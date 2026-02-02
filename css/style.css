@@ -46,6 +46,9 @@ html{
     font-size: var(--font-icon);
     margin: 0 5px;
 }
+.alignItem-star{
+    align-items: start !important;
+}
 .link-hover{
     position: relative;
 }
@@ -76,6 +79,15 @@ html{
 .wid-logo-big{
     width: 150px;
 }
+.flex-colum{
+    flex-direction: column;
+}
+.pad-1rem{
+    padding: 1rem;
+}
+.pad-2rem{
+    padding: 2rem;
+}
 /* Header Css */
 header{
     position: fixed;
@@ -97,7 +109,6 @@ header{
 }
 
 .header_menu{
-    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -114,14 +125,11 @@ header{
 .header_tool{
     gap: 20px;
 }
-.header_main ul li a, .header_tool ul li a{
+.header_menu ul li a, .header_tool ul li a{
     text-decoration: none;
     color: var(--black-color);
     padding: 2rem;
     cursor: pointer;
-}
-.header_main ul li, .header_tool ul li{
-    padding: 1rem 0;
 }
 .header_main{
     display: flex;
@@ -561,13 +569,53 @@ header{
    pointer-events: auto;
 }
 /* End Search */
-/* Animation */
-@keyframes slideLeftToRight{
-    from{
-        transform: translateX(-100%);
-    }to{
-        transform: translateX(0);
-    }
+/* Menu Mobile */
+.menu-mobile{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 4;
 }
-
-/* End Animation */
+.menu-mobile_body{
+    background-color: var(--white-color);
+    display: inline-block;
+    height: 100%;
+}
+.menu-mobile_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-mobile_header img{
+    width: 100%;
+    height: auto;
+}
+.menu-tools-mobile li, .menu-mobile_header{
+    border-bottom: 1px solid var(--border-grey);
+    margin: 1rem 0;
+}
+.menu-tools-mobile{
+    display: block;
+    width: 100%;
+}
+.menu-tools-mobile a{
+    font-size: var(--font-price);
+}
+.menu-mobile_img img{
+    width: 100%;
+}
+.menu-mobile_img div{
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    min-width: 10px;
+    margin: 0.5rem 0;
+}
+.menu-mobile_img{
+    padding: 3rem;
+}
+/* End Menu Mobile */
