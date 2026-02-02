@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "sku": "GF01",
+        "name": "Áo ỉn in hình dễ thương",
+        "categories": "Girl fashion",
+        "price" : 379000,
+        "image" : "../asset/image/Product/GirlFashion/GF01/jpeg.webp"
+    },
+    {
+        "id": 2,
+        "sku": "GF02",
+        "name":"Sơ mi cổ kiểu phối viền ren",
+        "categories": "Girl fashion",
+        "price" : 235000,
+        "image": "../asset/image/Product/GirlFashion/GF02/SomiTrang.webp"
+    },
+    {
+        "id": 3,
+        "sku": "GF03",
+        "name": "Áo sơ mi cổ kiểu phối bèo",
+        "categories": "Girl fashion",
+        "price": 219000,
+        "image": "../asset/image/Product/GirlFashion/GF03/jpeg.webp"
+    },
+    {
+        "id": 4,
+        "sku": "GF04",
+        "name": "Áo sơ mi cổ sen",
+        "categories": "Girl fashion",
+        "price": 196000,
+        "image":"../asset/image/Product/GirlFashion/GF04/jpeg.webp"
+    },
+        {
+        "id": 5,
+        "sku": "GF05",
+        "name": "Áo thô lụa cổ cánh bướm hai lớp",
+        "categories": "Girl fashion",
+        "price": 205000,
+        "image":"../asset/image/Product/GirlFashion/GF05/jpeg.webp"
+    },
+        {
+        "id": 6,
+        "sku": "GF06",
+        "name": "Áo cổ nhúng bèo đính nơ xinh xắn",
+        "categories": "Girl fashion",
+        "price": 245000,
+        "image":"../asset/image/Product/GirlFashion/GF06/jpeg.webp"
+    },
+            {
+        "id": 7,
+        "sku": "GF06",
+        "name": "Áo cổ nhúng bèo đính nơ xinh xắn",
+        "categories": "Girl fashion",
+        "price": 245000,
+        "image":"../asset/image/Product/GirlFashion/GF06/jpeg.webp"
+    },
+            {
+        "id": 8,
+        "sku": "GF06",
+        "name": "Áo cổ nhúng bèo đính nơ xinh xắn",
+        "categories": "Girl fashion",
+        "price": 245000,
+        "image":"../asset/image/Product/GirlFashion/GF06/jpeg.webp"
+    }
+]
