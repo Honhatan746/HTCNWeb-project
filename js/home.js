@@ -161,3 +161,25 @@ searchContent.addEventListener('click', (event)=>{ // ngăn chặn sự kiện n
 })
 window.addEventListener('scroll', hideModal);
 // End Search
+// Menu 
+const btnsMenuMobile = document.querySelectorAll('.menu-ti-js');
+const menuMobile = document.querySelector('.menu-mobile-js');
+const menuMobileBody = document.querySelector('.menu-mobile_body');
+
+function showMenuMobile(){
+    menuMobile.classList.add('open');
+    menuMobileBody.classList.add('open');
+}
+function hideMenuMobile(){
+    menuMobile.classList.remove('open');
+    menuMobileBody.classList.remove('open');
+}
+
+btnsMenuMobile.forEach(btnMenuMobile => {
+    btnMenuMobile.addEventListener('click', showMenuMobile)
+});
+menuMobile.addEventListener('click', hideMenuMobile);
+menuMobileBody.addEventListener('click', (event)=>{
+    event.stopPropagation();
+});
+// End Menu

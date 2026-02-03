@@ -1,6 +1,8 @@
 /* PC */
 @media(min-width: 1024px){
-
+    .menu-mobile{
+        display: none;
+    }
 }
 /* Tablet and Mobile */
 @media(max-width: 1023px){
