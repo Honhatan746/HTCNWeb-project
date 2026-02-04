@@ -14,12 +14,6 @@
     .menu-tools-md{
         display: none;
     }
-    header{
-        position: relative;
-    }
-    .slide{
-        margin-top: 0;
-    }
         .sub_logo{
     display: block;
 }
@@ -42,7 +36,10 @@
     max-width: 322px;
     width: 100%;
     min-width: 10px;
-}
+    }  
+    .prodcuts-container{
+    padding: 0 3rem;
+} 
 
 }
 /* Mobile */
@@ -72,4 +69,11 @@
     .news_cart{
         font-size: 2rem;
     }
+    .footer_body{
+        flex-direction: column;
+    }
+    .prodcuts-container{
+    padding: 0 1rem;
+} 
+
 }

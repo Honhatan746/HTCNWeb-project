@@ -12,6 +12,9 @@
     --linear-gradient-pink: linear-gradient(#FFECFA, #FEFEFE);
     --linear-gradient-blue: linear-gradient(#AAEFFF, #FFFFFF);
     --linear-gradient-yellow: linear-gradient(#FAFFB3, #FFFFFF);
+    --pink-pastel: #FFECFA;
+    --blue-pastel: #AAEFFF;
+    --yellow-pastel: #FAFFB3;
     --font-icon: 2.5rem;
     --font-headding: 3rem;
     --font-title: 1.6rem;
@@ -89,6 +92,7 @@ line-height: 4rem;
     line-height: 5rem;
     padding: 0 1rem;
 }
+/* --------------------------------Home------------------------- */
 /* Header Css */
 header{
     position: fixed;
@@ -226,12 +230,14 @@ header{
     max-width: 1760px;
     margin: 0 auto;
 }
+.margin-t-77{
+    margin-top: 77px;
+}
 /* End Section */
 /* Slide Css */
 .slide{
     background: url(../asset/image/Slide/01_-_banner_web_ngang_-_2500x991.jpg) top center / cover no-repeat;
     padding-top: 50%;
-    margin-top: 77px;
 }
 /* End slide Css */
 /* showcase product */
@@ -449,7 +455,7 @@ header{
     color: white;
     text-transform: uppercase;
     text-align: center;
-    font-size: 2rem;
+    font-size: var(--font-title);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -679,3 +685,50 @@ header{
 
 }
 /* End Menu Mobile */
+/* --------------------------------End Home------------------------- */
+/* --------------------------------Gril Product ------------------------- */
+/* Navbar */
+.navbar > ul li{
+    display: inline-block;
+    list-style: none;  
+    margin: 0.3rem; 
+    line-height: 2rem;
+    color: var(--black-color);
+    font-size: var(--font-text);
+    font-style: normal;
+}
+.navbar{
+    padding: 0 8rem;
+}
+.navbar > ul li a{
+    text-decoration: none;
+    color: var(--color-price);
+    font-size: var(--font-text);
+    font-style: normal;
+}
+.navbar > ul > i:first-child > li::after{
+    content: "/";
+    margin-left: 1rem;
+}
+.prodcuts-container{
+    padding: 0 8rem;
+}
+.girl-prd-container{
+    background: var(--linear-gradient-pink);
+}
+/* End navbar */
+/* Section prodcut */
+.prodcuts-container > div:first-child > img{
+    width: 100%;
+}
+.products-list{
+    padding: 0;
+}
+.prodcuts-text{
+    font-size: var(--font-headding);
+    color: var(--color-price);
+    border-top: 10px double white;
+    border-bottom: 10px double white;
+    text-shadow: 5px 2px 5px #c7c7c7;
+}
+/* --------------------------------End Girl Product------------------------- */
