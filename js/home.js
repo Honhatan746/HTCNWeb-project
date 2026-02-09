@@ -11,10 +11,10 @@ fetch("../data/showcase.json")
     showcase.forEach(product => {
         cart += `
             <div class="cart">
-                   <div class="frame_img"> <img src="${product.image}" alt="image"></div>
+                   <div class="frame_img"> <img src="${product.image}" alt="image" class="img-cls"></div>
                 <div class="cart_text">
                     <h3>${product.name}</h3>
-                    <h3 class="cart_price">${product.price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
+                    <h3 class="heading-pink">${product.price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
                 </div>
             </div>
         `
@@ -35,10 +35,10 @@ fetch("../data/showcase.json")
     girlProducts.forEach(girlProduct => {
         cart +=`
             <div class="cart swiper-slide mr-10-30 max-width-cart-swiper">
-                <div class="frame_img"> <img src="${girlProduct.image}" alt="image"></div>
+                <div class="frame_img"> <img src="${girlProduct.image}" alt="image" class="img-cls"></div>
                 <div class="cart_text">
                     <h3>${girlProduct.name}</h3>
-                    <h3 class="cart_price">${girlProduct.price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
+                    <h3 class="heading-pink">${girlProduct.price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
                 </div>
             </div>  
         ` 
@@ -59,10 +59,10 @@ fetch("../data/showcase.json")
     boyProducts.forEach(boyProduct => {
         cart +=`
             <div class="cart swiper-slide mr-10-30 max-width-cart-swiper ">
-               <div class="frame_img"> <img src="${boyProduct.image}" alt="image"></div>
+               <div class="frame_img"> <img src="${boyProduct.image}" alt="image"  class="img-cls"></div>
                 <div class="cart_text">
                     <h3>${boyProduct.name}</h3>
-                    <h3 class="cart_price">${boyProduct.price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
+                    <h3 class="heading-pink">${boyProduct.price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
                 </div>
             </div>  
         ` 
@@ -84,10 +84,10 @@ fetch("../data/showcase.json")
     accessProducts.forEach(accessProduct => {
         cart +=`
             <div class="cart swiper-slide mr-10-30 max-width-cart-swiper ">
-                <div class="frame_img"> <img src="${accessProduct.image}" alt="image"></div>
+                <div class="frame_img"> <img src="${accessProduct.image}" alt="image" class="img-cls"></div>
                 <div class="cart_text">
                     <h3>${accessProduct.name}</h3>
-                    <h3 class="cart_price">${accessProduct.price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
+                    <h3 class="heading-pink">${accessProduct.price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
                 </div>
             </div>  
         ` 
@@ -107,7 +107,7 @@ fetch("../data/news.json")
     listNews.forEach(news => {
         cart += `
                 <div class="news_cart">
-                    <div class="frame_img aspect-16-9"><img src="${news.image}" alt="news"></div>
+                    <div class="frame_img aspect-16-9"><img src="${news.image}" alt="news" class="img-cls"></div>
                     <div class="news_text">
                         <h1>${news.headding}</h1>
                         <p>${news.excerpt}</p>
