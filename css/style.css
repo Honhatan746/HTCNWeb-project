@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif ;
 }
 :root{
     --border-grey: rgb(193, 193, 193);
@@ -17,11 +18,17 @@
     --font-icon: 2.5rem;
     --font-headding: 3rem;
     --font-title: 1.6rem;
-    --font-text: 1.3rem;
+    --font-text: 1.4rem;
     --font-price: 2rem;
 }
 html{
     font-size: 62.5%;
+}
+.line-height{
+    line-height: 1.4;
+}
+.font-text{
+    font-size: var(--font-text);
 }
 .max-width-cart-swiper{
     max-width: 270px !important ;
@@ -34,12 +41,20 @@ html{
 .aspect-16-9{
     aspect-ratio: 16 / 9;
 }
+.font-title{
+    font-size: var(--font-title);
+}
 .bo-bot{
     border-bottom: 1px solid var(--border-grey);
-    margin-bottom: 10px;
 }
 .mar-t-b{
     margin:1rem 0 ;
+}
+.font-price{
+    font-size: var(--font-price);
+}
+.no-bor{
+    border: 0 !important;
 }
 .mr-10-30 {
     margin: 1em 1em;
@@ -66,6 +81,12 @@ html{
     transform-origin: left;
     transition: all 0.3s ease;
 }
+.under-line{
+    text-decoration: underline;
+}
+.upcass{
+    text-transform: uppercase;
+}
 .link-hover:hover::after{
     transform: scaleX(1);
 }
@@ -85,11 +106,22 @@ html{
     flex-direction: column;
 }
 .pad-1rem{
-line-height: 4rem;
+    line-height: 4rem;
 }
 .pad-2rem{
     line-height: 5rem;
     padding: 0 1rem;
+}
+.img-cls{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.color-white{
+    color: var(--white-color) !important;
+}
+.font-w-700{
+    font-weight: 700;
 }
 /* --------------------------------Home------------------------- */
 /* Header Css */
@@ -111,7 +143,9 @@ header{
     padding: 5px;
     width: 100%;
 }
-
+.background-violet{
+    background: var(--headding-violet) !important;
+}
 .header_menu{
     display: flex;
     align-items: center;
@@ -192,12 +226,6 @@ header{
     a{
         color: var(--white-color);
     }
-}
-.frame_img > img{
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
 }
 .menu-tools_sub:hover .menu_img{
    transform: translateX(0);
@@ -295,17 +323,20 @@ header{
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-top: 20px;
-    font-size: 2rem;
+    font-size: var(--font-price);
     padding-left: 20px;
     line-height: 1.3;
 }
 
 .cart h3:first-child{
     font-weight: 100;
-    font-size: 2rem;
+    font-size: var(--font-price);
 }
-.cart .cart_price{
-    color: #AB2A8B;
+.bor-radis-0{
+    border-radius: 0 !important;
+}
+.di-flex{
+    display: flex;
 }
 .show-pdt_list {
     display: grid;
@@ -379,13 +410,11 @@ header{
     float: right;
 }
 .btn{
-    font-size: 2rem;
     color: var(--black-color);
     background-color: var(--white-color);
     border: 0;
     border: 1px solid var(--headding-violet);
     border-radius: 10px;
-    margin: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -424,9 +453,7 @@ header{
     text-align: center;
     gap: 1.2em;
 }
-.news_cart .frame_img > img{
-    width: 100%;
-}
+
 .new_list{
     display: flex;
 }
@@ -739,3 +766,105 @@ header{
     background: var(--linear-gradient-yellow);
 }
 /*---------------------------------End Fashion Accessories--------------------------- */
+/*---------------------------------Prodcut Details------------------------------ */
+.product-dt-container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.product-dt-content{
+    display: flex;
+    justify-content: center;
+}
+.product-dt_img{
+    display: flex;
+    gap: 1rem;
+}
+.product-dt_list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+} 
+.product-dt_list_img{
+    width: 80px;
+    overflow: hidden;
+    height: 80px;
+    cursor: pointer;
+}
+
+.product-dt_main-img > div{
+    width: 510px;
+    overflow: hidden;
+    height: 550px;
+}
+#mainImg{
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity .6s ease, transform 0.6s ease;
+}
+#mainImg.fade-out {
+    opacity: 0;
+    transform: scale(0.97);
+}
+.product-dt-text{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 3rem;
+    gap: 1rem;
+    font-size: var(--font-text);
+    width: 100%;
+}
+.product-dt-color{
+    width: 40px;
+    border: 1px solid black;
+}
+.prodcut-dt-size{
+    display: flex;
+    justify-content: space-between;
+}
+.size-frame div{
+    border: 1px solid var(--border-grey);
+    width: 45px;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.size-frame{
+    display: flex;
+    gap: 1.3rem;
+}
+.product-dt-quantity > div{
+    border: 1px solid var(--headding-violet);
+    display: inline-flex;
+    gap: 1px;
+    border-radius: 11px;
+}
+.product-dt-quantity input{
+    width: 50px;
+    outline: none;
+    text-align: center;
+}
+.btn-mua{
+    width: 220px;
+}
+.color-violet{
+    color: var(--headding-violet);
+}
+.hover:hover{
+    opacity: 0.8;
+}
+.list-none {
+    list-style: none;
+}
+.product-dt-description{
+    margin-top: 3rem;
+}
+.font-w-100{
+    font-weight:100;
+}
+.product-dt-description > ul{
+    list-style-type: disclosure-closed;
+}
+/*---------------------------------End Prodcut Details--------------------------- */
