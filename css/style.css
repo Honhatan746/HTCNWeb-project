@@ -66,6 +66,9 @@ html{
 .alignItem-star{
     align-items: start !important;
 }
+.height-auto{
+    height: auto !important;
+}
 .link-hover{
     position: relative;
 }
@@ -778,6 +781,8 @@ header{
 .product-dt_img{
     display: flex;
     gap: 1rem;
+    min-width: 10px;
+    width: 100%;
 }
 .product-dt_list{
     display: flex;
@@ -791,10 +796,10 @@ header{
     cursor: pointer;
 }
 
-.product-dt_main-img > div{
+.product-dt_main-img {
     width: 510px;
     overflow: hidden;
-    height: 550px;
+    max-width: 100%;
 }
 #mainImg{
     opacity: 1;
@@ -812,6 +817,10 @@ header{
     gap: 1rem;
     font-size: var(--font-text);
     width: 100%;
+    min-width: 10px;
+}
+.fix-bottom{
+
 }
 .product-dt-color{
     width: 40px;
@@ -853,7 +862,7 @@ header{
     color: var(--headding-violet);
 }
 .hover:hover{
-    opacity: 0.8;
+    background: #c5aaff !important;
 }
 .list-none {
     list-style: none;
