@@ -75,5 +75,32 @@
     .prodcuts-container{
     padding: 0 1rem;
 } 
-
+    .product-dt_main-img{
+        width: 100%;
+    }
+    .product-dt-content{
+        flex-direction: column;
+    }
+    .product-dt-text {
+        margin: 0.5rem 0;
+    }
+    .product-dt_img{
+        flex-direction: column-reverse;
+    }
+    .product-dt_list{
+        flex-direction: row;
+    }
+    .fix-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    box-shadow: -2px -2px 8px #00000040;
+    }
+.btn-mua{
+    width: 100%;
+    padding: 3rem 0;
+    font-size: var(--font-price);
+}
 }
