@@ -1,30 +1,5 @@
-// Fetch data for showcase products 
-fetch("../data/showcase.json")
-.then(response => response.json())
-.then(showcase => {
-
-    const container = document.getElementById("showcaselist");
-
-
-    var cart = '';
-    
-    showcase.forEach(product => {
-        cart += `
-            <div class="cart">
-                   <div class="frame_img"> <img src="${product.image}" alt="image" class="img-cls"></div>
-                <div class="cart_text">
-                    <h3>${product.name}</h3>
-                    <h3 class="heading-pink">${product.price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
-                </div>
-            </div>
-        `
-    })
-    
-    container.innerHTML = cart;
-
-})
 // Fetch data for girlfashion 
-fetch("../data/showcase.json")
+fetch("../data/girlFashion.json")
 .then(response => response.json())
 .then(girlProducts => {
     
@@ -34,13 +9,14 @@ fetch("../data/showcase.json")
     
     girlProducts.forEach(girlProduct => {
         cart +=`
-            <div class="cart swiper-slide mr-10-30 max-width-cart-swiper">
-                <div class="frame_img"> <img src="${girlProduct.image}" alt="image" class="img-cls"></div>
+            <a href="../productDetail.html?id=${girlProduct.productID}" class="cart swiper-slide mr-10-30 max-width-cart-swiper">
+                <div class="frame_img"> <img src="${girlProduct.variants[0].image[0]}" alt="image" class="img-cls"></div>
                 <div class="cart_text">
                     <h3>${girlProduct.name}</h3>
-                    <h3 class="heading-pink">${girlProduct.price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
-                </div>
-            </div>  
+                    <h3 class="heading-pink">${girlProduct.variants[0].item[0].price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
+                    <div class="frame_img cart-color"><img class="img-cls" src="${girlProduct.variants[0].image[1]}"></div>       
+                    </div>
+            </a>  
         ` 
     })
     girlContainer.innerHTML = cart;
@@ -48,7 +24,7 @@ fetch("../data/showcase.json")
 
 })
 // Fetch data for boy fashion
-fetch("../data/showcase.json")
+fetch("../data/boyFashion.json")
 .then(response => response.json())
 .then(boyProducts => {
     
@@ -58,13 +34,14 @@ fetch("../data/showcase.json")
     
     boyProducts.forEach(boyProduct => {
         cart +=`
-            <div class="cart swiper-slide mr-10-30 max-width-cart-swiper ">
-               <div class="frame_img"> <img src="${boyProduct.image}" alt="image"  class="img-cls"></div>
+            <a href="../productDetail.html?id=${boyProduct.productID}" class="cart swiper-slide mr-10-30 max-width-cart-swiper">
+                <div class="frame_img"> <img src="${boyProduct.variants[0].image[0]}" alt="image" class="img-cls"></div>
                 <div class="cart_text">
                     <h3>${boyProduct.name}</h3>
-                    <h3 class="heading-pink">${boyProduct.price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
-                </div>
-            </div>  
+                    <h3 class="heading-pink">${boyProduct.variants[0].item[0].price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
+                    <div class="frame_img cart-color"><img class="img-cls" src="${boyProduct.variants[0].image[1]}"></div>       
+                    </div>
+            </a> 
         ` 
     })
     boyContainer.innerHTML = cart;
@@ -73,7 +50,7 @@ fetch("../data/showcase.json")
 })
 
 //Fetch data for accessories fashion
-fetch("../data/showcase.json")
+fetch("../data/Accessories.json")
 .then(response => response.json())
 .then(accessProducts => {
     
@@ -83,13 +60,14 @@ fetch("../data/showcase.json")
     
     accessProducts.forEach(accessProduct => {
         cart +=`
-            <div class="cart swiper-slide mr-10-30 max-width-cart-swiper ">
-                <div class="frame_img"> <img src="${accessProduct.image}" alt="image" class="img-cls"></div>
+            <a href="../productDetail.html?id=${accessProduct.productID}" class="cart swiper-slide mr-10-30 max-width-cart-swiper">
+                <div class="frame_img"> <img src="${accessProduct.variants[0].image[0]}" alt="image" class="img-cls"></div>
                 <div class="cart_text">
                     <h3>${accessProduct.name}</h3>
-                    <h3 class="heading-pink">${accessProduct.price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
-                </div>
-            </div>  
+                    <h3 class="heading-pink">${accessProduct.variants[0].item[0].price.toLocaleString("vi-VN",{style: "currency",currency: "VND"})}</h3>    
+                    <div class="frame_img cart-color"><img class="img-cls" src="${accessProduct.variants[0].image[1]}"></div>       
+                    </div>
+            </a>  
         ` 
     })
     accessContainer.innerHTML = cart;
@@ -106,13 +84,13 @@ fetch("../data/news.json")
 
     listNews.forEach(news => {
         cart += `
-                <div class="news_cart">
+            <a href="" class=" text-deco-none color-black news_cart">
                     <div class="frame_img aspect-16-9"><img src="${news.image}" alt="news" class="img-cls"></div>
                     <div class="news_text">
                         <h1>${news.headding}</h1>
                         <p>${news.excerpt}</p>
                     </div>
-                </div>
+                </a>
         `
     })
     newsContainer.innerHTML = cart;
@@ -133,3 +111,26 @@ fetch("../data/news.json")
         });
     }); 
 // End Swiper
+// Slide
+    document.addEventListener('DOMContentLoaded', () => {
+        const swiper = document.querySelector('.swiper-wrapper');
+        const slides = swiper.querySelectorAll('.swiper-slide');
+        
+        let index = 0;
+        const total = slides.length;
+        const delay = 3000;
+        
+        setInterval(() => {
+            index++;
+            
+            if (index >= total) {
+                index = 0;
+            }
+            
+            swiper.scrollTo({
+                left: index * swiper.clientWidth,
+                behavior: 'smooth'
+            });
+        }, delay);
+    });
+// End Slide

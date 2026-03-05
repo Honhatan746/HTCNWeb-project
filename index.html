@@ -31,9 +31,9 @@
                         <!-- Menu Sub -->
                         <div class="header_product-sub ">
                             <ul>
-                                <li class="pad-1rem"><a href="">Girl Fashion</a></li>
-                                <li class="pad-1rem"><a href="">Boy Fashion </a></li>
-                                <li class="pad-1rem"><a href="">Fashion Accessoies</a></li>
+                                <li class="pad-1rem"><a href="./girlfashion.html">Girl Fashion</a></li>
+                                <li class="pad-1rem"><a href="./boyfashion.html">Boy Fashion </a></li>
+                                <li class="pad-1rem"><a href="./accessories.html">Fashion Accessoies</a></li>
                             </ul>
                             <div class="menu_img">
                                 <img src="./asset/image/Slide/anh_tet.webp" alt="">
@@ -42,15 +42,15 @@
                         </div>
                         <!-- End MenuSub -->
                     </li>
-                    <li class="link-hover pad-1rem "><a title="News List" href="">News</a></li>
-                    <li class="link-hover pad-1rem"><a title="Infomation about us" href="">About</a></li>
-                    <li class="link-hover pad-1rem"><a title="Direction in our website" href="">SiteMap</a></li>
+                    <li class="link-hover pad-1rem "><a title="News List" href="./news.html">News</a></li>
+                    <li class="link-hover pad-1rem"><a title="Infomation about us" href="./about.html">About</a></li>
+                    <li class="link-hover pad-1rem"><a title="Direction in our website" href="./sitemap.html">SiteMap</a></li>
                 </ul>
             </div>
             <div class="header_tool">
                 <ul class="menu-tools">
-                    <li class="link-hover pad-1rem"><a title="Shopping cart" href=""><i class="ti-shopping-cart"></i></a></li>
-                    <li class="link-hover pad-1rem"><a title="Account" href=""><i class="ti-user"></i></a></li>
+                    <li class="link-hover pad-1rem"><a title="Shopping cart" href="./cart.html"><i class="ti-shopping-cart"></i></a></li>
+                    <li class="link-hover pad-1rem"><a title="Account" href="./login.html"><i class="ti-user"></i></a></li>
                     <li class="link-hover pad-1rem"><a title="CheckOut" href=""><i class="ti-bag"></i></a></li>
                     <li class="link-hover js-search-icon pad-1rem" ><a title="Search" ><i class="ti-search"></i></a></li>
                 </ul>
@@ -58,8 +58,16 @@
         </div>
     </header>
     <!-- Slide -->
-        <div class="slide margin-t-77" >
-
+        <div class=" margin-t-77 di-flex" >
+            <div class=" swiper slide ">
+            <div class="swiper-button-prev dis-none"><i class="ti-arrow-left"></i></div>
+                <div class="swiper-wrapper" >
+                    <div class="frame_img aspect-ratio-auto swiper-slide"><img class="img-cls" src="./asset/image/Slide/01_-_banner_web_ngang_-_2500x991.jpg" alt=""></div>
+                    <div class="frame_img aspect-ratio-auto swiper-slide"><img class="img-cls" src="./asset/image/Slide/anh_tet.webp" alt=""></div>
+                    <div class="frame_img aspect-ratio-auto swiper-slide"><img class="img-cls" src="./asset/image/Slide/anh_trung_thu.webp" alt=""></div>
+                </div>
+            <div class="swiper-button-next dis-none"><i class="ti-arrow-right"></i></div>
+            </div>
         </div>
         <!-- End slide -->
     <!--End Header-->
@@ -68,7 +76,7 @@
         <div class="show-pdt bo-bot mar-t-b">
             <h1 class="home-heading">Showcase Product</h1>
             <div class="show-pdt_contain">
-                <img src="./asset/image/Product/png.webp" alt="">
+                <img class="wid-100" src="./asset/image/Product/png.webp" alt="">
                 <div class="show-pdt_list" id="showcaselist">
 
                 </div>
@@ -82,12 +90,12 @@
             <div class="girl-fash_list swiper">
             <div class="swiper-button-prev"><i class="ti-arrow-left"></i></div>
                 <div class="swiper-wrapper " id="girlfashlist">
-                
+
                 </div>
             <div class="swiper-button-next"><i class="ti-arrow-right"></i></div>
             </div>
+            <button class="btn float-r font-price mar-t-b">Show All Products</button>
             <!-- End Swiper -->
-            <button class="btn float-r font-price font-price mar-t-b">Show All Products</button>
         </div>
         <!-- End Girlfashion -->
          <!-- Boy fashion -->
@@ -249,5 +257,6 @@
        <!-- End Menu Mobile -->
     <script src="./js/home.js"> </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/showcase.js"></script>
 </body>
 </html>
