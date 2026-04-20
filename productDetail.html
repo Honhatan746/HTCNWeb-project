@@ -1,18 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./asset/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./css/responsible.css">
     <title>Product Details</title>
     <style>
+        .modern-product {
+    padding: 60px 0;
+    background: #f8f8f8;
+}
+
+/* LEFT SIDE */
+.product-left {
+    padding-right: 40px;
+}
+
+.product-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-big-title {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.product-desc {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.desc-block {
+    margin-bottom: 15px;
+}
+
+.desc-block h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.btn-order {
+    background: #ff3c00;
+    color: #fff;
+    border: none;
+    padding: 14px 30px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-order:hover {
+    background: #d93200;
+}
+
+/* RIGHT SIDE */
+.product-right {
+    position: relative;
+}
+
+.product-image-wrapper {
+    background: #9ec3e6;
+    border-radius: 40px;
+    padding: 40px;
+    text-align: center;
+}
+
+.main-product-img {
+    width: 80%;
+}
+
+/* mini card */
+.mini-card {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    background: #f7d9a8;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.mini-card img {
+    width: 50px;
+}
+
+/* vertical badge */
+.vertical-badge {
+    position: absolute;
+    bottom: 20px;
+    left: -40px;
+    background: #000;
+    color: #fff;
+    padding: 20px 10px;
+    border-radius: 20px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .product-big-title {
+        font-size: 40px;
+    }
+
+    .product-left {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .mini-card,
+    .vertical-badge {
+        display: none;
+    }
+}
     </style>
 </head>
+
 <body>
-       <!-- Header -->
-    <header>
+        <!-- Header -->
+         <header>
         <div class="header_sub">
             <p>Kids’s products – gentle and comfortable</p>
             <p>Best-selling products on the market</p>
@@ -22,20 +137,20 @@
                 <div 
                 class="menu-ti link-hover menu-ti-js"><i class="ti-menu"></i>    
                 </div>
-                <a href="./index.html"><img class="wid-logo sub_logo" src="./asset/image/Logo/iuh.png" alt="Logo"></a>
+                <a href="./home.html"><img class="wid-logo sub_logo" src="./asset/image/Logo/iuh.png" alt="Logo"></a>
             </div>
-            <a href="./index.html"><img class="wid-logo main_logo" src="./asset/image/Logo/iuh.png" alt="Logo"></a>
+            <a href="./home.html"><img class="wid-logo main_logo" src="./asset/image/Logo/iuh.png" alt="Logo"></a>
             <div class="header_menu ">
                 <ul class="menu-tools menu-tools-md">
-                    <li class="link-hover pad-1rem"><a title="Home" href="index.html">Home</a></li>
+                    <li class="link-hover pad-1rem"><a title="Home" style="color: black;" href="home.html">Home</a></li>
                     <li class="menu-tools_sub link-hover pad-1rem">
-                        <span class="text-hover"> Product</span>
+                        <a href="./allProduct.html" class="text-hover" style="color: black;"> Product</a>
                         <!-- Menu Sub -->
                         <div class="header_product-sub ">
                             <ul>
-                                <li class="pad-1rem"><a href="">Girl Fashion</a></li>
-                                <li class="pad-1rem"><a href="">Boy Fashion </a></li>
-                                <li class="pad-1rem"><a href="">Fashion Accessoies</a></li>
+                                <li class="pad-1rem"><a href="allProduct.html?cat=girlFashion" style="color: black;">Girl Fashion</a></li>
+                                <li class="pad-1rem"><a href="allProduct.html?cat=boyFashion" style="color: black;">Boy Fashion </a></li>
+                                <li class="pad-1rem"><a href="allProduct.html?cat=Accessories" style="color: black;">Fashion Accessoies</a></li>
                             </ul>
                             <div class="menu_img">
                                 <img src="./asset/image/Slide/anh_tet.webp" alt="">
@@ -44,80 +159,87 @@
                         </div>
                         <!-- End MenuSub -->
                     </li>
-                    <li class="link-hover pad-1rem "><a title="News List" href="">News</a></li>
-                    <li class="link-hover pad-1rem"><a title="Infomation about us" href="">About</a></li>
-                    <li class="link-hover pad-1rem"><a title="Direction in our website" href="">SiteMap</a></li>
+                    <li class="link-hover pad-1rem "><a title="News List" style="color: black;" href="./news.html">News</a></li>
+                    <li class="link-hover pad-1rem"><a title="Infomation about us" style="color: black;" href="./about.html">About</a></li>
+                    <li class="link-hover pad-1rem"><a title="Direction in our website" style="color: black;" href="./sitemap.html">SiteMap</a></li>
                 </ul>
             </div>
             <div class="header_tool">
                 <ul class="menu-tools">
-                    <li class="link-hover pad-1rem"><a title="Shopping cart" href=""><i class="ti-shopping-cart"></i></a></li>
-                    <li class="link-hover pad-1rem"><a title="Account" href=""><i class="ti-user"></i></a></li>
-                    <li class="link-hover pad-1rem"><a title="CheckOut" href=""><i class="ti-bag"></i></a></li>
-                    <li class="link-hover js-search-icon pad-1rem" ><a title="Search" ><i class="ti-search"></i></a></li>
+                    <li class="link-hover pad-1rem"><a title="Shopping cart" style="color: black;" href="./cart.html"><i class="ti-shopping-cart"></i></a></li>
+                    <li class="link-hover pad-1rem"><a title="Account" style="color: black;" href="./account.html"><i class="ti-user"></i></a></li>
+                    <li class="link-hover pad-1rem"><a title="CheckOut" style="color: black;" href="./order.html"><i class="ti-bag"></i></a></li>
+                    <li class="link-hover js-search-icon pad-1rem" ><a title="Search" style="color: black;" ><i class="ti-search"></i></a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <!--End Header -->
-        <!-- Navbar  -->
-     <nav class="navbar margin-t-77">
+    <!-- Navbar -->
+          <nav class="navbarcss">
             <ul>
                 <i><li><a href="./index.html">Home</a></li></i>
-                <i><li>Product Details</li></i>
+                <i><li>Login</li></i>
             </ul>
         </nav>
-     <!-- End Navbar -->
-      <!-- Section -->
-        <section class="product-dt-container prodcuts-container">
-            <div class="product-dt-content di-flex justi-cen mar-t-b">
-                <div class="product-dt_img wid-100 di-flex">
-                    <div class="product-dt_list di-flex flex-colum" id="productDTList">
+    <!-- End Navbar -->
+    <!-- Section -->
+    <section class="product-dt-container prodcuts-container">
+        <div class="product-dt-content di-flex justi-cen mar-t-b">
+            <div class="product-dt_img wid-100 di-flex">
+                <div class="product-dt_list di-flex flex-colum" id="productDTList">
 
-                    </div>
-                    <div class="product-dt_main-img" id="prodcutDTMainImg"></div>
                 </div>
-                <div class="product-dt-text wid-100 di-flex flex-colum line-height">
-                    <h1 class="bo-bot" id="prodcutDTName"></h1>
-                    <p class="dis-con">Product ID: </p>
-                    <p class="dis-con" id="prodcutDTID"></p>
-                    <h1 class="heading-pink bo-bot" id="productDTPrice" ></h1>
-                    <h3>Color: </h3>
-                    <div class="product-dt-color di-flex" id="productDTcolor">
-                        
+                <div class="product-dt_main-img" id="prodcutDTMainImg"></div>
+            </div>
+            <div class="product-dt-text wid-100 di-flex flex-colum line-height">
+                <h1 class="bo-bot" id="prodcutDTName"></h1>
+                <p class="dis-con">Product ID: </p>
+                <p class="dis-con" id="prodcutDTID"></p>
+                <h1 class="heading-pink bo-bot" id="productDTPrice"></h1>
+                <h3>Color: </h3>
+                <div class="product-dt-color di-flex" id="productDTcolor">
+                    <!-- Color sản phẩm -->
+                </div>
+                <div class="prodcut-dt-size di-flex justi-btw j" id="sizeSection">
+                    <div class="size-frame" id="prodcutDTSize">
+                        <!-- Size sản phẩm -->
                     </div>
-                    <div class="prodcut-dt-size di-flex justi-btw" id="sizeSection">
-                        <div class="size-frame di-flex" id="prodcutDTSize">
-                        </div>
-                        <a href="#tableDTSize"  class="heading-pink under-line font-title font-w-700">Bảng size</a>
-                    </div>
-                    <div class="product-dt-quantity">
-                        <h3 class="mar-t-b">Quantity: </h3>
-                        <div>
-                            <button class="btn no-bor font-w-700" onclick="subtract()">–</button>
-                            <input type="text" id="quantity" class="no-bor font-w-700" value="1" readonly>
-                            <button class="btn no-bor font-w-700" onclick="add()">+</button>
-                        </div>
-                    </div>
-                    <div class="di-flex fix-bottom" >
-                        <button class="btn-read bor-radis-0 upcass color-violet  font-w-700 font-text ">Vui lòng chọn Size</button>
-                        <button class="btn-read bor-radis-0 upcass color-white background-violet  font-w-700 font-text  " >Vui lòng chọn Size</button>
-                        <button class="btn bor-radis-0 upcass btn-mua color-violet font-text  font-w-700 ">Thêm vào giỏ hàng</button>
-                        <button class="btn bor-radis-0 background-violet font-title color-white upcass btn-mua hover font-w-700" >Mua Ngay</button>
+                    <a href="#tableDTSize" id="labelBangSize" class="heading-pink under-line font-title font-w-700">Bảng
+                        size</a>
+                </div>
+                <div class="product-dt-quantity">
+                    <h3 class="mar-t-b">Quantity: </h3>
+                    <div>
+                        <button class="btncss no-bor font-w-700" onclick="subtract()">–</button>
+                        <input type="text" id="quantity" class="no-bor font-w-700" value="1" readonly>
+                        <button class="btncss no-bor font-w-700" onclick="add()">+</button>
                     </div>
                 </div>
+                <div class="di-flex fix-bottom">
+                    <button class="btncss bor-radis-0 upcass btn-mua color-violet font-text  font-w-700 "
+                        id="addtoCart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+                    <button
+                        class="btncss bor-radis-0 background-violet font-title color-white upcass btn-mua hover font-w-700"
+                        id="buyNow">Mua Ngay</button>
+                </div>
             </div>
-            <div class="product-dt-description font-title line-height ">
-                <h1 class="bo-bot upcass home-heading">Chi tiết sản phẩm</h1>
-                <ul id="productDTDescription">
-                
-                </ul>
-            </div >
-            <div class="product-dt-description font-title line-height " id="tableDTSize">
-                
-            </div>
-            <div class="show-pdt bo-bot mar-t-b">
-            <h1 class="home-heading">Showcase Product</h1>
+        </div>
+        <div class="product-dt-description font-title line-height ">
+            <h1 class="bo-bot upcass home-heading">Chi tiết sản phẩm</h1>
+            <ul id="productDTDescription">
+
+            </ul>
+            <section class="modern-product">
+                <div class="container">
+                    <div id="productDetail" class="row align-items-center"></div>
+                </div>
+            </section>
+        </div>
+        <div class="product-dt-description font-title line-height " id="tableDTSize">
+
+        </div>
+        <div class="show-pdt bo-bot mar-t-b">
+            <h1 class="home-heading">Sản phẩm bán chạy</h1>
             <div class="show-pdt_contain">
                 <img class="wid-100" src="./asset/image/Product/png.webp" alt="">
                 <div class="show-pdt_list" id="showcaselist">
@@ -125,9 +247,9 @@
                 </div>
             </div>
         </div>
-        </section>
-       <!-- End Section -->
-        <!-- Footer -->
+    </section>
+    <!-- End Section -->
+    <!-- Footer -->
     <footer>
         <div class="footer_background">
             <div class="footer_text">
@@ -138,16 +260,22 @@
             <div class="footer_info">
                 <a href=""><img class="wid-logo" src="./asset/image/Logo/iuh.png" alt=""></a>
                 <div class="mar-t-b">
-                    <i  class="ti-mobile "></i>
-                    <a class="text-hover" href=""><p>Liên hệ: 0123456789</p></a>
+                    <i class="ti-mobile "></i>
+                    <a class="text-hover" href="">
+                        <p>Liên hệ: 0123456789</p>
+                    </a>
                 </div>
                 <div class="mar-t-b">
                     <i class="ti-email"></i>
-                    <a class="text-hover" href=""><p>Email: KidcoreFashion@gmail.com</p></a>
+                    <a class="text-hover" href="">
+                        <p>Email: KidcoreFashion@gmail.com</p>
+                    </a>
                 </div>
                 <div class="mar-t-b">
                     <i class="ti-home"></i>
-                    <a class="text-hover" href=""><p>Địa chỉ: Số 12 Nguyễn Văn Bảo, P. Hạnh Thông, Thành phố Hồ Chí Minh</p></a>
+                    <a class="text-hover" href="">
+                        <p>Địa chỉ: Số 12 Nguyễn Văn Bảo, P. Hạnh Thông, Thành phố Hồ Chí Minh</p>
+                    </a>
                 </div>
                 <div class="mar-t-b">
                     <h1>Conect with us</h1>
@@ -163,7 +291,7 @@
             <div>
                 <ul>
                     <li>Service</li>
-                    <li><a class="text-hover" href="./index.html">Home</a></li>
+                    <li><a class="text-hover" href="./index.html">Trang chủ</a></li>
                     <li><a class="text-hover" href="./about.html">About</a></li>
                     <li><a class="text-hover" href="./cart.html">My Cart</a></li>
                 </ul>
@@ -175,57 +303,68 @@
                     <li><a class="text-hover" href="">Ordering support</a></li>
                     <li><a class="text-hover" href="">Delivery and shipping</a></li>
                     <li><a class="text-hover" href="">Check orders</a></li>
-                    <li><a class="text-hover"a href="">Contact us: 0123456789</a></li>
+                    <li><a class="text-hover" href="">Contact us: 0123456789</a></li>
                 </ul>
-            </div>  
+            </div>
         </div>
         <div class="footer_end">
-            <p>Welcome <sup>©</sup> 2026    </p>
+            <p>Welcome <sup>©</sup> 2026 </p>
         </div>
     </footer>
     <!-- Footer -->
     <!-- Search -->
-     <div class="search js_search">
+    <div class="search js_search">
         <div class="search_body js-search_body">
             <a href=""><img class="wid-logo-big " src="./asset/image/Logo/iuh.png" alt=""></a>
             <div class="search_content">
                 <div class="search_input">
                     <input placeholder="Search your favorate products..." type="text" id="serach_input">
-                    <button class="btn-search absout-search"><i class="ti-search"></i></button>
+
+                    <div class="" id="listProductSearch">
+                        <!--Render ra sản phẩm ở đây  -->
+                    </div>
                 </div>
             </div>
-            <div class="header_tool">
-                <ul class="menu-tools">
-                    <li class="link-hover"><a title="Shopping cart" href=""><i class="ti-shopping-cart"></i></a></li>
-                    <li class="link-hover"><a title="Account" href=""><i class="ti-user"></i></a></li>
-                    <li class="link-hover"><a title="CheckOut" href=""><i class="ti-bag"></i></a></li>
-                </ul>
+            <div class="header_tool searchTool">
+                <!-- Render ra ở đây -->
             </div>
         </div>
-     </div>
-     <!-- End Search -->
-      <!-- Menu Mobile -->
-       <div class="menu-mobile menu-mobile-js">
-            <div class="menu-mobile_body" > 
-                    <div class="menu-mobile_header">
-                        <div class="wid-logo"><img src="./asset/image/Logo/iuh.png" alt="Logo"></div>
-                        <h1>Catalogue</h1>
-                    </div>
-                    <div class="header_menu alignItem-star">
-                        <ul class=" menu-tools flex-colum menu-tools-mobile">
-                            <li class="pad-2rem link-hover"><a class="text-hover" href="">Home</a></li>
-                            <li class="pad-2rem link-hover"><a class="text-hover" href="">About</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu-mobile_img ">
-                        <div><img src="./asset/image/Slide/anh_tet.webp" alt="anhTet"></div>
-                        <div><img src="./asset/image/Slide/anh_trung_thu.webp" alt="anhTrungThu"></div>
-                    </div>
+    </div>
+    <!-- End Search -->
+    <!-- Menu Mobile -->
+    <div class="menu-mobile menu-mobile-js">
+        <div class="menu-mobile_body">
+            <div class="menu-mobile_header">
+                <div class="wid-logo"><img src="./asset/image/Logo/iuh.png" alt="Logo"></div>
+                <h1>Catalogue</h1>
             </div>
-       </div>
-       <!-- End Menu Mobile -->
-        <script src="./js/modal.js"></script> 
-        <script src="./js/productDetails.js"></script>
-       <script src="./js/showcase.js "></script>
+            <div class="header_menu alignItem-star">
+                <ul class=" menu-tools flex-colum menu-tools-mobile">
+                    <!--Render Js code-->
+                </ul>
+            </div>
+            <div class="menu-mobile_img ">
+                <div><img src="./asset/image/Slide/anh_tet.webp" alt="anhTet"></div>
+                <div><img src="./asset/image/Slide/anh_trung_thu.webp" alt="anhTrungThu"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Menu Mobile -->
+    <!-- Message -->
+    <div id="globalModal" class="g-modal">
+        <div class="g-modal-overlay"></div>
+        <div class="g-modal-box">
+            <div class="g-modal-icon" id="gModalIcon"></div>
+            <h2 id="gModalTitle" class="font-heading">Thông báo</h2>
+            <p id="gModalMessage" class="font-title"></p>
+            <div class="g-modal-buttons">
+                <button class="g-btn g-btn-cancel" id="gModalCancel">Hủy</button>
+                <button class="g-btn g-btn-ok" id="gModalOk">Đồng ý</button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
+        <script type="module" src="./js/productDetails.js"></script>
+        <script src="./js/showcase.js "></script>
 </body>
+
 </html>
