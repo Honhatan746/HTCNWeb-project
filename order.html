@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <link href="./bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsible.css"> 
+</head>
+         <!-- Header -->
+         <header>
+        <div class="header_sub">
+            <p>Kids’s products – gentle and comfortable</p>
+            <p>Best-selling products on the market</p>
+        </div>
+        <div class="header_main">
+            <div class="menu-md">
+                <div 
+                class="menu-ti link-hover menu-ti-js"><i class="ti-menu"></i>    
+                </div>
+                <a href="./home.html"><img class="wid-logo sub_logo" src="./asset/image/Logo/iuh.png" alt="Logo"></a>
+            </div>
+            <a href="./home.html"><img class="wid-logo main_logo" src="./asset/image/Logo/iuh.png" alt="Logo"></a>
+            <div class="header_menu ">
+                <ul class="menu-tools menu-tools-md">
+                    <li class="link-hover pad-1rem"><a title="Home" style="color: black;" href="home.html">Home</a></li>
+                    <li class="menu-tools_sub link-hover pad-1rem">
+                        <a href="./allProduct.html" class="text-hover" style="color: black;"> Product</a>
+                        <!-- Menu Sub -->
+                        <div class="header_product-sub ">
+                            <ul>
+                                <li class="pad-1rem"><a href="allProduct.html?cat=girlFashion" style="color: black;">Girl Fashion</a></li>
+                                <li class="pad-1rem"><a href="allProduct.html?cat=boyFashion" style="color: black;">Boy Fashion </a></li>
+                                <li class="pad-1rem"><a href="allProduct.html?cat=Accessories" style="color: black;">Fashion Accessoies</a></li>
+                            </ul>
+                            <div class="menu_img">
+                                <img src="./asset/image/Slide/anh_tet.webp" alt="">
+                                <img src="./asset/image/Slide/anh_trung_thu.webp" alt="">
+                            </div>
+                        </div>
+                        <!-- End MenuSub -->
+                    </li>
+                    <li class="link-hover pad-1rem "><a title="News List" style="color: black;" href="./news.html">News</a></li>
+                    <li class="link-hover pad-1rem"><a title="Infomation about us" style="color: black;" href="./about.html">About</a></li>
+                    <li class="link-hover pad-1rem"><a title="Direction in our website" style="color: black;" href="./sitemap.html">SiteMap</a></li>
+                </ul>
+            </div>
+            <div class="header_tool">
+                <ul class="menu-tools">
+                    <li class="link-hover pad-1rem"><a title="Shopping cart" style="color: black;" href="./cart.html"><i class="ti-shopping-cart"></i></a></li>
+                    <li class="link-hover pad-1rem"><a title="Account" style="color: black;" href="./account.html"><i class="ti-user"></i></a></li>
+                    <li class="link-hover pad-1rem"><a title="CheckOut" style="color: black;" href="./order.html"><i class="ti-bag"></i></a></li>
+                    <li class="link-hover js-search-icon pad-1rem" ><a title="Search" style="color: black;" ><i class="ti-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar -->
+          <nav class="navbarcss">
+            <ul>
+                <i><li><a href="./index.html">Home</a></li></i>
+                <i><li>Login</li></i>
+            </ul>
+        </nav>
+    <!-- End Navbar -->
+ <!-- Content -->
+<body class="bg-light" style="background-color: #fcfaff;">
+
+        <div class="container py-4">
+
+            <h3 class="mb-4 font-heading heading-pink fw-bold text-uppercase">Đơn hàng của bạn</h3>
+            <div id="orderContainer"></div>
+
+        </div>
+
+<div class="modal fade" id="orderDetailModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style=" border: none;">
+    <div class="modal-header" style="background-color: #fcfaff; border-bottom: 1px solid #eee;">
+        <h5 class="modal-title" style="font-size: 1.8rem; color: var(--primary-color);">
+            <i class="bi bi-receipt"></i> Chi tiết đơn hàng
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" style="font-size: 1.2rem;"></button>
+    </div>
+    <div class="modal-body" id="orderDetailContent" style="font-size: 1.5rem; line-height: 1.6;">
+        </div>
+</div>
+  </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer_background">
+            <div class="footer_text">
+                <h1>Kidcore fashion - ultimate refinement</h1>
+            </div>
+        </div>
+        <div class="footer_body">
+            <div class="footer_info">
+                <a href=""><img class="wid-logo" src="./asset/image/Logo/iuh.png" alt=""></a>
+                <div class="mar-t-b">
+                    <i  class="ti-mobile "></i>
+                    <a class="text-hover" href=""><p>Liên hệ: 0123456789</p></a>
+                </div>
+                <div class="mar-t-b">
+                    <i class="ti-email"></i>
+                    <a class="text-hover" href=""><p>Email: KidcoreFashion@gmail.com</p></a>
+                </div>
+                <div class="mar-t-b">
+                    <i class="ti-home"></i>
+                    <a class="text-hover" href=""><p>Địa chỉ: Số 12 Nguyễn Văn Bảo, P. Hạnh Thông, Thành phố Hồ Chí Minh</p></a>
+                </div>
+                <div class="mar-t-b">
+                    <h1>Conect with us</h1>
+                    <div class="mar-t-b">
+                        <a href=""><i class="ti-instagram font-icon text-hover"></i></a>
+                        <a href=""><i class="ti-facebook font-icon text-hover"></i></a>
+                        <a href=""><i class="ti-pinterest-alt font-icon text-hover"></i></a>
+                        <a href=""><i class="ti-youtube font-icon text-hover"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <ul>
+                    <li>Service</li>
+                    <li><a class="text-hover" href="./index.html">Trang chủ</a></li>
+                    <li><a class="text-hover" href="./about.html">About</a></li>
+                    <li><a class="text-hover" href="./cart.html">My Cart</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Customer support</li>
+                    <li><a class="text-hover" href="">Payment support</a></li>
+                    <li><a class="text-hover" href="">Ordering support</a></li>
+                    <li><a class="text-hover" href="">Delivery and shipping</a></li>
+                    <li><a class="text-hover" href="">Check orders</a></li>
+                    <li><a class="text-hover" href="">Contact us: 0123456789</a></li>
+                </ul>
+            </div>  
+        </div>
+        <div class="footer_end">
+            <p>Welcome <sup>©</sup> 2026    </p>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <!-- Search -->
+     <div class="search js_search">
+        <div class="search_body js-search_body">
+            <a href=""><img class="wid-logo-big " src="./asset/image/Logo/iuh.png" alt=""></a>
+            <div class="search_content">
+                <div class="search_input">
+                    <input placeholder="Search your favorate products..." type="text" id="serach_input">
+                    
+                    <div class="" id="listProductSearch">
+                              <!--Render ra sản phẩm ở đây  -->
+                    </div>
+                </div>
+            </div>
+            <div class="header_tool searchTool">
+                <!-- Render ra ở đây -->
+            </div>
+        </div>
+     </div>
+     <!-- End Search -->
+      <!-- Menu Mobile -->
+       <div class="menu-mobile menu-mobile-js">
+            <div class="menu-mobile_body" > 
+                    <div class="menu-mobile_header">
+                        <div class="wid-logo"><img src="./asset/image/Logo/iuh.png" alt="Logo"></div>
+                        <h1>Catalogue</h1>
+                    </div>
+                    <div class="header_menu alignItem-star">
+                        <ul class=" menu-tools flex-colum menu-tools-mobile">
+                            <!--Render Js code-->
+                        </ul>
+                    </div>
+                    <div class="menu-mobile_img ">
+                        <div><img src="./asset/image/Slide/anh_tet.webp" alt="anhTet"></div>
+                        <div><img src="./asset/image/Slide/anh_trung_thu.webp" alt="anhTrungThu"></div>
+                    </div>
+            </div>
+       </div>
+       <!-- End Menu Mobile -->
+        <!-- Message -->
+        <div id="globalModal" class="g-modal">
+    <div class="g-modal-overlay"></div>
+    <div class="g-modal-box">
+        <div class="g-modal-icon" id="gModalIcon"></div>
+        <h2 id="gModalTitle" class="font-heading">Thông báo</h2>
+        <p id="gModalMessage" class="font-title"></p>
+        <div class="g-modal-buttons">
+            <button class="g-btn g-btn-cancel" id="gModalCancel">Hủy</button>
+            <button class="g-btn g-btn-ok" id="gModalOk">Đồng ý</button>
+        </div>
+    </div>
+       <script src="./js/modal.js"></script>
+<script src="./js/order.js"></script>
+<script src="./bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

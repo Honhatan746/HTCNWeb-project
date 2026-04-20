@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="./bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsible.css">
+    <link rel="stylesheet" href="./asset/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <!--Header -->
+    <nav class="navbar navbar-expand-lg main-header fixed-top font-title" id="mainNavbar">
+        <div class="container">
+            <a href="./index.html"><img class="wid-logo main_logo navbar-brand fw-bold font-title"
+                    src="./asset/image/Logo/iuh.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse font-title header_menu" id="navbarNav">
+                <ul class="navbar-nav ms-auto menu-tools menu-tools-md">
+                    <li class="link-hover pad-1rem nav-item"><a class="nav-link" title="Home" href="home.html">Home</a>
+                    </li>
+                    <li class="menu-tools_sub link-hover pad-1rem nav-item">
+                        <a href="./allProduct.html" class="text-decoration-none text-hover nav-link"> Product</a>
+                        <!-- Menu Sub -->
+                        <div class="header_product-sub ">
+                            <ul>
+                                <li class="pad-1rem"><a class="text-black" href="allProduct.html?cat=girlFashion">Girl Fashion</a>
+                                </li>
+                                <li class="pad-1rem"><a class="text-black" href="allProduct.html?cat=boyFashion">Boy Fashion </a>
+                                </li>
+                                <li class="pad-1rem"><a class="text-black" href="allProduct.html?cat=Accessories">Fashion
+                                        Accessoies</a></li>
+                            </ul>
+                            <div class="menu_img">
+                                <img src="./asset/image/Slide/anh_tet.webp" alt="">
+                                <img src="./asset/image/Slide/anh_trung_thu.webp" alt="">
+                            </div>
+                        </div>
+                        <!-- End MenuSub -->
+                    </li>
+                    <li class="link-hover pad-1rem nav-item"><a class="nav-link" title="News List"
+                            href="./news.html">News</a></li>
+                    <li class="link-hover pad-1rem nav-item"><a class="nav-link" title="Infomation about us"
+                            href="./about.html">About</a></li>
+                    <li class="link-hover pad-1rem nav-item"><a class="nav-link" title="Direction in our website"
+                            href="./sitemap.html">SiteMap</a></li>
+                </ul>
+            </div>
+            <div class="header_tool">
+                <ul class="menu-tools navbar-nav ms-auto">
+                    <li class="link-hover pad-1rem nav-item"><a class="nav-link" title="Shopping cart"
+                            href="./cart.html"><i class="ti-shopping-cart"></i></a></li>
+                    <li class="link-hover pad-1rem nav-item"><a class="nav-link" title="Account" href="./login.html"><i
+                                class="ti-user"></i></a></li>
+                    <li class="link-hover pad-1rem nav-item"><a class="nav-link" title="CheckOut" href="./order.html"><i
+                                class="ti-bag"></i></a></li>
+                    <li class="link-hover js-search-icon pad-1rem nav-item"><a class="nav-link" title="Search"><i
+                                class="ti-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End header -->
+
+    <!-- Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="fixed-search-overlay">
+            <form class="d-flex shadow-lg bg-white p-2 rounded-pill">
+                <input class="form-control border-0 rounded-pill ps-4 font-title p-3" type="search"
+                    placeholder="Bạn muốn tìm gì hôm nay?" aria-label="Search">
+                <button class="btn btn-danger rounded-pill" style="font-size: 1.5rem; width: 14.5rem;" type="submit">Tìm
+                    ngay</button>
+            </form>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active"
+                style="background-image: url('./asset/image/Slide/01_-_banner_web_ngang_-_2500x991.jpg')">
+                <div class="carousel-caption">
+                    <h5 class="text-warning fw-bold">WELCOME TO TRAVEL</h5>
+                    <h1 class="display-3 fw-bold">KHÁM PHÁ ĐẠI DƯƠNG</h1>
+                    <p class="lead">Tận hưởng những bãi biển đẹp nhất thế giới cùng gia đình.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('./asset/image/Slide/anh_tet.webp')">
+                <div class="carousel-caption">
+                    <h5 class="text-warning fw-bold">NATURE EXPERIENCE</h5>
+                    <h1 class="display-3 fw-bold">VẺ ĐẸP THIÊN NHIÊN</h1>
+                    <p class="lead">Hòa mình vào không gian xanh mát của núi rừng hùng vĩ.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <!-- Carousel -->
+
+    <section class="py-5 kcs-hot-collections container-fluid">
+        <!-- Trending list -->
+        <div class="container-fluid p-0">
+            <section class="hero-banner position-relative">
+                <div class="banner-img">
+                    <img src="./asset/image/Slide/anh_trung_thu.webp" alt="Trending Collection"
+                        class="w-100 h-100 object-fit-cover">
+                </div>
+                <div class="banner-overlay d-flex align-items-center justify-content-center text-center">
+                    <div class="banner-text text-white p-3">
+                        <h5 class="text-uppercase ls-2">Bộ Sưu Tập 2026</h5>
+                        <h1 class="display-3 fw-bold">TRENDING NOW</h1>
+                        <p class="lead">Khám phá những phong cách đang dẫn đầu xu hướng cho bé.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container my-5">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <div>
+                        <h2 class="fw-bold mb-0">Sản Phẩm Trending</h2>
+                        <div class="title-line"></div>
+                    </div>
+                    <a href="./allProduct.html" class="heading-pink font-text fw-bold">Xem tất cả →</a>
+                </div>
+
+                <div class="row g-4" id="trendingProducts">
+                    <!-- Render product -->
+
+                </div>
+            </section>
+        </div>
+        <!-- Scroll effect -->
+        <!-- Hot collections  -->
+        <div class="kcs-hot-collections pt-5">
+            <div class="container pt-5">
+
+                <!-- Girl Fashion hot trend -->
+                <div class="row align-items-center justify-content-between mb-100">
+                    <div class="text-center mb-5">
+                        <h5 class="fw-bold text-uppercase heading-pink">Categories product</h5>
+                        <h2 class="display-6 fw-bold">Girl Fashion</h2>
+                        <div class="mx-auto bg-primary" style="height: 3px; width: 60px;"></div>
+                    </div>
+                    <div class="col-lg-4 position-relative">
+                        <div class="kcs-hot-bg-letter">C</div>
+                        <div class="kcs-main-img-box">
+                            <img src="./asset/image/Product/vn-11134207-820l4-mfl26xjv2hhrde.webp" alt="Atelier"
+                                class="img-fluid">
+                            <h2 class="kcs-hot-title">Collection <br> <span>Atelier</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="d-flex gap-4 mb-4" id="clothes-girl-hot">
+                            <!-- Render Js -->
+                        </div>
+                        <p class="text-muted kcs-hot-desc">Mô tả ngắn về dòng sản phẩm cao cấp dành cho bé, mang lại sự
+                            tinh tế trong từng đường kim mũi chỉ.</p>
+                        <a href="allProduct.html?cat=girlFashion" class="kcs-hot-link">Girl Fashion →</a>
+                    </div>
+                    <!-- Girl Product -->
+                    <div class="container kcs-hot-collections">
+                        <div class="position-relative">
+                            <button class="slider-btn prev-btn" onclick="slideProducts('left', 'product-slider-girl')">
+                                <i class="ti-arrow-left"></i>
+                            </button>
+    
+                            <div class="product-wrapper" id="product-slider-girl">
+                                <!-- Reder product here -->
+                            </div>
+    
+                            <button class="slider-btn next-btn" onclick="slideProducts('right', 'product-slider-girl')">
+                                <i class="ti-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Boy Fashion hot trend -->
+                <div class="row align-items-center justify-content-between flex-row-reverse mb-100">
+                    <div class="text-center mb-5">
+                        <h5 class="fw-bold text-uppercase heading-pink">Categories product</h5>
+                        <h2 class="display-6 fw-bold">Boy Fashion</h2>
+                        <div class="mx-auto bg-primary" style="height: 3px; width: 60px;"></div>
+                    </div>
+                    <div class="col-lg-4 position-relative">
+                        <div class="kcs-hot-bg-letter" style="left: -11%;">W</div>
+                        <div class="kcs-main-img-box">
+                            <img src="./asset/image/Product/vn-11134258-81ztc-mmt2ny9hufpc18.png" alt="Wild Berries"
+                                class="img-fluid">
+                            <h2 class="kcs-hot-title right">Wild <br> <span>Berries</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="d-flex gap-4 mb-4 justify-content-end" id="clothes-boy-hot">
+                            <!-- Render Js -->
+                        </div>
+                        <div class="text-end">
+                            <a class="text-muted kcs-hot-desc text-decoration-none">Dòng sản phẩm lấy cảm hứng từ thiên
+                                nhiên với màu sắc năng động, trẻ trung.</a>
+                            <span class="d-block mt-4"></span>
+                            <a href="allProduct.html?cat=boyFashion" class="kcs-hot-link">Boy Fashion →</a>
+                        </div>
+                    </div>
+                    <!-- Boy Fashion -->
+                    <div class="container kcs-hot-collections">
+                        <div class="position-relative">
+                            <button class="slider-btn prev-btn" onclick="slideProducts('left', 'product-slider-boy')">
+                                <i class="ti-arrow-left"></i>
+                            </button>
+    
+                            <div class="product-wrapper" id="product-slider-boy">
+                                <!-- Reder product here -->
+                            </div>
+    
+                            <button class="slider-btn next-btn" onclick="slideProducts('right', 'product-slider-boy')">
+                                <i class="ti-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accessories hot trend -->
+                <div class="text-center mb-5">
+                    <h5 class="fw-bold text-uppercase heading-pink">Categories product</h5>
+                    <h2 class="display-6 fw-bold">Accessories Fashion</h2>
+                    <div class="mx-auto bg-primary" style="height: 3px; width: 60px;"></div>
+                </div>
+                <div class="row align-items-center justify-content-between mb-100">
+                    <div class="col-lg-4 position-relative">
+                        <div class="kcs-hot-bg-letter">C</div>
+                        <div class="kcs-main-img-box">
+                            <img src="./asset/image/Product/phuKien.avif" alt="Atelier" class="img-fluid">
+                            <h2 class="kcs-hot-title">Collection <br> <span>Atelier</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="d-flex gap-4 mb-4" id="accessories-hot">
+                            <!-- Render Js -->
+                        </div>
+                        <p class="text-muted kcs-hot-desc">Mô tả ngắn về dòng sản phẩm cao cấp dành cho bé, mang lại sự
+                            tinh tế trong từng đường kim mũi chỉ.</p>
+                        <a href="allProduct.html?cat=Accessories" class="kcs-hot-link">Accessroies →</a>
+                    </div>
+                    <!-- Accessories Fashion -->
+                    <div class="container kcs-hot-collections">
+                        <div class="position-relative">
+                            <button class="slider-btn prev-btn"
+                                onclick="slideProducts('left', 'product-slider-access')">
+                                <i class="ti-arrow-left"></i>
+                            </button>
+
+                            <div class="product-wrapper" id="product-slider-access">
+                                <!-- Reder product here -->
+                            </div>
+
+                            <button class="slider-btn next-btn"
+                                onclick="slideProducts('right', 'product-slider-access')">
+                                <i class="ti-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accessories hot trend -->
+            </div>
+        </div>
+        <!-- News list -->
+        <div class="news-widget container my-5">
+            <div class="text-center mb-5">
+                <h5 class="fw-bold text-uppercase heading-pink">Hot news</h5>
+                <h2 class="display-6 fw-bold">List news</h2>
+                <div class="mx-auto bg-primary" style="height: 3px; width: 60px;"></div>
+            </div>
+            <div id="mainPreview" class="news-main-preview mb-4">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <div class="preview-img-wrapper">
+                            <img id="previewImg" src="./asset/image/news1.jpg" alt="Main News"
+                                class="img-fluid rounded-4">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="preview-content p-4">
+                            <span id="previewTag" class="badge bg-pink mb-2">New Arrivals</span>
+                            <h2 id="previewTitle" class="display-6 fw-bold">Bộ sưu tập mùa hè cho bé yêu</h2>
+                            <p id="previewDesc" class="text-muted">Khám phá những mẫu thiết kế mới nhất với chất liệu
+                                cotton hữu cơ thoáng mát...</p>
+                            <a href="#" class="btn btn-outline-dark rounded-pill px-4">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-tabs-list row g-3" id="newsList">
+                <!-- Render Js news -->
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer_background">
+            <div class="footer_text">
+                <h1>Kidcore fashion - ultimate refinement</h1>
+            </div>
+        </div>
+        <div class="kcs-footer-dark bg-dark text-white pt-5">
+            <div class="container-fluid px-lg-5">
+                <div class="row gy-4">
+                    <div class="col-6 col-md-2">
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50">Offer</h6>
+                        <ul class="list-unstyled kcs-footer-links">
+                            <li><a href="#">Calendars</a></li>
+                            <li><a href="#">Refills & accessories</a></li>
+                            <li><a href="#">Notebooks</a></li>
+                            <li><a href="#">Bundles</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2">
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50">Kalstore</h6>
+                        <ul class="list-unstyled kcs-footer-links">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Stories</a></li>
+                            <li><a href="#">Collaboration</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2">
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50">Customer</h6>
+                        <ul class="list-unstyled kcs-footer-links">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Refunds</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2">
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50">Social Media</h6>
+                        <ul class="list-unstyled kcs-footer-links">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Pinterest</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50">Newsletter</h6>
+                        <h4>Get 10% off the first order</h4>
+                        <p class="small opacity-75">Sign up for our monthly newsletter. That's it!</p>
+                        <form class="kcs-newsletter-form mt-3">
+                            <div class="input-group border-bottom border-secondary">
+                                <input type="email"
+                                    class="form-control bg-transparent border-0 text-white shadow-none ps-0"
+                                    placeholder="Email">
+                                <button class="btn text-white" type="submit">→</button>
+                            </div>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input bg-transparent border-secondary" type="checkbox"
+                                    id="agree">
+                                <label class="form-check-label small opacity-50" for="agree">
+                                    I read and agree to terms and conditions and privacy policy.
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="mt-5 pb-4">
+                    <h6 class="text-uppercase fw-bold mb-3 small opacity-50">Payment Methods</h6>
+                    <div class="d-flex flex-wrap gap-2 kcs-payment-icons">
+                        <img src="visa-icon.png" alt="Visa">
+                        <img src="mastercard-icon.png" alt="Mastercard">
+                        <img src="apple-pay.png" alt="Apple Pay">
+                    </div>
+                </div>
+            </div>
+
+            <div class="kcs-footer-big-text">
+                <h1 class="m-0">Kalstore<span>®</span></h1>
+            </div>
+        </div>
+    </footer>
+    <!-- Search -->
+    <div class="search js_search">
+        <div class="search_body js-search_body">
+            <a href=""><img class="wid-logo-big " src="./asset/image/Logo/iuh.png" alt=""></a>
+            <div class="search_content">
+                <div class="search_input">
+                    <input placeholder="Search your favorate products..." type="text" id="serach_input">
+                    <button class="btn-search absout-search"><i class="ti-search"></i></button>
+                </div>
+                <div class="search_recomend">
+                    <h3>Recomend showcase products</h3>
+                    <div class="search_recomend-btn">
+                        <a href=""><button class="btn-search">Boy fashion</button></a>
+                        <a href=""><button class="btn-search">Girl fashion</button></a>
+                        <a href=""><button class="btn-search">Fashion Accessoies</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_tool">
+                <ul class="menu-tools">
+                    <li class="link-hover"><a title="Shopping cart" href=""><i class="ti-shopping-cart"></i></a></li>
+                    <li class="link-hover"><a title="Account" href=""><i class="ti-user"></i></a></li>
+                    <li class="link-hover"><a title="CheckOut" href=""><i class="ti-bag"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Mobile -->
+    <div class="menu-mobile menu-mobile-js">
+        <div class="menu-mobile_body">
+            <div class="menu-mobile_header">
+                <div class="wid-logo"><img src="./asset/image/Logo/iuh.png" alt="Logo"></div>
+                <h1>Catalogue</h1>
+            </div>
+            <div class="header_menu alignItem-star">
+                <ul class=" menu-tools flex-colum menu-tools-mobile">
+                    <li class="pad-2rem link-hover"><a class="text-hover" href="">Home</a></li>
+                    <li class="pad-2rem link-hover menu-mobile-sub">
+                        <span class="text-hover"> Product</span>
+                        <div class="menu-mobile-sub-nav">
+                            <ul>
+                                <li><a href="">Girl Fashion</a></li>
+                                <li><a href="">Boy Fashion</a></li>
+                                <li><a href="">Fashion Accessories</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="pad-2rem link-hover"><a class="text-hover" href="">News</a></li>
+                    <li class="pad-2rem link-hover"><a class="text-hover" href="">About</a></li>
+                    <li class="pad-2rem link-hover"><a class="text-hover" href="">SiteMap</a></li>
+                </ul>
+            </div>
+            <div class="menu-mobile_img ">
+                <div><img src="./asset/image/Slide/anh_tet.webp" alt="anhTet"></div>
+                <div><img src="./asset/image/Slide/anh_trung_thu.webp" alt="anhTrungThu"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('mainNavbar');
+
+            // Nếu cuộn quá 80px thì thêm class 'scrolled', ngược lại thì xóa đi
+            if (window.scrollY > 80) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        function slideProducts(direction, sliderId) {
+            const slider = document.getElementById(sliderId);
+
+            // Kiểm tra nếu slider tồn tại để tránh lỗi
+            if (!slider) return;
+
+            const scrollAmount = slider.clientWidth;
+
+            if (direction === 'left') {
+                slider.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else {
+                slider.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        window.addEventListener('scroll', function () {
+            const images = document.querySelectorAll('.image-section img');
+            const windowHeight = window.innerHeight;
+
+            images.forEach((img, index) => {
+                const rect = img.getBoundingClientRect();
+
+                let progress = 1 - (rect.top / windowHeight);
+                progress = Math.max(0, Math.min(1, progress));
+
+                // trái - phải xoay ngược chiều
+                let direction = index % 2 === 0 ? -1 : 1;
+
+                // chỉ xoay tối đa 5deg
+                let rotate = progress * 5 * direction;
+
+                // trượt nhẹ lên
+                let translateY = 80 - progress * 80;
+
+                img.style.transform = `translateY(${translateY}px) rotate(${rotate}deg)`;
+            });
+        });
+
+        // Dữ liệu tin tức (Bạn có thể lấy từ API sau này)
+
+
+
+    </script>
+    <script src="./js/home.js"></script>
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>
