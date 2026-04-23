@@ -61,13 +61,13 @@ async function renderTop2Fashion(categories, container) {
             const displayImg = product.variants[0].image[0];
 
             htmlContent += `
-                <div class="kcs-small-card product-card text-center">
+                <a href="../productDetail.html?id=${product.productID}" class="kcs-small-card text-decoration-none product-card text-center">
                     <div class ="product-img-container">
                         <img src="${displayImg}" alt="${product.name}">
                     </div>
-                    <p class="small mt-2 mb-1">${product.name}</p>
+                    <p class="small mt-2 mb-1 text-black">${product.name}</p>
                     <p class="fw-bold heading-pink">${product.topPrice.toLocaleString('vi-VN')} đ</p>
-                </div>
+                </a>
             `;
         });
 
@@ -88,7 +88,7 @@ async function renderFashion(categories, container) {
     if (!productSlider) return;
     girlProduct.forEach(p => {
         html += `
-            <a href="" class=" product-item product-card text-decoration-none">
+            <a href="../productDetail.html?id=${p.productID}" class=" product-item product-card text-decoration-none">
                 <div  class=" cart h-100 border-0 shadow-sm">
                     <div class="product-img-container frame_img">
                         <img src="${p.variants[0].image[0]}" class=" img-cls" alt="${p.name}">

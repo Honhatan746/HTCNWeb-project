@@ -9,120 +9,6 @@
     <link rel="stylesheet" href="./asset/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./css/responsible.css">
     <title>Product Details</title>
-    <style>
-        .modern-product {
-    padding: 60px 0;
-    background: #f8f8f8;
-}
-
-/* LEFT SIDE */
-.product-left {
-    padding-right: 40px;
-}
-
-.product-subtitle {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.product-big-title {
-    font-size: 72px;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 20px;
-}
-
-.product-desc {
-    color: #555;
-    line-height: 1.7;
-    margin-bottom: 30px;
-}
-
-.desc-block {
-    margin-bottom: 15px;
-}
-
-.desc-block h5 {
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.btn-order {
-    background: #ff3c00;
-    color: #fff;
-    border: none;
-    padding: 14px 30px;
-    font-size: 16px;
-    border-radius: 4px;
-    transition: 0.3s;
-}
-
-.btn-order:hover {
-    background: #d93200;
-}
-
-/* RIGHT SIDE */
-.product-right {
-    position: relative;
-}
-
-.product-image-wrapper {
-    background: #9ec3e6;
-    border-radius: 40px;
-    padding: 40px;
-    text-align: center;
-}
-
-.main-product-img {
-    width: 80%;
-}
-
-/* mini card */
-.mini-card {
-    position: absolute;
-    top: 20px;
-    left: -20px;
-    background: #f7d9a8;
-    padding: 15px;
-    border-radius: 20px;
-}
-
-.mini-card img {
-    width: 50px;
-}
-
-/* vertical badge */
-.vertical-badge {
-    position: absolute;
-    bottom: 20px;
-    left: -40px;
-    background: #000;
-    color: #fff;
-    padding: 20px 10px;
-    border-radius: 20px;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-weight: 600;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .product-big-title {
-        font-size: 40px;
-    }
-
-    .product-left {
-        padding-right: 0;
-        margin-bottom: 30px;
-    }
-
-    .mini-card,
-    .vertical-badge {
-        display: none;
-    }
-}
-    </style>
 </head>
 
 <body>
@@ -148,9 +34,9 @@
                         <!-- Menu Sub -->
                         <div class="header_product-sub ">
                             <ul>
-                                <li class="pad-1rem"><a href="allProduct.html?cat=girlFashion" style="color: black;">Girl Fashion</a></li>
-                                <li class="pad-1rem"><a href="allProduct.html?cat=boyFashion" style="color: black;">Boy Fashion </a></li>
-                                <li class="pad-1rem"><a href="allProduct.html?cat=Accessories" style="color: black;">Fashion Accessoies</a></li>
+                                <li class="pad-1rem"><a href="allProduct.html?cat=girlFashion" style="color: black; padding: 1rem;">Girl Fashion</a></li>
+                                <li class="pad-1rem"><a href="allProduct.html?cat=boyFashion" style="color: black; padding: 1rem">Boy Fashion </a></li>
+                                <li class="pad-1rem"><a href="allProduct.html?cat=Accessories" style="color: black; padding: 1rem">Fashion Accessoies</a></li>
                             </ul>
                             <div class="menu_img">
                                 <img src="./asset/image/Slide/anh_tet.webp" alt="">
@@ -178,7 +64,8 @@
           <nav class="navbarcss">
             <ul>
                 <i><li><a href="./index.html">Home</a></li></i>
-                <i><li>Login</li></i>
+                <i><li><a href="./allProduct.html">Product</a></li></i>
+                <i><li class="nameProduct"></li></i>
             </ul>
         </nav>
     <!-- End Navbar -->
@@ -192,11 +79,11 @@
                 <div class="product-dt_main-img" id="prodcutDTMainImg"></div>
             </div>
             <div class="product-dt-text wid-100 di-flex flex-colum line-height">
-                <h1 class="bo-bot" id="prodcutDTName"></h1>
+                <h1 class="bo-bot fw-bold" id="prodcutDTName"></h1>
                 <p class="dis-con">Product ID: </p>
                 <p class="dis-con" id="prodcutDTID"></p>
-                <h1 class="heading-pink bo-bot" id="productDTPrice"></h1>
-                <h3>Color: </h3>
+                <h1 class="heading-pink bo-bot fw-bold" id="productDTPrice"></h1>
+                <h3>Color: <span class="fw-bold text-capitalize color-span"></span> </h3>
                 <div class="product-dt-color di-flex" id="productDTcolor">
                     <!-- Color sản phẩm -->
                 </div>
@@ -231,7 +118,7 @@
             </ul>
             <section class="modern-product">
                 <div class="container">
-                    <div id="productDetail" class="row align-items-center"></div>
+                    <div id="productDetail" class="row align-items-center p-5"></div>
                 </div>
             </section>
         </div>
@@ -318,7 +205,7 @@
             <a href=""><img class="wid-logo-big " src="./asset/image/Logo/iuh.png" alt=""></a>
             <div class="search_content">
                 <div class="search_input">
-                    <input placeholder="Search your favorate products..." type="text" id="serach_input">
+                    <input placeholder="Search your favorate products..." type="text" class="font-title" id="serach_input">
 
                     <div class="" id="listProductSearch">
                         <!--Render ra sản phẩm ở đây  -->
@@ -326,7 +213,13 @@
                 </div>
             </div>
             <div class="header_tool searchTool">
-                <!-- Render ra ở đây -->
+                 <div class="header_tool">
+                <ul class="menu-tools">
+                    <li class="link-hover pad-1rem"><a title="Shopping cart" style="color: black;" href="./cart.html"><i class="ti-shopping-cart"></i></a></li>
+                    <li class="link-hover pad-1rem"><a title="Account" style="color: black;" href="./account.html"><i class="ti-user"></i></a></li>
+                    <li class="link-hover pad-1rem"><a title="CheckOut" style="color: black;" href="./order.html"><i class="ti-bag"></i></a></li>
+                </ul>
+            </div>
             </div>
         </div>
     </div>
