@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kidcore Fashion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsible.css">
+    <style>
+        html {
+            font-size: 100%;
+        }
+
+        /* CSS nội bộ để ưu tiên các tùy chỉnh mới của bạn */
+        body {
+            background-color: #f9f7f2 !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .heading-highlight {
+            background: #e91e63;
+            color: white;
+            padding: 8px 20px;
+            display: inline-block;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Member Card Styling */
+        .member-card {
+            background: #fff;
+            border-radius: 24px;
+            overflow: hidden;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .member-img-wrapper {
+            background-color: #e2e8d8;
+            height: 320px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .member-img-wrapper img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .member-name-tag {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 6px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #333;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .member-content {
+            padding: 25px;
+        }
+
+        .member-number {
+            font-weight: bold;
+            font-size: 1.1rem;
+            background-color: #d8e2c5;
+            display: inline-block;
+            padding: 2px 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            color: #4a5d23;
+        }
+
+        .member-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 12px;
+        }
+
+        .member-desc {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .content-box {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
+        }
+
+        .goal-section {
+            background-color: #f9f7f2;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .goal-img {
+            max-height: 250px;
+            object-fit: cover;
+        }
+
+        /* chữ nền lớn */
+        .bg-text {
+            position: absolute;
+            top: 23%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 232px;
+            font-weight: 900;
+            color: rgba(0, 0, 0, 0.05);
+            letter-spacing: 10px;
+            z-index: 0;
+            white-space: nowrap;
+        }
+
+        /* đảm bảo nội dung nằm trên */
+        .goal-section .row {
+            position: relative;
+            z-index: 2;
+        }
+
+        .goal-heading {
+            font-size: 40px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #222;
+        }
+
+        /* chữ nổi bật */
+        .goal-heading span {
+            color: #c7e36b;
+            /* màu xanh giống ảnh */
+        }
+
+        /* ===== BANNER ===== */
+        .intro-banner {
+            background: #f9f7f2;
+            padding: 8px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner-bg-text {
+            font-size: 540px;
+            font-weight: 900;
+            color: #AB2A8B;
+            opacity: 0.9;
+            letter-spacing: 9px;
+            margin: 0;
+            line-height: 1;
+            transform: translateX(-20%);
+        }
+
+        .banner-top-text {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        /* ảnh nằm đè */
+        .banner-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .banner-img img {
+            max-width: 450px;
+            filter: grayscale(100%);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        /* ===== HEADING PHÍA DƯỚI ===== */
+        .intro-heading {
+            font-size: 42px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #222;
+        }
+
+        /* chữ highlight */
+        .intro-heading span {
+            color: #AB2A8B;
+        }
+
+        /* label nhỏ */
+        .heading-highlight {
+            display: inline-block;
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-transparent py-4">
+        <div class="container">
+            <ul class="d-flex list-unstyled m-0">
+                <li class="me-3"><a href="./index.html" class="text-decoration-none text-dark fw-bold">Trang chủ</a>
+                </li>
+                <li class="text-muted fw-bold">/ About</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== BANNER ===== -->
+    <section class="intro-banner">
+        <div class="container position-relative text-center">
+
+            <!-- chữ lớn phía sau -->
+            <h1 class="banner-bg-text">KIDCLOTHES</h1>
+
+            <!-- heading nhỏ phía trên -->
+            <div class="banner-top-text">[ GIỚI THIỆU ]</div>
+
+            <!-- ảnh -->
+            <div class="banner-img">
+                <img src="./asset/image/about/Group-Staff-Photo.jpg" alt="" class="img-fluid">
+            </div>
+
+        </div>
+    </section>
+    <main class="container">
+        <!-- ===== NỘI DUNG ===== -->
+        <section class="mb-5">
+            <div class="">
+
+                <h1 class="intro-heading">
+                    Hệ thống bán <span>quần áo</span> trẻ em
+                </h1>
+
+                <p class="text-muted lead fs-6 lh-lg">
+                    Trong bối cảnh thương mại điện tử ngày càng phát triển mạnh mẽ,
+                    việc xây dựng các hệ thống bán hàng trực tuyến trở thành một nhu cầu thiết yếu...
+                </p>
+
+            </div>
+        </section>
+
+        <section class="goal-section py-5">
+            <div class="container position-relative">
+
+                <!-- chữ nền phía sau -->
+                <h1 class="bg-text">ABOUT</h1>
+
+                <h2 class="goal-heading text-center intro-heading">
+                    Mục <span>tiêu</span> của <span>nhóm</span>
+                </h2>
+                <div class="row align-items-center">
+
+                    <!-- ảnh trái -->
+                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                        <img src="./asset/image/about/Rob_Crowle.jpg" class="img-fluid goal-img" alt="">
+                    </div>
+
+                    <!-- nội dung -->
+                    <div class="col-md-4 text-center">
+                        <p class="text-muted small">
+                            Nhóm mong muốn qua phần bài tập này sẽ đem lại nhiều kiến thức và kinh nghiệm
+                            trong việc làm nhóm hiệu quả. Cụ thể, nhóm hướng đến việc phát triển một nền
+                            tảng giúp người dùng dễ dàng tìm kiếm, lựa chọn và mua sắm sản phẩm một cách
+                            nhanh chóng.
+                        </p>
+                    </div>
+
+                    <!-- ảnh phải -->
+                    <div class="col-md-4 text-center">
+                        <img src="./asset/image/about/Rob_Crowle.jpg" class="img-fluid goal-img" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-4">
+            <h2 class="goal-heading text-end my-5 intro-heading">
+                Thành <span>Viên</span>
+                trong <span>nhóm</span>
+            </h2>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-4">
+                    <div class="member-card shadow-sm h-100">
+                        <div class="member-img-wrapper">
+                            <img src="./asset/image/about/Duchy-3-WEB.jpg" alt="Hồ Nhật Tân">
+                        </div>
+                        <div class="member-content text-start">
+                            <div class="member-number">Trưởng nhóm</div>
+                            <h3 class="member-title">Hồ Nhật Tân</h3>
+                            <p class="member-desc m-0">
+                                Viết UI cho các chức năng đặt hàng, thanh toán, thêm giỏ hàng, xem chi tiết sản phẩm và
+                                các danh mục bán chạy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="member-card shadow-sm h-100">
+                        <div class="member-img-wrapper">
+                            <img src="./asset/image/about/Duchy-3-WEB.jpg" alt="Nguyễn Hải Đăng">
+                        </div>
+                        <div class="member-content text-start">
+                            <div class="member-number">Thành viên</div>
+                            <h3 class="member-title">Nguyễn Hải Đăng</h3>
+                            <p class="member-desc m-0">
+                                Viết Logic, query chức năng đăng nhập, CRUD sản phẩm, thông tin người dùng và thống kê
+                                sản phẩm theo doanh thu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="member-card shadow-sm h-100">
+                        <div class="member-img-wrapper">
+                            <img src="./asset/image/about/Duchy-3-WEB.jpg" alt="Nguyễn Ngọc Hậu">
+                        </div>
+                        <div class="member-content text-start">
+                            <div class="member-number">Thành viên</div>
+                            <h3 class="member-title">Nguyễn Ngọc HậuLead</h3>
+                            <p class="member-desc m-0">
+                                Phụ trách báo cáo, tài liệu đặc tả hệ thống. Thiết kế UI và thực hiện kết nối dữ liệu từ
+                                API Backend.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center py-5 my-5">
+            <h2 class="goal-heading text-center intro-heading">
+                Thank <span>you</span>
+            </h2>
+            <p class="text-muted">Nhóm xin chân thành cảm ơn thầy và nỗ lực của tất cả thành viên.</p>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

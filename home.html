@@ -15,15 +15,17 @@
 
 <body>
     <!--Header -->
-    <nav class="navbar navbar-expand-lg main-header fixed-top font-title" id="mainNavbar">
+    <nav class="navbar navbar-expand main-header fixed-top font-title" id="mainNavbar">
         <div class="container">
+            <div class="menu-md">
+                <div class="menu-ti link-hover nav-link menu-ti-js"><i class="ti-menu"></i>
+                </div>
+                <a href="./index.html"><img class="wid-logo sub_logo" src="./asset/image/Logo/iuh.png" alt="Logo"></a>
+            </div>
             <a href="./index.html"><img class="wid-logo main_logo navbar-brand fw-bold font-title"
                     src="./asset/image/Logo/iuh.png" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse font-title header_menu" id="navbarNav">
-                <ul class="navbar-nav ms-auto menu-tools menu-tools-md">
+            <div class="collapse navbar-collapse  justify-content-center header_menu" id="navbarNav">
+                <ul class="navbar-nav menu-tools menu-tools-md">
                     <li class="link-hover pad-1rem nav-item"><a class="nav-link" title="Home" href="home.html">Home</a>
                     </li>
                     <li class="menu-tools_sub link-hover pad-1rem nav-item">
@@ -31,11 +33,16 @@
                         <!-- Menu Sub -->
                         <div class="header_product-sub ">
                             <ul>
-                                <li class="pad-1rem"><a class="text-black" href="allProduct.html?cat=girlFashion">Girl Fashion</a>
+                                <li class="pad-1rem"><a class="text-black" style="padding: 1rem;"
+                                        href="allProduct.html?cat=girlFashion">Girl
+                                        Fashion</a>
                                 </li>
-                                <li class="pad-1rem"><a class="text-black" href="allProduct.html?cat=boyFashion">Boy Fashion </a>
+                                <li class="pad-1rem"><a class="text-black" style="padding: 1rem;"
+                                        href="allProduct.html?cat=boyFashion">Boy
+                                        Fashion </a>
                                 </li>
-                                <li class="pad-1rem"><a class="text-black" href="allProduct.html?cat=Accessories">Fashion
+                                <li class="pad-1rem"><a class="text-black" style="padding: 1rem;"
+                                        href="allProduct.html?cat=Accessories">Fashion
                                         Accessoies</a></li>
                             </ul>
                             <div class="menu_img">
@@ -72,22 +79,18 @@
     <!-- Carousel -->
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
 
-        <div class="fixed-search-overlay">
-            <form class="d-flex shadow-lg bg-white p-2 rounded-pill">
-                <input class="form-control border-0 rounded-pill ps-4 font-title p-3" type="search"
-                    placeholder="Bạn muốn tìm gì hôm nay?" aria-label="Search">
-                <button class="btn btn-danger rounded-pill" style="font-size: 1.5rem; width: 14.5rem;" type="submit">Tìm
-                    ngay</button>
-            </form>
-        </div>
+        <div class="d-flex justify-content-center">
+            <button class="fixed-search-overlay btn rounded-pill">
+                Xem Ngay</button>
 
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active"
                 style="background-image: url('./asset/image/Slide/01_-_banner_web_ngang_-_2500x991.jpg')">
                 <div class="carousel-caption">
-                    <h5 class="text-warning fw-bold">WELCOME TO TRAVEL</h5>
+                    <h5 class="text-warning fw-bold fs-2">WELCOME TO TRAVEL</h5>
                     <h1 class="display-3 fw-bold">KHÁM PHÁ ĐẠI DƯƠNG</h1>
-                    <p class="lead">Tận hưởng những bãi biển đẹp nhất thế giới cùng gia đình.</p>
+                    <p class="lead fs-5">Tận hưởng những bãi biển đẹp nhất thế giới cùng gia đình.</p>
                 </div>
             </div>
 
@@ -109,7 +112,7 @@
     </div>
     <!-- Carousel -->
 
-    <section class="py-5 kcs-hot-collections container-fluid">
+    <section class="py-5 kcs-hot-collections container-fluid" style="margin-bottom: 10rem;">
         <!-- Trending list -->
         <div class="container-fluid p-0">
             <section class="hero-banner position-relative">
@@ -175,11 +178,11 @@
                             <button class="slider-btn prev-btn" onclick="slideProducts('left', 'product-slider-girl')">
                                 <i class="ti-arrow-left"></i>
                             </button>
-    
+
                             <div class="product-wrapper" id="product-slider-girl">
                                 <!-- Reder product here -->
                             </div>
-    
+
                             <button class="slider-btn next-btn" onclick="slideProducts('right', 'product-slider-girl')">
                                 <i class="ti-arrow-right"></i>
                             </button>
@@ -218,11 +221,11 @@
                             <button class="slider-btn prev-btn" onclick="slideProducts('left', 'product-slider-boy')">
                                 <i class="ti-arrow-left"></i>
                             </button>
-    
+
                             <div class="product-wrapper" id="product-slider-boy">
                                 <!-- Reder product here -->
                             </div>
-    
+
                             <button class="slider-btn next-btn" onclick="slideProducts('right', 'product-slider-boy')">
                                 <i class="ti-arrow-right"></i>
                             </button>
@@ -291,11 +294,9 @@
                     </div>
                     <div class="col-md-5">
                         <div class="preview-content p-4">
-                            <span id="previewTag" class="badge bg-pink mb-2">New Arrivals</span>
-                            <h2 id="previewTitle" class="display-6 fw-bold">Bộ sưu tập mùa hè cho bé yêu</h2>
-                            <p id="previewDesc" class="text-muted">Khám phá những mẫu thiết kế mới nhất với chất liệu
-                                cotton hữu cơ thoáng mát...</p>
-                            <a href="#" class="btn btn-outline-dark rounded-pill px-4">Đọc thêm</a>
+                            <h2 id="previewTitle" class="display-4 fw-bold"></h2>
+                            <p id="previewDesc" class="text-muted font-text my-3"></p>
+                            <a href="newsDetail.html?id=${news.id}" class="btn btn-news rounded-pill font-title">Đọc thêm</a>
                         </div>
                     </div>
                 </div>
@@ -304,6 +305,7 @@
             <div class="news-tabs-list row g-3" id="newsList">
                 <!-- Render Js news -->
             </div>
+            <a href="news.html" class="btn btn-news rounded-pill font-title my-5">Xem tất cả danh sách tin tức</a>
         </div>
     </section>
     <!-- Footer -->
@@ -397,23 +399,32 @@
             <a href=""><img class="wid-logo-big " src="./asset/image/Logo/iuh.png" alt=""></a>
             <div class="search_content">
                 <div class="search_input">
-                    <input placeholder="Search your favorate products..." type="text" id="serach_input">
-                    <button class="btn-search absout-search"><i class="ti-search"></i></button>
+                    <input class="font-text" placeholder="Search your favorate products..." type="text"
+                        id="serach_input">
+                    <div class="" id="listProductSearch">
+                        <!--Render ra sản phẩm ở đây  -->
+                    </div>
                 </div>
                 <div class="search_recomend">
                     <h3>Recomend showcase products</h3>
                     <div class="search_recomend-btn">
-                        <a href=""><button class="btn-search">Boy fashion</button></a>
-                        <a href=""><button class="btn-search">Girl fashion</button></a>
-                        <a href=""><button class="btn-search">Fashion Accessoies</button></a>
+                        <a href="allProduct.html?cat=boyFashion"><button class="btn-search font-text">Boy
+                                fashion</button></a>
+                        <a href="allProduct.html?cat=girlFashion"><button class="btn-search font-text">Girl
+                                fashion</button></a>
+                        <a href="allProduct.html?cat=Accessories"><button class="btn-search font-text">Fashion
+                                Accessoies</button></a>
                     </div>
                 </div>
             </div>
             <div class="header_tool">
                 <ul class="menu-tools">
-                    <li class="link-hover"><a title="Shopping cart" href=""><i class="ti-shopping-cart"></i></a></li>
-                    <li class="link-hover"><a title="Account" href=""><i class="ti-user"></i></a></li>
-                    <li class="link-hover"><a title="CheckOut" href=""><i class="ti-bag"></i></a></li>
+                    <li class="link-hover"><a title="Shopping cart" class="nav-link" href="./cart.html"><i
+                                class="ti-shopping-cart"></i></a></li>
+                    <li class="link-hover"><a title="Account" href="./account.html" class="nav-link"><i
+                                class="ti-user"></i></a></li>
+                    <li class="link-hover"><a title="CheckOut" href="./order.html" class="nav-link"><i
+                                class="ti-bag"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -427,20 +438,24 @@
             </div>
             <div class="header_menu alignItem-star">
                 <ul class=" menu-tools flex-colum menu-tools-mobile">
-                    <li class="pad-2rem link-hover"><a class="text-hover" href="">Home</a></li>
+                    <li class="pad-2rem link-hover "><a style="color: black;" class="text-hover" href="">Home</a></li>
                     <li class="pad-2rem link-hover menu-mobile-sub">
-                        <span class="text-hover"> Product</span>
+                        <a href="allProduct.html" class="text-hover " style="color: black;"> Product</a>
                         <div class="menu-mobile-sub-nav">
                             <ul>
-                                <li><a href="">Girl Fashion</a></li>
-                                <li><a href="">Boy Fashion</a></li>
-                                <li><a href="">Fashion Accessories</a></li>
+                                <li><a class="" style="color: black;" href="allProduct.html?cat=boyFashion">Boy
+                                        Fashion</a></li>
+                                <li><a class="" style="color: black;" href="allProduct.html?cat=girlFashion">Girl
+                                        Fashion</a></li>
+                                <li><a class="" style="color: black;" href="allProduct.html?cat=Accessories">Fashion
+                                        Accessories</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="pad-2rem link-hover"><a class="text-hover" href="">News</a></li>
-                    <li class="pad-2rem link-hover"><a class="text-hover" href="">About</a></li>
-                    <li class="pad-2rem link-hover"><a class="text-hover" href="">SiteMap</a></li>
+                    <li class="pad-2rem link-hover"><a class="text-hover " style="color: black;" href="">News</a></li>
+                    <li class="pad-2rem link-hover"><a class="text-hover " style="color: black;" href="">About</a></li>
+                    <li class="pad-2rem link-hover"><a class="text-hover " style="color: black;" href="">SiteMap</a>
+                    </li>
                 </ul>
             </div>
             <div class="menu-mobile_img ">
@@ -506,9 +521,6 @@
         });
 
         // Dữ liệu tin tức (Bạn có thể lấy từ API sau này)
-
-
-
     </script>
     <script src="./js/home.js"></script>
     <script src="./js/modal.js"></script>

@@ -67,7 +67,7 @@ function renderLeftColumn(data) {
                         <div class="col-md-7">
                             <span class="category-tag">${news.headding}</span>
                             <h5 class="fw-bold mt-2">${news.title}</h5>
-                            <a href="newsDetail.html?id=${news.id}" class="read-next-news fw-bold text-decoration-none small">Đọc tiếp →</a>
+                            <a href="../newsDetail.html?id=${news.id}" class="read-next-news fw-bold text-decoration-none small">Đọc tiếp →</a>
                         </div>
                     </div>
                 </div>`;

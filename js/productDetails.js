@@ -2,28 +2,28 @@
  * HÀM BỔ TRỢ: Đổi ảnh chính khi click vào thumbnail
  * Cần đưa vào window để HTML onclick có thể gọi được
  */
-window.changeImage = function(imgElement) {
+window.changeImage = function (imgElement) {
     const mainImg = document.getElementById("mainImg");
     if (mainImg) {
         // Hiệu ứng mờ nhẹ khi đổi ảnh
-        mainImg.style.opacity = "0.5";
+        mainImg.style.opacity = "0.2";
         setTimeout(() => {
             mainImg.src = imgElement.src;
             mainImg.style.opacity = "1";
-        }, 150);
+        }, 250);
     }
 };
 
 /**
  * HÀM TĂNG GIẢM SỐ LƯỢNG
  */
-window.subtract = function() {
+window.subtract = function () {
     const input = document.getElementById("quantity");
     let val = parseInt(input.value);
     if (val > 1) input.value = val - 1;
 };
 
-window.add = function() {
+window.add = function () {
     const input = document.getElementById("quantity");
     let val = parseInt(input.value);
     input.value = val + 1;
@@ -63,30 +63,35 @@ async function initProductDetail() {
 
         // 4. RENDER THÔNG TIN CƠ BẢN TĨNH
         document.getElementById("prodcutDTName").innerText = product.name;
+        document.querySelector(".nameProduct").innerText = product.name
         renderModernProductDetail(product);
-
+        if(product.sizeTable === undefined){
+        document.getElementById("tableDTSize").innerHTML = "";
+        }else{
+            document.getElementById("tableDTSize").innerHTML = product.sizeTable;
+        }
         // 5. HÀM RENDER SIZE (Gọi lại mỗi khi đổi màu)
-const renderSizes = () => {
-    const boxSize = document.getElementById("prodcutDTSize");
-    const sizeSection = document.getElementById("sizeSection");
+        const renderSizes = () => {
+            const boxSize = document.getElementById("prodcutDTSize");
+            const sizeSection = document.getElementById("sizeSection");
 
-    if (!boxSize) return;
+            if (!boxSize) return;
 
-    // Trường hợp 1: Sản phẩm không có size (Phụ kiện) -> Hiện nút mua ngay lập tức
-    if (currentVariant.item.length === 1 && !currentVariant.item[0].size) {
-        if (sizeSection) sizeSection.style.display = "none";
-        return;
-    }
-    let sizeHtml = "";
-    currentVariant.item.forEach((item, index) => {
-        const activeClass = (currentItem && currentItem.sku === item.sku) ? "active" : "";
-        sizeHtml += `
+            // Trường hợp 1: Sản phẩm không có size (Phụ kiện) -> Hiện nút mua ngay lập tức
+            if (currentVariant.item.length === 1 && !currentVariant.item[0].size) {
+                if (sizeSection) sizeSection.style.display = "none";
+                return;
+            }
+            let sizeHtml = "";
+            currentVariant.item.forEach((item, index) => {
+                const activeClass = (currentItem && currentItem.sku === item.sku) ? "active" : "";
+                sizeHtml += `
             <div class="btncss ${activeClass}" onclick="window.selectSize(${index})">
                 ${item.size}
             </div>`;
-    });
-    boxSize.innerHTML = sizeHtml;
-};
+            });
+            boxSize.innerHTML = sizeHtml;
+        };
 
         // 6. HÀM RENDER THUMBNAILS (Gọi lại mỗi khi đổi màu)
         const renderThumbnails = (variant) => {
@@ -102,16 +107,21 @@ const renderSizes = () => {
         };
 
         // 7. LẬP TRÌNH CÁC HÀM TƯƠNG TÁC (Gắn vào window)
-        
+
         // CHỌN MÀU
-        window.selectColor = function(index) {
+        window.selectColor = function (index) {
             currentVariant = product.variants[index];
             currentItem = currentVariant.item[0]; // Reset về size đầu tiên của màu mới
 
             // Cập nhật ảnh chính (Dùng đúng ID prodcutDTMainImg của bạn)
             const mainImgContainer = document.getElementById("prodcutDTMainImg");
             mainImgContainer.innerHTML = `<img id="mainImg" class="img-cls wid-100" src="${currentVariant.image[0]}" alt="main">`;
-
+            document.querySelector(".color-span").innerHTML = currentVariant.color;
+            if(/^White$/i.test(currentVariant.color)){
+            document.querySelector(".color-span").style.color = "black";
+            }else{
+            document.querySelector(".color-span").style.color = currentVariant.color;
+            }
             // Cập nhật Giá và Mã SKU
             document.getElementById("productDTPrice").innerText = currentItem.price.toLocaleString("vi-VN") + "đ";
             document.getElementById("prodcutDTID").innerText = currentItem.sku;
@@ -121,24 +131,24 @@ const renderSizes = () => {
         };
 
         // CHỌN SIZE
-window.selectSize = function(index) {
-    // 1. Gán item hiện tại dựa trên size vừa chọn
-    currentItem = currentVariant.item[index];
+        window.selectSize = function (index) {
+            // 1. Gán item hiện tại dựa trên size vừa chọn
+            currentItem = currentVariant.item[index];
 
-    // 2. Cập nhật giao diện Giá và SKU
-    document.getElementById("productDTPrice").innerText = currentItem.price.toLocaleString("vi-VN") + "đ";
-    document.getElementById("prodcutDTID").innerText = currentItem.sku;
+            // 2. Cập nhật giao diện Giá và SKU
+            document.getElementById("productDTPrice").innerText = currentItem.price.toLocaleString("vi-VN") + "đ";
+            document.getElementById("prodcutDTID").innerText = currentItem.sku;
 
-    // 3. HIỆN NÚT MUA, ẨN NÚT NHẮC NHỞ
-    const btnReads = document.querySelectorAll(".btn-read");
-    const btnBuys = document.querySelectorAll(".btn-mua");
+            // 3. HIỆN NÚT MUA, ẨN NÚT NHẮC NHỞ
+            const btnReads = document.querySelectorAll(".btn-read");
+            const btnBuys = document.querySelectorAll(".btn-mua");
 
-    btnReads.forEach(btn => btn.style.display = "none");
-    btnBuys.forEach(btn => btn.style.display = "block");
+            btnReads.forEach(btn => btn.style.display = "none");
+            btnBuys.forEach(btn => btn.style.display = "block");
 
-    // 4. Vẽ lại danh sách size để cập nhật class 'active' (màu sắc nút size)
-    renderSizes();
-};
+            // 4. Vẽ lại danh sách size để cập nhật class 'active' (màu sắc nút size)
+            renderSizes();
+        };
 
         // 8. RENDER DANH SÁCH MÀU SẮC (Lần đầu load trang)
         const colorContain = document.getElementById("productDTcolor");
@@ -192,14 +202,11 @@ function renderModernProductDetail(product) {
     container.innerHTML = `
         <!-- LEFT -->
         <div class="col-lg-6 product-left">
-            <p class="product-subtitle">Product Detail</p>
             <h1 class="product-big-title">${product.name}</h1>
 
             <div class="product-desc">
                 ${descHTML}
             </div>
-
-            <button class="btn-order">Order Now</button>
         </div>
 
         <!-- RIGHT -->
@@ -221,6 +228,7 @@ function renderModernProductDetail(product) {
     `;
 }
 // Chạy hàm khi trang web tải xong
+
 document.addEventListener("DOMContentLoaded", initProductDetail);
 
 window.addToCart = function () {
