@@ -35,11 +35,11 @@ function renderRightColumn(newsList) {
                     <div class="img-frame mb-3 mx-auto" style="max-width: 100%; height: 250px;">
                         <img src="${news.image}" class="img-fluid w-100 h-100 object-fit-cover" alt="${news.title}">
                     </div>
-                    <span class="badge read-next-news rounded-pill mb-2 px-3">${news.published}</span>
-                    <h4 class="fw-bold text-truncate-2">${news.title}</h4>
-                    <p class="text-muted small px-2 text-truncate-3">${news.excerpt}</p>
+                    <span class="badge read-next-news rounded-pill mb-2 px-3 fs-4">${news.published}</span>
+                    <h4 class="fw-bold text-truncate-2 fs-2">${news.title}</h4>
+                    <p class="text-muted small px-2 text-truncate-3 fs-4">${news.excerpt}</p>
                     <div class="mt-3">
-                        <a href="newsDetail.html?id=${news.id}" class="btn btn-primary rounded-pill px-4 btn-sm">Xem chi tiết</a>
+                        <a href="newsDetail.html?id=${news.id}" class="btn btn-news rounded-pill px-4 fs-4">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
@@ -66,8 +66,8 @@ function renderLeftColumn(data) {
                         </div>
                         <div class="col-md-7">
                             <span class="category-tag">${news.headding}</span>
-                            <h5 class="fw-bold mt-2">${news.title}</h5>
-                            <a href="../newsDetail.html?id=${news.id}" class="read-next-news fw-bold text-decoration-none small">Đọc tiếp →</a>
+                            <h5 class="fw-bold mt-2 font-title">${news.title}</h5>
+                            <a href="../newsDetail.html?id=${news.id}" class="read-next-news fs-4 fw-bold text-decoration-none small">Đọc tiếp →</a>
                         </div>
                     </div>
                 </div>`;

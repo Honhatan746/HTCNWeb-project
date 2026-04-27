@@ -1,250 +1,121 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng ký - Fashion Studio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsible.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: url(./asset/image/Slide/01_-_banner_web_ngang_-_2500x991.jpg) top center / cover no-repeat;
-            font-family: 'Montserrat', sans-serif;
-            position: relative;
-            padding: 4rem;
-        }
-        
-        body::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgb(0 0 0 / 23%);
-            ;
-            /* chỉnh 0.3 -> 0.7 tùy độ tối */
-            z-index: 0;
-        }
-
-        /* KHUNG CHÍNH CÓ VIỀN TRẮNG MỜ */
-        .main-wrapper {
-          width: 1300px;
-            height: 764px;
-            max-width: 95%;
-            display: flex;
-            border-radius: 40px;
-            overflow: hidden;
-            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
-            position: relative;
-            z-index: 1;
-            border: 9px solid #fff;
-        }
-
-        /* PHẦN TRÁI TRỐNG RỖNG NHÌN XUYÊN NỀN */
-        .left-hollow {
-            font-size: 1.6rem;
-            padding: 5.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            color: white;
-            background: transparent;
-            flex: 0.7;
-        }
-
-        .main-heading {
-            font-family: 'Playfair Display', serif;
-            font-size: 5rem;
-            line-height: 1;
-            text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-            /* Đổ bóng nhẹ để chữ nổi lên nền */
-        }
-
-        /* PHẦN PHẢI: FORM ĐĂNG KÝ TRẮNG ĐỤC */
-        .right-auth {
-            font-size: 1.5rem;
-            flex: 1;
-            background: #ffffff;
-            /* Màu trắng đặc để dễ nhập liệu */
-            padding: 60px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; 
-        }
-
-        .login-name.form-control {
-            border-radius: 15px;
-            padding: 15px;
-            border: 1px solid #eee;
-            background: #fdfdfd;
-            margin-bottom: 20px;
-            transition: all .3s ease;
-        }
-
-        .login-name.form-control:focus {
-            box-shadow: 0px 0px 6px #8f5bff;
-        }
-
-
-        .btn-login-custom {
-            color: #fff;
-            border-radius: 15px;
-            padding: 15px;
-            font-weight: 600;
-            width: 100%;
-            border: none;
-            transition: 0.3s;
-            background-color: #8f5bff;
-        }
-
-        .btn-login-custom:hover {
-            opacity: 0.8;
-            transform: scale(0.98);
-            color: white;
-            background-color: #8f5bff;
-        }
-        /* Tùy chỉnh ô chọn giới tính */
-.custom-select{
-            border-radius: 15px;
-            padding: 15px;
-            border: 1px solid #eee;
-            background: #fdfdfd;
-            margin-bottom: 20px;
-            transition: all .3s ease;
-}
-
-.custom-select:focus {
-     box-shadow: 0px 0px 6px #8f5bff;
-}
-
-/* RESPONSIVE CHO MOBILE */
-@media (max-width: 991px) {
-    .main-wrapper {
-        flex-direction: column; /* Chuyển thành hàng dọc */
-        height: auto; /* Chiều cao tự động theo nội dung */
-        max-width: 90%;
-        margin: 20px 0;
-        border-radius: 25px;
-        border: none; /* Bo góc nhỏ lại một chút trên mobile */
-    }
-
-    /* Phần bên trái: Ẩn bớt nội dung hoặc thu nhỏ */
-    .left-hollow {
-        display: none;
-    }
-
-    .main-heading {
-        font-size: 1.5rem; /* Thu nhỏ tiêu đề */
-        margin: 20px 0;
-    }
-
-    /* Phần bên phải: Form đăng ký */
-    .right-auth {
-        padding: 30px 25px;
-        border-radius: 0 0 25px 25px; /* Bo góc phía dưới */
-        flex: none;
-    }
-}
-
-/* Tối ưu riêng cho màn hình rất nhỏ (iPhone 5/SE...) */
-@media (max-width: 375px) {
-    .right-auth {
-        padding: 2rem;
-    }
-}
-        .text-login{
-            color:  #8f5bff;
-        }
-    </style>
+    <link rel="stylesheet" href="./asset/icon/themify-icons-font/themify-icons/themify-icons.css">
 </head>
-<body>
 
-<div class="main-wrapper">
-    
-<div class="right-auth">
-    <div class="mb-4">
-        <h1 class="fw-bold m-0 text-login">Create Account</h1>
-        <p class="text-muted small">Khám phá ngay những bộ sưu tập mới nhất</p>
+<body class="bodyCustome">
+
+    <div class="main-wrapper">
+
+        <div class="right-auth">
+            <div class="mb-4">
+                <h1 class="fw-bold m-0 text-login">Create Account</h1>
+                <p class="text-muted small">Khám phá ngay những bộ sưu tập mới nhất</p>
+            </div>
+
+            <form>
+                <div class="mb-2">
+                    <label class=" fw-bold text-login mb-1 ">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" class="font-text form-control login-name " id="fullName"
+                        placeholder="Nhập họ tên">
+                    <span class="text-danger validReName"></span>
+                </div>
+
+                <div class="mb-2">
+                    <label class=" fw-bold text-login mb-1 ">Phone Number <span class="text-danger">*</span></label>
+                    <input type="tel" class=" font-text form-control login-name" id="phoneNumber"
+                        placeholder="090x xxx xxx">
+                    <span class="text-danger validRePhone"></span>
+                </div>
+
+                <div class="mb-2">
+                    <label class="fw-bold text-login mb-1">
+                        Address <span class="text-danger">*</span>
+                    </label>
+
+                    <div class="row">
+                        <div class="col">
+                            <select id="province" class="form-select font-text custom-select">
+                                <option value="">Chọn Tỉnh/Thành</option>
+                            </select>
+                        </div>
+
+                        <div class="col">
+                            <select id="district" class="form-select font-text custom-select">
+                                <option value="">Chọn Quận/Huyện</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select id="ward" class="form-select font-text custom-select">
+                                <option value="">Chọn Xã/Phường</option>
+                            </select>
+                        </div>
+                    </div>
+                    <span class="text-danger validReAddress"></span>
+                </div>
+                <div class="mb-2">
+                    <label class=" fw-bold text-login mb-1 ">Email <span class="text-danger">*</span></label>
+                    <input type="email" class=" font-text form-control login-name login-name" id="email"
+                        placeholder="example@fashion.com">
+                    <span class="text-danger validReEmail"></span>
+                </div>
+
+                <div class="row g-2 mb-3">
+                    <div class="col-md-6">
+                        <label class=" fw-bold text-login mb-1 ">Password <span class="text-danger">*</span></label>
+                        <div class="password-group position-relative">
+                            <input type="password" id="password" class=" font-text form-control login-name"
+                                placeholder="---">
+                            <i class="ti-lock toggle-password" data-target="password"></i>
+                        </div>
+                        <span class="text-danger validPass"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label class=" fw-bold text-login mb-1 ">Confirm <span class="text-danger">*</span></label>
+                        <div class="password-group position-relative">
+                            <input type="password" id="rePass" class=" font-text form-control  login-name"
+                                placeholder="---">
+                            <i class="ti-lock toggle-password" data-target="rePass"></i>
+                        </div>
+                        <span class="text-danger validRePass"></span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-login-custom mb-3 font-text" id="submit">Tạo tài khoản</button>
+
+                <p class="text-center small text-muted">
+                    Đã có tài khoản? <a href="login.html" class="fw-bold text-login text-decoration-none">Đăng nhập</a>
+                </p>
+            </form>
+        </div>
+        <div class="left-hollow">
+            <div>
+                <p class="text-uppercase fw-bold" style="letter-spacing: 4px; font-size: 1.4rem;">JOIN THE CLUB —</p>
+                <p class="fst-italic opacity-75 font-text">"Fashion is part of the daily air..."</p>
+            </div>
+
+            <div class="main-heading fw-bold">
+                Start<br>Your Fashion<br>Journey
+            </div>
+
+            <div class="small opacity-50">
+                FASHION STUDIO © 2026
+            </div>
+        </div>
+
     </div>
 
-    <form>
-        <div class="mb-2">
-            <label class=" fw-bold text-login mb-1 ">Full Name</label>
-            <input type="text" class="font-text form-control login-name" placeholder="Nhập họ tên">
-        </div>
-
-        <div class="row g-2 mb-2">
-            <div class="col-md-7">
-                <label class=" fw-bold text-login mb-1 ">Phone Number</label>
-                <input type="tel" class=" font-text form-control login-name login-name" placeholder="090x xxx xxx">
-            </div>
-            <div class="col-md-5">
-                <label class=" fw-bold text-login mb-1 ">Gender</label>
-                <select class="form-select font-text custom-select">
-                    <option selected disabled>Chọn...</option>
-                    <option value="male">Nam</option>
-                    <option value="female">Nữ</option>
-                    <option value="other">Khác</option>
-                </select>
-            </div>
-        </div>
-        
-        <div class="mb-2">
-            <label class=" fw-bold text-login mb-1 ">Address</label>
-            <input type="text" class=" font-text form-control login-name login-name" placeholder="Số nhà, tên đường, quận/huyện...">
-        </div>
-
-        <div class="mb-2">
-            <label class=" fw-bold text-login mb-1 ">Email</label>
-            <input type="email" class=" font-text form-control login-name login-name" placeholder="example@fashion.com">
-        </div>
-
-        <div class="row g-2 mb-3">
-            <div class="col-md-6">
-                <label class=" fw-bold text-login mb-1 ">Password</label>
-                <input type="password" class=" font-text form-control login-name login-name" placeholder="••••••••">
-            </div>
-            <div class="col-md-6">
-                <label class=" fw-bold text-login mb-1 ">Confirm</label>
-                <input type="password" class=" font-text form-control login-name login-name" placeholder="••••••••">
-            </div>
-        </div>
-
-        <div class="form-check mb-4">
-            <input type="checkbox" class="form-check-input" id="terms">
-            <label class="form-check-label small text-muted" for="terms">
-                Tôi đồng ý với <a href="#" class="text-dark fw-bold text-login">Điều khoản & Chính sách</a>
-            </label>
-        </div>
-
-        <button type="submit" class="btn btn-login-custom mb-3 font-text">Tạo tài khoản</button>
-        
-        <p class="text-center small text-muted">
-            Đã có tài khoản? <a href="login.html" class="fw-bold text-login text-decoration-none">Đăng nhập</a>
-        </p>
-    </form>
-</div>
-    <div class="left-hollow">
-        <div>
-            <p class="text-uppercase fw-bold" style="letter-spacing: 4px; font-size: 1.4rem;">JOIN THE CLUB —</p>
-            <p class="fst-italic opacity-75 font-text">"Fashion is part of the daily air..."</p>
-        </div>
-        
-        <div class="main-heading">
-            Start<br>Your Fashion<br>Journey
-        </div>
-
-        <div class="small opacity-50">
-            FASHION STUDIO © 2026
-        </div>
-    </div>
-
-</div>
-
+    <script src="./jquery/jquery-4.0.0.min.js"></script>
+    <script src="./bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/register.js"></script>
 </body>
+
 </html>

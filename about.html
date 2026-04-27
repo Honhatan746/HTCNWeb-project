@@ -5,235 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Kidcore Fashion</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./asset/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsible.css">
     <style>
-        html {
-            font-size: 100%;
-        }
-
-        /* CSS nội bộ để ưu tiên các tùy chỉnh mới của bạn */
         body {
             background-color: #f9f7f2 !important;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .heading-highlight {
-            background: #e91e63;
-            color: white;
-            padding: 8px 20px;
-            display: inline-block;
-            border-radius: 50px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-
-        /* Member Card Styling */
-        .member-card {
-            background: #fff;
-            border-radius: 24px;
-            overflow: hidden;
-            border: none;
-            transition: all 0.3s ease;
-        }
-
-        .member-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
-        }
-
-        .member-img-wrapper {
-            background-color: #e2e8d8;
-            height: 320px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-        }
-
-        .member-img-wrapper img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .member-name-tag {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 6px 15px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: #333;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .member-content {
-            padding: 25px;
-        }
-
-        .member-number {
-            font-weight: bold;
-            font-size: 1.1rem;
-            background-color: #d8e2c5;
-            display: inline-block;
-            padding: 2px 12px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            color: #4a5d23;
-        }
-
-        .member-title {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #222;
-            margin-bottom: 12px;
-        }
-
-        .member-desc {
-            color: #666;
-            font-size: 0.9rem;
-            line-height: 1.6;
-            text-align: justify;
-        }
-
-        .content-box {
-            background: #ffffff;
-            border-radius: 24px;
-            padding: 40px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
-        }
-
-        .goal-section {
-            background-color: #f9f7f2;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .goal-img {
-            max-height: 250px;
-            object-fit: cover;
-        }
-
-        /* chữ nền lớn */
-        .bg-text {
-            position: absolute;
-            top: 23%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 232px;
-            font-weight: 900;
-            color: rgba(0, 0, 0, 0.05);
-            letter-spacing: 10px;
-            z-index: 0;
-            white-space: nowrap;
-        }
-
-        /* đảm bảo nội dung nằm trên */
-        .goal-section .row {
-            position: relative;
-            z-index: 2;
-        }
-
-        .goal-heading {
-            font-size: 40px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #222;
-        }
-
-        /* chữ nổi bật */
-        .goal-heading span {
-            color: #c7e36b;
-            /* màu xanh giống ảnh */
-        }
-
-        /* ===== BANNER ===== */
-        .intro-banner {
-            background: #f9f7f2;
-            padding: 8px 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .banner-bg-text {
-            font-size: 540px;
-            font-weight: 900;
-            color: #AB2A8B;
-            opacity: 0.9;
-            letter-spacing: 9px;
-            margin: 0;
-            line-height: 1;
-            transform: translateX(-20%);
-        }
-
-        .banner-top-text {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: #fff;
-            font-size: 14px;
-            letter-spacing: 2px;
-        }
-
-        /* ảnh nằm đè */
-        .banner-img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .banner-img img {
-            max-width: 450px;
-            filter: grayscale(100%);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-        }
-
-        /* ===== HEADING PHÍA DƯỚI ===== */
-        .intro-heading {
-            font-size: 42px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #222;
-        }
-
-        /* chữ highlight */
-        .intro-heading span {
-            color: #AB2A8B;
-        }
-
-        /* label nhỏ */
-        .heading-highlight {
-            display: inline-block;
-            font-size: 14px;
-            letter-spacing: 2px;
-            color: #888;
-            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-transparent py-4">
-        <div class="container">
-            <ul class="d-flex list-unstyled m-0">
-                <li class="me-3"><a href="./index.html" class="text-decoration-none text-dark fw-bold">Trang chủ</a>
-                </li>
-                <li class="text-muted fw-bold">/ About</li>
-            </ul>
+    <!-- Header -->
+    <header>
+        <div class="header_sub">
+            <p>Kids’s products – gentle and comfortable</p>
+            <p>Best-selling products on the market</p>
         </div>
+        <div class="header_main">
+            <div class="menu-md">
+                <div class="menu-ti link-hover menu-ti-js"><i class="ti-menu"></i>
+                </div>
+                <a href="./home.html"><img class="wid-logo sub_logo" src="./asset/image/Logo/iuh.png" alt="Logo"></a>
+            </div>
+            <a href="./home.html"><img class="wid-logo main_logo" src="./asset/image/Logo/iuh.png" alt="Logo"></a>
+            <div class="header_menu ">
+                <ul class="menu-tools menu-tools-md">
+                    <li class="link-hover pad-1rem"><a title="Home" style="color: black;" href="home.html">Home</a></li>
+                    <li class="menu-tools_sub link-hover pad-1rem">
+                        <a href="./allProduct.html" class="text-hover" style="color: black;"> Product</a>
+                        <!-- Menu Sub -->
+                        <div class="header_product-sub ">
+                            <ul>
+                                <li class="pad-1rem"><a href="allProduct.html?cat=girlFashion"
+                                        style="color: black; padding: 1rem;">Girl Fashion</a></li>
+                                <li class="pad-1rem"><a href="allProduct.html?cat=boyFashion"
+                                        style="color: black; padding: 1rem">Boy Fashion </a></li>
+                                <li class="pad-1rem"><a href="allProduct.html?cat=Accessories"
+                                        style="color: black; padding: 1rem">Fashion Accessoies</a></li>
+                            </ul>
+                            <div class="menu_img">
+                                <img src="./asset/image/Slide/anh_tet.webp" alt="">
+                                <img src="./asset/image/Slide/anh_trung_thu.webp" alt="">
+                            </div>
+                        </div>
+                        <!-- End MenuSub -->
+                    </li>
+                    <li class="link-hover pad-1rem "><a title="News List" style="color: black;"
+                            href="./news.html">News</a></li>
+                    <li class="link-hover pad-1rem"><a title="Infomation about us" style="color: black;"
+                            href="./about.html">About</a></li>
+                    <li class="link-hover pad-1rem"><a title="Direction in our website" style="color: black;"
+                            href="./sitemap.html">SiteMap</a></li>
+                </ul>
+            </div>
+            <div class="header_tool">
+                <ul class="menu-tools">
+                    <li class="link-hover pad-1rem"><a title="Shopping cart" style="color: black;" href="./cart.html"><i
+                                class="ti-shopping-cart"></i></a></li>
+                    <li class="link-hover pad-1rem"><a title="Account" style="color: black;" href="./account.html"><i
+                                class="ti-user"></i></a></li>
+                    <li class="link-hover pad-1rem"><a title="CheckOut" style="color: black;" href="./order.html"><i
+                                class="ti-bag"></i></a></li>
+                    <li class="link-hover js-search-icon pad-1rem"><a title="Search" style="color: black;"><i
+                                class="ti-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbarcss">
+        <ul>
+            <i>
+                <li><a href="./index.html">Home</a></li>
+            </i>
+            <i>
+                <li>About</li>
+            </i>
+        </ul>
     </nav>
+    <!-- End Navbar -->
 
     <!-- ===== BANNER ===== -->
     <section class="intro-banner">
@@ -242,11 +95,8 @@
             <!-- chữ lớn phía sau -->
             <h1 class="banner-bg-text">KIDCLOTHES</h1>
 
-            <!-- heading nhỏ phía trên -->
-            <div class="banner-top-text">[ GIỚI THIỆU ]</div>
-
             <!-- ảnh -->
-            <div class="banner-img">
+            <div class="banner-img-about">
                 <img src="./asset/image/about/Group-Staff-Photo.jpg" alt="" class="img-fluid">
             </div>
 
@@ -261,7 +111,7 @@
                     Hệ thống bán <span>quần áo</span> trẻ em
                 </h1>
 
-                <p class="text-muted lead fs-6 lh-lg">
+                <p class="text-muted fs-2 lh-lg">
                     Trong bối cảnh thương mại điện tử ngày càng phát triển mạnh mẽ,
                     việc xây dựng các hệ thống bán hàng trực tuyến trở thành một nhu cầu thiết yếu...
                 </p>
@@ -287,7 +137,7 @@
 
                     <!-- nội dung -->
                     <div class="col-md-4 text-center">
-                        <p class="text-muted small">
+                        <p class="text-muted fs-2 lh-lg">
                             Nhóm mong muốn qua phần bài tập này sẽ đem lại nhiều kiến thức và kinh nghiệm
                             trong việc làm nhóm hiệu quả. Cụ thể, nhóm hướng đến việc phát triển một nền
                             tảng giúp người dùng dễ dàng tìm kiếm, lựa chọn và mua sắm sản phẩm một cách
@@ -318,7 +168,7 @@
                         </div>
                         <div class="member-content text-start">
                             <div class="member-number">Trưởng nhóm</div>
-                            <h3 class="member-title">Hồ Nhật Tân</h3>
+                            <h3 class="member-title">Nguyễn Hải Đăng</h3>
                             <p class="member-desc m-0">
                                 Viết UI cho các chức năng đặt hàng, thanh toán, thêm giỏ hàng, xem chi tiết sản phẩm và
                                 các danh mục bán chạy.
@@ -334,7 +184,7 @@
                         </div>
                         <div class="member-content text-start">
                             <div class="member-number">Thành viên</div>
-                            <h3 class="member-title">Nguyễn Hải Đăng</h3>
+                            <h3 class="member-title">Hồ Nhật Tân</h3>
                             <p class="member-desc m-0">
                                 Viết Logic, query chức năng đăng nhập, CRUD sản phẩm, thông tin người dùng và thống kê
                                 sản phẩm theo doanh thu.
@@ -350,7 +200,7 @@
                         </div>
                         <div class="member-content text-start">
                             <div class="member-number">Thành viên</div>
-                            <h3 class="member-title">Nguyễn Ngọc HậuLead</h3>
+                            <h3 class="member-title">Nguyễn Ngọc Hậu</h3>
                             <p class="member-desc m-0">
                                 Phụ trách báo cáo, tài liệu đặc tả hệ thống. Thiết kế UI và thực hiện kết nối dữ liệu từ
                                 API Backend.
@@ -365,11 +215,136 @@
             <h2 class="goal-heading text-center intro-heading">
                 Thank <span>you</span>
             </h2>
-            <p class="text-muted">Nhóm xin chân thành cảm ơn thầy và nỗ lực của tất cả thành viên.</p>
+            <p class="text-muted fs-2 lh-lg">Nhóm xin chân thành cảm ơn thầy và nỗ lực của tất cả thành viên.</p>
         </section>
     </main>
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <div class="footer_background">
+            <div class="footer_text">
+                <h1>Kidcore fashion - ultimate refinement</h1>
+            </div>
+        </div>
+        <div class="kcs-footer-dark bg-dark text-white pt-5">
+            <div class="container-fluid px-lg-5">
+                <div class="row gy-4">
+                    <div class="col-6 col-md-2">
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50 font-title">Offer</h6>
+                        <ul class="list-unstyled kcs-footer-links">
+                            <li><a href="#">Calendars</a></li>
+                            <li><a href="#">Refills & accessories</a></li>
+                            <li><a href="#">Notebooks</a></li>
+                            <li><a href="#">Bundles</a></li>
+                        </ul>
+                    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                    <div class="col-6 col-md-2">
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50 font-title">KidClothes</h6>
+                        <ul class="list-unstyled kcs-footer-links">
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./news.html">New</a></li>
+                            <li><a href="./sitemap.html">Sitemap</a></li>
+                            <li><a href="./allProduct.html">Product</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2">
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50 font-title">Customer</h6>
+                        <ul class="list-unstyled kcs-footer-links">
+                            <li><a href="./about.html">Contact</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Refunds</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2">
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50 font-title">Social Media</h6>
+                        <ul class="list-unstyled kcs-footer-links">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Pinterest</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50 font-title">Newsletter</h6>
+                        <h4 class="fw-bold">Sign up for our monthly newsletter. That's it!</h4>
+                        <form class="kcs-newsletter-form mt-3">
+                            <div class="input-group border-bottom border-secondary">
+                                <input type="email"
+                                    class="form-control bg-transparent border-0 text-white shadow-none ps-0"
+                                    placeholder="Email">
+                                <a href="./register.html" class="btn font-title text-decoration-none text-white" type="submit" >→</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kcs-footer-big-text">
+                <h1 class="m-0">KidClothes<span>®</span></h1>
+            </div>
+        </div>
+    </footer>
+    <!-- Search -->
+    <div class="search js_search">
+        <div class="search_body js-search_body">
+            <a href=""><img class="wid-logo-big " src="./asset/image/Logo/iuh.png" alt=""></a>
+            <div class="search_content">
+                <div class="search_input">
+                    <input class="font-text" placeholder="Search your favorate products..." type="text"
+                        id="serach_input">
+                    <div class="" id="listProductSearch">
+                        <!--Render ra sản phẩm ở đây  -->
+                    </div>
+                </div>
+                <div class="search_recomend">
+                    <h3>Recomend showcase products</h3>
+                    <div class="search_recomend-btn">
+                        <a href="allProduct.html?cat=boyFashion"><button class="btn-search font-text">Boy
+                                fashion</button></a>
+                        <a href="allProduct.html?cat=girlFashion"><button class="btn-search font-text">Girl
+                                fashion</button></a>
+                        <a href="allProduct.html?cat=Accessories"><button class="btn-search font-text">Fashion
+                                Accessoies</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_tool">
+                <ul class="menu-tools">
+                    <li class="link-hover"><a title="Shopping cart" class="nav-link" href="./cart.html"><i
+                                class="ti-shopping-cart"></i></a></li>
+                    <li class="link-hover"><a title="Account" href="./account.html" class="nav-link"><i
+                                class="ti-user"></i></a></li>
+                    <li class="link-hover"><a title="CheckOut" href="./order.html" class="nav-link"><i
+                                class="ti-bag"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Mobile -->
+    <div class="menu-mobile menu-mobile-js">
+        <div class="menu-mobile_body">
+            <div class="menu-mobile_header">
+                <div class="wid-logo"><img src="./asset/image/Logo/iuh.png" alt="Logo"></div>
+                <h1>Catalogue</h1>
+            </div>
+            <div class="header_menu alignItem-star">
+                <ul class=" menu-tools flex-colum menu-tools-mobile">
+                    <!--Render Js code-->
+                </ul>
+            </div>
+            <div class="menu-mobile_img ">
+                <div><img src="./asset/image/Slide/anh_tet.webp" alt="anhTet"></div>
+                <div><img src="./asset/image/Slide/anh_trung_thu.webp" alt="anhTrungThu"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Menu Mobile -->
+    <script src="./js/modal.js"></script>
+    <script src="./bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

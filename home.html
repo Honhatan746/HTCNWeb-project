@@ -64,7 +64,7 @@
                 <ul class="menu-tools navbar-nav ms-auto">
                     <li class="link-hover pad-1rem nav-item"><a class="nav-link" title="Shopping cart"
                             href="./cart.html"><i class="ti-shopping-cart"></i></a></li>
-                    <li class="link-hover pad-1rem nav-item"><a class="nav-link" title="Account" href="./login.html"><i
+                    <li class="link-hover pad-1rem nav-item"><a class="nav-link" title="Account" href="./account.html"><i
                                 class="ti-user"></i></a></li>
                     <li class="link-hover pad-1rem nav-item"><a class="nav-link" title="CheckOut" href="./order.html"><i
                                 class="ti-bag"></i></a></li>
@@ -80,25 +80,25 @@
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
 
         <div class="d-flex justify-content-center">
-            <button class="fixed-search-overlay btn rounded-pill">
-                Xem Ngay</button>
+            <a href="./allProduct.html" class="text-uppercase fixed-search-overlay btn rounded-pill">
+                All Product</a>
 
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active"
+            <div class="carousel-item homeCarousel active"
                 style="background-image: url('./asset/image/Slide/01_-_banner_web_ngang_-_2500x991.jpg')">
                 <div class="carousel-caption">
-                    <h5 class="text-warning fw-bold fs-2">WELCOME TO TRAVEL</h5>
-                    <h1 class="display-3 fw-bold">KHÁM PHÁ ĐẠI DƯƠNG</h1>
-                    <p class="lead fs-5">Tận hưởng những bãi biển đẹp nhất thế giới cùng gia đình.</p>
+                    <h5 class="text-warning fw-bold fs-2">WELCOME TO MY SHOP</h5>
+                    <h1 class="display-3 fw-bold">Elegance in Every Motion</h1>
+                    <p class="fs-5">Discover premium childrenswear designed for special moments. We blend classic silhouettes with buttery-soft fabrics, so your little ones can shine at any event while playing freely</p>
                 </div>
             </div>
 
-            <div class="carousel-item" style="background-image: url('./asset/image/Slide/anh_tet.webp')">
+            <div class="carousel-item homeCarousel" style="background-image: url('./asset/image/Slide/anh_tet.webp')">
                 <div class="carousel-caption">
                     <h5 class="text-warning fw-bold">NATURE EXPERIENCE</h5>
-                    <h1 class="display-3 fw-bold">VẺ ĐẸP THIÊN NHIÊN</h1>
-                    <p class="lead">Hòa mình vào không gian xanh mát của núi rừng hùng vĩ.</p>
+                    <h1 class="display-3 fw-bold">Sophisticated Style, Childlike Comfort</h1>
+                    <p class="fs-5">Why choose between looking good and feeling good? Our collection offers tailor-made looks crafted from breathable, organic materials for the modern mini-gentleman and little lady.</p>
                 </div>
             </div>
         </div>
@@ -288,7 +288,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-7">
                         <div class="preview-img-wrapper">
-                            <img id="previewImg" src="./asset/image/news1.jpg" alt="Main News"
+                            <img id="previewImg" src="" alt="Main News"
                                 class="img-fluid rounded-4">
                         </div>
                     </div>
@@ -319,7 +319,7 @@
             <div class="container-fluid px-lg-5">
                 <div class="row gy-4">
                     <div class="col-6 col-md-2">
-                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50">Offer</h6>
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50 font-title">Offer</h6>
                         <ul class="list-unstyled kcs-footer-links">
                             <li><a href="#">Calendars</a></li>
                             <li><a href="#">Refills & accessories</a></li>
@@ -329,25 +329,26 @@
                     </div>
 
                     <div class="col-6 col-md-2">
-                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50">Kalstore</h6>
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50 font-title">KidClothes</h6>
                         <ul class="list-unstyled kcs-footer-links">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Stories</a></li>
-                            <li><a href="#">Collaboration</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./news.html">New</a></li>
+                            <li><a href="./sitemap.html">Sitemap</a></li>
+                            <li><a href="./allProduct.html">Product</a></li>
                         </ul>
                     </div>
 
                     <div class="col-6 col-md-2">
-                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50">Customer</h6>
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50 font-title">Customer</h6>
                         <ul class="list-unstyled kcs-footer-links">
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="./about.html">Contact</a></li>
                             <li><a href="#">Shipping</a></li>
                             <li><a href="#">Refunds</a></li>
                         </ul>
                     </div>
 
                     <div class="col-6 col-md-2">
-                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50">Social Media</h6>
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50 font-title">Social Media</h6>
                         <ul class="list-unstyled kcs-footer-links">
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">LinkedIn</a></li>
@@ -357,39 +358,22 @@
                     </div>
 
                     <div class="col-md-4">
-                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50">Newsletter</h6>
-                        <h4>Get 10% off the first order</h4>
-                        <p class="small opacity-75">Sign up for our monthly newsletter. That's it!</p>
+                        <h6 class="text-uppercase fw-bold mb-3 small opacity-50 font-title">Newsletter</h6>
+                        <h4 class="fw-bold">Sign up for our monthly newsletter. That's it!</h4>
                         <form class="kcs-newsletter-form mt-3">
                             <div class="input-group border-bottom border-secondary">
                                 <input type="email"
                                     class="form-control bg-transparent border-0 text-white shadow-none ps-0"
                                     placeholder="Email">
-                                <button class="btn text-white" type="submit">→</button>
-                            </div>
-                            <div class="form-check mt-3">
-                                <input class="form-check-input bg-transparent border-secondary" type="checkbox"
-                                    id="agree">
-                                <label class="form-check-label small opacity-50" for="agree">
-                                    I read and agree to terms and conditions and privacy policy.
-                                </label>
+                                <a href="./register.html" class="btn font-title text-decoration-none text-white" type="submit" >→</a>
                             </div>
                         </form>
-                    </div>
-                </div>
-
-                <div class="mt-5 pb-4">
-                    <h6 class="text-uppercase fw-bold mb-3 small opacity-50">Payment Methods</h6>
-                    <div class="d-flex flex-wrap gap-2 kcs-payment-icons">
-                        <img src="visa-icon.png" alt="Visa">
-                        <img src="mastercard-icon.png" alt="Mastercard">
-                        <img src="apple-pay.png" alt="Apple Pay">
                     </div>
                 </div>
             </div>
 
             <div class="kcs-footer-big-text">
-                <h1 class="m-0">Kalstore<span>®</span></h1>
+                <h1 class="m-0">KidClothes<span>®</span></h1>
             </div>
         </div>
     </footer>
@@ -479,8 +463,6 @@
         });
         function slideProducts(direction, sliderId) {
             const slider = document.getElementById(sliderId);
-
-            // Kiểm tra nếu slider tồn tại để tránh lỗi
             if (!slider) return;
 
             const scrollAmount = slider.clientWidth;
@@ -497,30 +479,6 @@
                 });
             }
         }
-        window.addEventListener('scroll', function () {
-            const images = document.querySelectorAll('.image-section img');
-            const windowHeight = window.innerHeight;
-
-            images.forEach((img, index) => {
-                const rect = img.getBoundingClientRect();
-
-                let progress = 1 - (rect.top / windowHeight);
-                progress = Math.max(0, Math.min(1, progress));
-
-                // trái - phải xoay ngược chiều
-                let direction = index % 2 === 0 ? -1 : 1;
-
-                // chỉ xoay tối đa 5deg
-                let rotate = progress * 5 * direction;
-
-                // trượt nhẹ lên
-                let translateY = 80 - progress * 80;
-
-                img.style.transform = `translateY(${translateY}px) rotate(${rotate}deg)`;
-            });
-        });
-
-        // Dữ liệu tin tức (Bạn có thể lấy từ API sau này)
     </script>
     <script src="./js/home.js"></script>
     <script src="./js/modal.js"></script>

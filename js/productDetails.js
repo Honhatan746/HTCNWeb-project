@@ -65,9 +65,9 @@ async function initProductDetail() {
         document.getElementById("prodcutDTName").innerText = product.name;
         document.querySelector(".nameProduct").innerText = product.name
         renderModernProductDetail(product);
-        if(product.sizeTable === undefined){
-        document.getElementById("tableDTSize").innerHTML = "";
-        }else{
+        if (product.sizeTable === undefined) {
+            document.getElementById("tableDTSize").innerHTML = "";
+        } else {
             document.getElementById("tableDTSize").innerHTML = product.sizeTable;
         }
         // 5. HÀM RENDER SIZE (Gọi lại mỗi khi đổi màu)
@@ -117,10 +117,10 @@ async function initProductDetail() {
             const mainImgContainer = document.getElementById("prodcutDTMainImg");
             mainImgContainer.innerHTML = `<img id="mainImg" class="img-cls wid-100" src="${currentVariant.image[0]}" alt="main">`;
             document.querySelector(".color-span").innerHTML = currentVariant.color;
-            if(/^White$/i.test(currentVariant.color)){
-            document.querySelector(".color-span").style.color = "black";
-            }else{
-            document.querySelector(".color-span").style.color = currentVariant.color;
+            if (/^White$/i.test(currentVariant.color)) {
+                document.querySelector(".color-span").style.color = "black";
+            } else {
+                document.querySelector(".color-span").style.color = currentVariant.color;
             }
             // Cập nhật Giá và Mã SKU
             document.getElementById("productDTPrice").innerText = currentItem.price.toLocaleString("vi-VN") + "đ";
@@ -229,7 +229,10 @@ function renderModernProductDetail(product) {
 }
 // Chạy hàm khi trang web tải xong
 
-document.addEventListener("DOMContentLoaded", initProductDetail);
+document.addEventListener("DOMContentLoaded", () => {
+    initProductDetail(),
+        buyNow()
+});
 
 window.addToCart = function () {
     if (!currentItem) {
@@ -264,3 +267,41 @@ window.addToCart = function () {
 
     alert("Đã thêm vào giỏ hàng!");
 };
+function buyNow() {
+    let currentBuyNow = JSON.parse(localStorage.getItem("buyProduct"));
+    if (currentBuyNow) {
+        localStorage.removeItem("buyProduct");
+    }
+    console.log(currentBuyNow);
+    let buyNow = document.getElementById("buyNow");
+    buyNow.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (!localStorage.getItem("currentUser")) {
+            if (confirm("Vui lòng đăng nhập")) {
+                window.location.href = "../login.html";
+            }
+            return;
+        }
+        const quantityInput = document.getElementById("quantity");
+        const quantity = quantityInput ? parseInt(quantityInput.value) : 1;
+        buyNow.disabled = true;
+        buyNow.textContent = "Đang mua...";
+        setTimeout(() => {
+            let buyProduct = {
+                productID: product.productID,
+                name: product.name,
+                sku: currentItem.sku,
+                size: currentItem.size,
+                color: currentVariant.color,
+                price: currentItem.price,
+                image: currentVariant.image[0],
+                quantity: quantity
+            }
+            console.log(buyProduct);
+            localStorage.setItem("buyProduct", JSON.stringify(buyProduct));
+            window.location.href = "../paying.html";
+            buyNow.disabled = false;
+            buyNow.textContent = "Mua ngay";
+        }, 1500);
+    })
+}
