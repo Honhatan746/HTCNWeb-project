@@ -1,3 +1,8 @@
+let currentBuyNow = JSON.parse(localStorage.getItem("buyProduct"));
+if (currentBuyNow) {
+    localStorage.removeItem("buyProduct");
+}
+console.log(currentBuyNow);
 function renderCart() {
     const cartContainer = document.getElementById("cart-List");
     const countEl = document.getElementById("cart-count");
@@ -68,14 +73,14 @@ function renderCart() {
 }
 document.addEventListener("DOMContentLoaded", renderCart);
 
-window.increase = function(index) {
+window.increase = function (index) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     cart[index].quantity++;
     localStorage.setItem("cart", JSON.stringify(cart));
     renderCart();
 };
 
-window.decrease = function(index) {
+window.decrease = function (index) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     if (cart[index].quantity > 1) {
         cart[index].quantity--;
@@ -84,12 +89,12 @@ window.decrease = function(index) {
     renderCart();
 };
 
-window.removeItem = function(index) {
+window.removeItem = function (index) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     cart.splice(index, 1);
     localStorage.setItem("cart", JSON.stringify(cart));
     renderCart();
 };
-function paying(){
+function paying() {
     window.location.href = "../paying.html";
 }

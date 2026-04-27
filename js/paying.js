@@ -1,23 +1,70 @@
-function renderCheckout() {
+let currentuser = JSON.parse(localStorage.getItem("currentUser"));
+if (!currentuser) {
+    if (confirm("Vui lòng đăng nhập")) {
+        window.location.href = "../login.html";
+    } else {
+        window.location.href = "../home.html";
+    }
+}
+
+let currentBuyNow = JSON.parse(localStorage.getItem("buyProduct")) || "";
+if (currentBuyNow) {
+    console.log(currentBuyNow);
     const container = document.querySelector(".paying-list");
     const totalEl = document.getElementById("total");
     const totalTempEl = document.getElementById("totalTem");
 
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-    if (cart.length === 0) {
-        container.innerHTML = "<p>Không có sản phẩm</p>";
-        return;
-    }
 
     let html = "";
     let total = 0;
 
-    cart.forEach(item => {
-        const itemTotal = item.price * item.quantity;
-        total += itemTotal;
+    const itemTotal = currentBuyNow.price * currentBuyNow.quantity;
+    total += itemTotal;
 
-        html += `
+    html += `
+        <div class="paying-item di-flex alignItem-cen wid-100 justi-btw bo-bot mar-t-b">
+            
+            <div class="di-flex alignItem-cen">
+                <div class="frame_img paying-item-img">
+                    <img class="img-cls" src="${currentBuyNow.image}" alt="">
+                    <div class="absolute">${currentBuyNow.quantity}</div>
+                </div>
+
+                <div>
+                    <p class="font-price">${currentBuyNow.name}</p>
+                    ${currentBuyNow.size ? `<p>Size: ${currentBuyNow.size}</p>` : ""}
+                    ${currentBuyNow.color ? `<p>Color: ${currentBuyNow.color}</p>` : ""}
+                </div>
+            </div>
+
+            <p>${itemTotal.toLocaleString("vi-VN")}đ</p>
+        </div>
+        `;
+    container.innerHTML = html;
+    totalTempEl.innerText = total.toLocaleString("vi-VN") + "đ";
+    totalEl.innerText = total.toLocaleString("vi-VN") + "đ";
+    renderUser();
+} else {
+    function renderCheckout() {
+        const container = document.querySelector(".paying-list");
+        const totalEl = document.getElementById("total");
+        const totalTempEl = document.getElementById("totalTem");
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        if (cart.length === 0) {
+            container.innerHTML = "<p>Không có sản phẩm</p>";
+            return;
+        }
+
+        let html = "";
+        let total = 0;
+
+        cart.forEach(item => {
+            const itemTotal = item.price * item.quantity;
+            total += itemTotal;
+
+            html += `
         <div class="paying-item di-flex alignItem-cen wid-100 justi-btw bo-bot mar-t-b">
             
             <div class="di-flex alignItem-cen">
@@ -36,71 +83,74 @@ function renderCheckout() {
             <p>${itemTotal.toLocaleString("vi-VN")}đ</p>
         </div>
         `;
-    });
+        });
 
-    container.innerHTML = html;
-
-    // 👉 cập nhật tổng tiền
-    totalTempEl.innerText = total.toLocaleString("vi-VN") + "đ";
-    totalEl.innerText = total.toLocaleString("vi-VN") + "đ";
+        container.innerHTML = html;
+        totalTempEl.innerText = total.toLocaleString("vi-VN") + "đ";
+        totalEl.innerText = total.toLocaleString("vi-VN") + "đ";
+        renderUser();
+    }
+    document.addEventListener("DOMContentLoaded", renderCheckout);
 }
-document.addEventListener("DOMContentLoaded", renderCheckout);
+function renderUser(){
+    console.log(currentuser);
+    let address = currentuser.ward.name + "/" + currentuser.district.name + "/" + currentuser.province.name;
+    document.getElementById("payingName").value = currentuser.name;
+    document.getElementById("payingEmail").value = currentuser.email;
+    document.getElementById("payingTel").value = currentuser.phone;
+    document.getElementById("payingAddress").value = address;
 
+
+}
 window.creatOrder = function () {
-    // Lấy dữ liệu từ form
     const name = document.getElementById("payingName").value.trim();
     const email = document.getElementById("payingEmail").value.trim();
     const tel = document.getElementById("payingTel").value.trim();
     const address = document.getElementById("payingAddress").value.trim();
-    const country = document.getElementById("payingCountruy").value.trim();
 
-    // 👉 VALIDATE
-    if (!name || !email || !tel || !address || !country) {
+    if (!name || !email || !tel || !address) {
         alert("Vui lòng nhập đầy đủ thông tin!");
         return;
     }
 
-    // 👉 Lấy giỏ hàng
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    // 👉 LẤY buyNow hoặc cart
+    let buyNow = JSON.parse(localStorage.getItem("buyProduct"));
+    let items = [];
 
-    if (cart.length === 0) {
-        alert("Giỏ hàng trống!");
+    if (buyNow) {
+        items = [buyNow]; // chuyển thành array
+    } else {
+        items = JSON.parse(localStorage.getItem("cart")) || [];
+    }
+
+    if (items.length === 0) {
+        alert("Không có sản phẩm!");
         return;
     }
 
-    // 👉 Tạo mã đơn hàng (random đơn giản)
-    const orderID = "OD" + Date.now();
-
-    // 👉 Tính tổng tiền
-    let total = cart.reduce((sum, item) => {
+    // 👉 Tính tổng
+    let total = items.reduce((sum, item) => {
         return sum + item.price * item.quantity;
     }, 0);
 
-    // 👉 Tạo object order
     const order = {
-        orderID: orderID,
-        customer: {
-            name,
-            email,
-            tel,
-            address,
-            country
-        },
-        items: cart,
+        orderID: "OD" + Date.now(),
+        customer: { name, email, tel, address},
+        items: items,
         total: total,
         status: "PENDING_DELIVERY",
         createdAt: new Date().toLocaleString("vi-VN")
     };
 
-    // 👉 Lưu vào localStorage
     let orders = JSON.parse(localStorage.getItem("orders")) || [];
     orders.push(order);
-
     localStorage.setItem("orders", JSON.stringify(orders));
 
-    // 👉 Xóa giỏ hàng
-    localStorage.removeItem("cart");
+    if (buyNow) {
+        localStorage.removeItem("buyProduct");
+    } else {
+        localStorage.removeItem("cart");
+    }
 
-    // 👉 Chuyển trang
     window.location.href = "order.html";
 };

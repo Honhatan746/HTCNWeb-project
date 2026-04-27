@@ -23,6 +23,7 @@ async function initNewsDetail() {
 
 function renderMainNews(news) {
     const detailArea = document.getElementById("newsDetailArea");
+    document.querySelector(".newDetail").innerHTML = news.title;
     detailArea.innerHTML = `
         <span class="badge heading-pink font-text rounded-pill px-3 mb-3">${news.headding}</span>
         <h1>${news.title}</h1>
