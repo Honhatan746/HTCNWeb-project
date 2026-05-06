@@ -11,8 +11,6 @@ function renderCart() {
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     console.log(cart);
-
-    // 👉 Nếu giỏ hàng trống
     if (cart.length === 0) {
         cartContainer.innerHTML = "<p>Giỏ hàng trống</p>";
         countEl.innerText = "0 sản phẩm";
@@ -20,7 +18,6 @@ function renderCart() {
         finalEl.innerText = "0đ";
         return;
     }
-
     let html = "";
     let total = 0;
     let totalQuantity = 0;
@@ -63,11 +60,7 @@ function renderCart() {
     });
 
     cartContainer.innerHTML = html;
-
-    // 👉 Update số lượng
     countEl.innerText = totalQuantity + " sản phẩm";
-
-    // 👉 Update tiền
     totalEl.innerText = total.toLocaleString("vi-VN") + "đ";
     finalEl.innerText = total.toLocaleString("vi-VN") + "đ";
 }
@@ -75,9 +68,27 @@ document.addEventListener("DOMContentLoaded", renderCart);
 
 window.increase = function (index) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart[index].quantity++;
-    localStorage.setItem("cart", JSON.stringify(cart));
-    renderCart();
+    let allProducts = JSON.parse(localStorage.getItem("products")) || [];
+    
+    let itemInCart = cart[index];
+    let originProduct = allProducts.find(p => p.productID === itemInCart.productID);
+    let currentStock = 0;
+
+    if (originProduct) {
+        originProduct.variants.forEach(variant => {
+            let stockItem = variant.item.find(i => i.sku === itemInCart.sku);
+            if (stockItem) {
+                currentStock = stockItem.stock;
+            }
+        });
+    }
+    if (itemInCart.quantity < currentStock) {
+        itemInCart.quantity++;
+        localStorage.setItem("cart", JSON.stringify(cart));
+        renderCart();
+    } else {
+        alert(`Rất tiếc, sản phẩm này chỉ còn tối đa ${currentStock} cái trong kho.`);
+    }
 };
 
 window.decrease = function (index) {
@@ -90,11 +101,40 @@ window.decrease = function (index) {
 };
 
 window.removeItem = function (index) {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.splice(index, 1);
-    localStorage.setItem("cart", JSON.stringify(cart));
-    renderCart();
+    if(confirm("Bạn có muốn xóa không?")){
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.splice(index, 1);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        renderCart();
+    }else{
+        return;
+    }
 };
+
 function paying() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let allProducts = JSON.parse(localStorage.getItem("products")) || [];
+    
+    if (cart.length === 0) {
+        alert("Giỏ hàng của bạn đang trống!");
+        return;
+    }
+    for (let item of cart) {
+        let originProduct = allProducts.find(p => p.productID === item.productID);
+        let stockAvailable = 0;
+
+        if (originProduct) {
+            originProduct.variants.forEach(variant => {
+                let stockItem = variant.item.find(i => i.sku === item.sku);
+                if (stockItem) stockAvailable = stockItem.stock;
+            });
+        }
+
+        if (item.quantity > stockAvailable) {
+            alert(`Sản phẩm "${item.name}" đã vượt quá số lượng trong kho (${stockAvailable}). Vui lòng điều chỉnh lại!`);
+            return;
+        }
+    }
+
     window.location.href = "../paying.html";
 }

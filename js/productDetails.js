@@ -20,15 +20,28 @@ window.changeImage = function (imgElement) {
 window.subtract = function () {
     const input = document.getElementById("quantity");
     let val = parseInt(input.value);
-    if (val > 1) input.value = val - 1;
+
+    if (val > 1) {
+        input.value = val - 1;
+    }
 };
 
 window.add = function () {
     const input = document.getElementById("quantity");
     let val = parseInt(input.value);
+
+    if (!currentItem) {
+        alert("Vui lòng chọn size!");
+        return;
+    }
+
+    if (val >= currentItem.stock) {
+        alert("Chỉ còn " + currentItem.stock + " sản phẩm trong kho!");
+        return;
+    }
+
     input.value = val + 1;
 };
-
 /**
  * HÀM CHÍNH: Tải dữ liệu và Render chi tiết sản phẩm
  */
@@ -130,26 +143,26 @@ async function initProductDetail() {
             renderSizes();
         };
 
-        // CHỌN SIZE
+        // Chọn size
         window.selectSize = function (index) {
-            // 1. Gán item hiện tại dựa trên size vừa chọn
             currentItem = currentVariant.item[index];
 
-            // 2. Cập nhật giao diện Giá và SKU
-            document.getElementById("productDTPrice").innerText = currentItem.price.toLocaleString("vi-VN") + "đ";
+            document.getElementById("productDTPrice").innerText =
+                currentItem.price.toLocaleString("vi-VN") + "đ";
+
             document.getElementById("prodcutDTID").innerText = currentItem.sku;
 
-            // 3. HIỆN NÚT MUA, ẨN NÚT NHẮC NHỞ
+            //  quantity về 1
+            document.getElementById("quantity").value = 1;
+
             const btnReads = document.querySelectorAll(".btn-read");
             const btnBuys = document.querySelectorAll(".btn-mua");
 
             btnReads.forEach(btn => btn.style.display = "none");
             btnBuys.forEach(btn => btn.style.display = "block");
 
-            // 4. Vẽ lại danh sách size để cập nhật class 'active' (màu sắc nút size)
             renderSizes();
         };
-
         // 8. RENDER DANH SÁCH MÀU SẮC (Lần đầu load trang)
         const colorContain = document.getElementById("productDTcolor");
         let colorHtml = "";
