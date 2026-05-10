@@ -67,7 +67,7 @@ serachInput.addEventListener("input", (e) => {
 
     if (keyWord.length === 0) {
         listProductSearch.classList.remove("open");
-        setTimeout(() => { listProductSearch.innerHTML = ""; }, 300); // Đợi mờ hết rồi mới xóa chữ
+        setTimeout(() => { listProductSearch.innerHTML = ""; }, 300);
         return;
     }   
 

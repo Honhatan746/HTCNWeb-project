@@ -72,7 +72,7 @@
                 <div class="paying-form">
                     <form action="">
                         <div class="di-flex justi-btw">
-                            <h3>Liên hệ</h3>
+                            <h3>Contact</h3>
                             <p id="dangNhapPaying"><a href=""></a></p>
                         </div>
                             <input type="text" id="payingName" placeholder="Your Name">
@@ -82,21 +82,21 @@
                         </div>
                         <input type="text"  id="payingAddress" placeholder="Your Address">
                         <div>
-                            <h3 class="mar-t-b">Phuong Thuc Van Chuyen</h3>
+                            <h3 class="mar-t-b">Shipping method</h3>
                             <div class="VAT">
-                                <p class="absolute font-w-700 upcass">Mien phi</p>
-                                <p>VAT tiêu chuẩn (miễn phí)</p>
-                                <p style="color:#5e5e5e;">Nội thành (1-3 ngày), ngoại thành (3-5 ngày), liên tỉnh (5-7 ngày)</p>
+                                <p class="absolute font-w-700 upcass">Free</p>
+                                <p>Standard VAT (free of charge)</p>
+                                <p style="color:#5e5e5e;">Within the city (1-3 days), outside the city (3-5 days), inter-provincial (5-7 days)</p>
                             </div>
                         </div>
                         <div>
-                            <h3 class="mar-t-b">Phuong thuc thanh toan</h3>
+                            <h3 class="mar-t-b">Payment method</h3>
                             <div class="VAT di-flex header_tool alignItem-cen">
                                 <i class="ti-credit-card"></i>
-                                <p>Thanh toán khi giao hàng</p>
+                                <p>Payment upon delivery</p>
                             </div>
                         </div>
-                        <button type="button" class="btncss upcass font-w-700 background-violet hover color-white confirm-paying" onclick="creatOrder()">Xác nhận đặt hàng</button>
+                        <button type="button" class="btncss upcass font-w-700 background-violet hover color-white confirm-paying" onclick="creatOrder()">Order confirmation</button>
                     </form>
                 </div>
                 <div class="paying-display font-title">
@@ -104,30 +104,30 @@
                         <!-- Js render ra -->
                     </div>
                     <div class="di-flex justi-btw mar-t-b">
-                                <p>Tien hang hoa</p>
+                                <p>Commodity money</p>
                                 <p id="totalTem">1.137.000đ</p>
                     </div>
                     <div  class="di-flex justi-btw mar-t-b">
-                                <p>Giảm giá</p>
+                                <p>Voucher</p>
                                 <p id="voucher">0đ</p>
                     </div >
                     <div  class="di-flex justi-btw mar-t-b">
-                                <p>Phí vận chuyển</p>
-                                <p>Miễn phí</p>
+                                <p>Shipping fee</p>
+                                <p>Free</p>
                     </div >
                     <div class="di-flex justi-btw bo-bot mar-t-b">
-                                <p class="heading-pink font-icon mar-t-b font-w-700">Tong cong</p>
+                                <p class="heading-pink font-icon mar-t-b font-w-700">Total</p>
                                 <p class="heading-pink font-w-700 font-icon" id="total" >1.137.000đ</p>
                     </div>
             </div>
 
             <div class="fix-bottom pay-fixed">
                 <div class="di-flex fix-gap alignItem-cen">
-                    <button class="btncss font-w-700 font-title background-violet color-white hover upcass">Đặt hàng</button>
+                    <button class="btncss font-w-700 font-title background-violet color-white hover upcass" onclick="creatOrder()">Order confirmation</button>
                    <div>
-                     <h1 class="font-icon heading-pink">1.137.000đ</h1>
+                     <h1 class="font-icon heading-pink" id="totalMobile">1.137.000đ</h1>
                      <div class="di-flex font-title justi-btw">
-                         <p>Giảm giá :</p>
+                         <p>Vourcher:</p>
                         <p>0đ</p>
                      </div>
                    </div>
@@ -235,25 +235,46 @@
             </div>
         </div>
     </div>
-    <!-- Menu Mobile -->
-    <div class="menu-mobile menu-mobile-js">
-        <div class="menu-mobile_body">
-            <div class="menu-mobile_header">
-                <div class="wid-logo"><img src="./asset/image/Logo/Logo_White-removebg-preview.png" alt="Logo"></div>
-                
-            </div>
-            <div class="header_menu alignItem-star">
-                <ul class=" menu-tools flex-colum menu-tools-mobile">
-                    <!--Render Js code-->
-                </ul>
-            </div>
-            <div class="menu-mobile_img ">
-                <div><img src="./asset/image/Slide/anh_tet.webp" alt="anhTet"></div>
-                <div><img src="./asset/image/Slide/anh_trung_thu.webp" alt="anhTrungThu"></div>
+        <!-- Menu Mobile -->
+        <div class="menu-mobile menu-mobile-js">
+            <div class="menu-mobile_body">
+                <div class="menu-mobile_header">
+                    <div class="wid-logo"><img src="./asset/image/Logo/Logo_White-removebg-preview.png" alt="Logo">
+                    </div>
+
+                </div>
+                <div class="header_menu alignItem-star">
+                    <ul class=" menu-tools flex-colum menu-tools-mobile">
+                        <li class="pad-2rem link-hover "><a style="color: black;" class="text-hover" href="">Home</a>
+                        </li>
+                        <li class="pad-2rem link-hover menu-mobile-sub">
+                            <a href="allProduct.html" class="text-hover " style="color: black;"> Product</a>
+                            <div class="menu-mobile-sub-nav">
+                                <ul>
+                                    <li><a class="" style="color: black;" href="allProduct.html?cat=boyFashion">Boy
+                                            Fashion</a></li>
+                                    <li><a class="" style="color: black;" href="allProduct.html?cat=girlFashion">Girl
+                                            Fashion</a></li>
+                                    <li><a class="" style="color: black;" href="allProduct.html?cat=Accessories">Fashion
+                                            Accessories</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="pad-2rem link-hover"><a class="text-hover " style="color: black;" href="">News</a>
+                        </li>
+                        <li class="pad-2rem link-hover"><a class="text-hover " style="color: black;" href="">About</a>
+                        </li>
+                        <li class="pad-2rem link-hover"><a class="text-hover " style="color: black;" href="">SiteMap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-mobile_img ">
+                    <div><img src="./asset/image/Slide/anh_tet.webp" alt="anhTet"></div>
+                    <div><img src="./asset/image/Slide/anh_trung_thu.webp" alt="anhTrungThu"></div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- End Menu Mobile -->
        <script src="./js/modal.js"></script>
         <script src="./js/paying.js"></script>
 </body>

@@ -1,12 +1,12 @@
 [
-        {
+    {
         "productID": "AF01",
-        "name": "Mũ Len Kèm Khăn sừng nai",
+        "name": "Wool Hat with Deer Antler Scarf",
         "categories": "Accessories",
-        "variants":[
+        "variants": [
             {
                 "color": "Pink",
-                "item":[
+                "item": [
                     {
                         "sku": "AF01-S-P",
                         "size": null,
@@ -14,29 +14,29 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/AccessFashion/AF01/jpeg (1).webp",
-                  "../asset/image/Product/AccessFashion/AF01/jpeg.webp"
+                "image": [
+                    "../asset/image/Product/AccessFashion/AF01/jpeg (1).webp",
+                    "../asset/image/Product/AccessFashion/AF01/jpeg.webp"
                 ]
             },
             {
-                "color": "Cream",
-                "item":[
+                "color": "BlanchedAlmond",
+                "item": [
                     {
-                        "sku": "AF01-S-CR",
+                        "sku": "AF01-S-BA",
                         "size": null,
                         "price": 31000,
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/AccessFashion/AF01/jpeg (2).webp",
-                  "../asset/image/Product/AccessFashion/AF01/jpeg (3).webp" 
+                "image": [
+                    "../asset/image/Product/AccessFashion/AF01/jpeg (2).webp",
+                    "../asset/image/Product/AccessFashion/AF01/jpeg (3).webp"
                 ]
             },
             {
                 "color": "Brown",
-                "item":[
+                "item": [
                     {
                         "sku": "AF01-S-B",
                         "size": null,
@@ -44,47 +44,47 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/AccessFashion/AF01/jpeg (4).webp",
-                  "../asset/image/Product/AccessFashion/AF01/jpeg (5).webp" 
+                "image": [
+                    "../asset/image/Product/AccessFashion/AF01/jpeg (4).webp",
+                    "../asset/image/Product/AccessFashion/AF01/jpeg (5).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>"
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>"
     },
     {
         "productID": "AF02",
-        "name":"Kính mát trang trí hình gấu",
+        "name": "Sunglasses decorated with a bear design.",
         "categories": "Accessories",
-        "variants":[
+        "variants": [
             {
-                "color": "Cream",
-                "item":[
+                "color": "BlanchedAlmond",
+                "item": [
                     {
-                        "sku": "AF01-S-CR",
+                        "sku": "AF01-S-BA",
                         "size": null,
                         "price": 12000,
                         "stock": 10
                     }
                 ],
-                "image":[
+                "image": [
                     "../asset/image/Product/AccessFashion/AF02/jpeg (2).webp",
-                  "../asset/image/Product/AccessFashion/AF02/jpeg.webp",
-                  "../asset/image/Product/AccessFashion/AF02/jpeg (1).webp",
-                  "../asset/image/Product/AccessFashion/AF02/jpeg (3).webp"
+                    "../asset/image/Product/AccessFashion/AF02/jpeg.webp",
+                    "../asset/image/Product/AccessFashion/AF02/jpeg (1).webp",
+                    "../asset/image/Product/AccessFashion/AF02/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>"
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>"
     },
     {
         "productID": "AF03",
-        "name": "Vòng Cổ Vải",
+        "name": "Fabric Necklace",
         "categories": "Accessories",
-        "variants":[
+        "variants": [
             {
                 "color": "White",
-                "item":[
+                "item": [
                     {
                         "sku": "AF03-S-W",
                         "size": null,
@@ -92,15 +92,15 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/AccessFashion/AF03/jpeg.webp",
-                  "../asset/image/Product/AccessFashion/AF03/jpeg (1).webp",
-                  "../asset/image/Product/AccessFashion/AF03/jpeg (2).webp" 
+                "image": [
+                    "../asset/image/Product/AccessFashion/AF03/jpeg.webp",
+                    "../asset/image/Product/AccessFashion/AF03/jpeg (1).webp",
+                    "../asset/image/Product/AccessFashion/AF03/jpeg (2).webp"
                 ]
             },
             {
                 "color": "Brown",
-                "item":[
+                "item": [
                     {
                         "sku": "AF03-S-B",
                         "size": null,
@@ -108,24 +108,23 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/AccessFashion/AF03/jpeg (3).webp",
-                  "../asset/image/Product/AccessFashion/AF03/jpeg (4).webp",
-                  "../asset/image/Product/AccessFashion/AF03/jpeg (5).webp" 
+                "image": [
+                    "../asset/image/Product/AccessFashion/AF03/jpeg (3).webp",
+                    "../asset/image/Product/AccessFashion/AF03/jpeg (4).webp",
+                    "../asset/image/Product/AccessFashion/AF03/jpeg (5).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>"
-    
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>"
     },
     {
         "productID": "AF04",
-        "name": "Kẹp nơ nhung đỏ chery",
+        "name": "Cherry red velvet bow hair clip",
         "categories": "Accessories",
-                "variants":[
+        "variants": [
             {
                 "color": "Red",
-                "item":[
+                "item": [
                     {
                         "sku": "AF04-S-Red",
                         "size": null,
@@ -133,25 +132,24 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/AccessFashion/AF04/jpeg.webp",
-                  "../asset/image/Product/AccessFashion/AF04/jpeg (1).webp",
-                  "../asset/image/Product/AccessFashion/AF04/jpeg (2).webp",
-                  "../asset/image/Product/AccessFashion/AF04/jpeg (3).webp" 
+                "image": [
+                    "../asset/image/Product/AccessFashion/AF04/jpeg.webp",
+                    "../asset/image/Product/AccessFashion/AF04/jpeg (1).webp",
+                    "../asset/image/Product/AccessFashion/AF04/jpeg (2).webp",
+                    "../asset/image/Product/AccessFashion/AF04/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>"
-  
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>"
     },
-        {
+    {
         "productID": "AF05",
-        "name": "Giày Da Bé Trai , Giày Tây Trơn",
+        "name": "Boys' Leather Shoes, Plain Dress Shoes",
         "categories": "Accessories",
-                "variants":[
+        "variants": [
             {
                 "color": "Black",
-                "item":[
+                "item": [
                     {
                         "sku": "AF05-21-BLA",
                         "size": "21",
@@ -177,26 +175,25 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/AccessFashion/AF05/jpeg.webp",
-                  "../asset/image/Product/AccessFashion/AF05/jpeg (1).webp",
-                  "../asset/image/Product/AccessFashion/AF05/jpeg (2).webp",
-                  "../asset/image/Product/AccessFashion/AF05/jpeg (3).webp"
+                "image": [
+                    "../asset/image/Product/AccessFashion/AF05/jpeg.webp",
+                    "../asset/image/Product/AccessFashion/AF05/jpeg (1).webp",
+                    "../asset/image/Product/AccessFashion/AF05/jpeg (2).webp",
+                    "../asset/image/Product/AccessFashion/AF05/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>",
-    "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Bảng Size cho bé</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Chiều Dài Chân</th><th>Kích thướt giày</th></tr><tr><td>21</td><td>Từ 10cm- 12cm</td><td>Từ 10.79cm - 12.79cm</td></tr><tr><td>22</td><td>từ 13cm - 15cm</td><td>Từ 13.57cm - 15.79cm </td></tr><tr><td>23</td><td>từ 16cm - 18cm</td><td>Từ 16.57cm - 18.79cmkg</td></tr><tr><td>24</td><td>Từ 19cm - 21cm</td><td>Từ 19.57cm - 21.79cm</td></tr></table></div>"   
-  
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>",
+        "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Size Table for Children</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Foot Length</th><th>Shoe Size</th></tr><tr><td>21</td><td>From 10cm- 12cm</td><td>From 10.79cm - 12.79cm</td></tr><tr><td>22</td><td>From 13cm - 15cm</td><td>From 13.57cm - 15.79cm</td></tr><tr><td>23</td><td>From 16cm - 18cm</td><td>From 16.57cm - 18.79cmkg</td></tr><tr><td>24</td><td>From 19cm - 21cm</td><td>From 19.57cm - 21.79cm</td></tr></table></div>"
     },
-        {
+    {
         "productID": "AF06",
-        "name": "Mũ Nồi Kiểu Anh Quốc Cổ Điển",
+        "name": "Classic British-Style Beret",
         "categories": "Accessories",
-                "variants":[
+        "variants": [
             {
                 "color": "Brown",
-                "item":[
+                "item": [
                     {
                         "sku": "AF06-S-B",
                         "size": null,
@@ -204,67 +201,67 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/AccessFashion/AF06/jpeg.webp",
-                  "../asset/image/Product/AccessFashion/AF06/jpeg (1).webp",
-                  "../asset/image/Product/AccessFashion/AF06/jpeg (2).webp"
+                "image": [
+                    "../asset/image/Product/AccessFashion/AF06/jpeg.webp",
+                    "../asset/image/Product/AccessFashion/AF06/jpeg (1).webp",
+                    "../asset/image/Product/AccessFashion/AF06/jpeg (2).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>"
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>"
     },
-        {
+    {
         "productID": "BF01",
-        "name": "Bộ Polo bé trai ngắn Animo ",
-        "categories": "boyFashion", 
-        "variants":[
+        "name": "Animo short polo set for boys",
+        "categories": "boyFashion",
+        "variants": [
             {
-                "color": "WhiteBrown",
-                "item":[
+                "color": "Chocolate",
+                "item": [
                     {
-                        "sku": "BF01-S-WB",
+                        "sku": "BF01-S-CCL",
                         "size": "S",
                         "price": 199000,
                         "stock": 10
                     },
                     {
-                        "sku": "BF01-L-WB",
+                        "sku": "BF01-L-CCL",
                         "size": "L",
                         "price": 199000,
                         "stock": 10
                     },
                     {
-                        "sku": "BF01-M-WB",
+                        "sku": "BF01-M-CCL",
                         "size": "M",
                         "price": 199000,
                         "stock": 10
                     },
                     {
-                        "sku": "BF01-XL-WB",
+                        "sku": "BF01-XL-CCL",
                         "size": "XL",
                         "price": 199000,
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/BoyFashion/BF01/jpeg.webp",
-                  "../asset/image/Product/BoyFashion/BF01/jpeg (1).webp",
-                  "../asset/image/Product/BoyFashion/BF01/jpeg (2).webp",
-                  "../asset/image/Product/BoyFashion/BF01/jpeg (3).webp" 
+                "image": [
+                    "../asset/image/Product/BoyFashion/BF01/jpeg.webp",
+                    "../asset/image/Product/BoyFashion/BF01/jpeg (1).webp",
+                    "../asset/image/Product/BoyFashion/BF01/jpeg (2).webp",
+                    "../asset/image/Product/BoyFashion/BF01/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>",
-    "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Bảng Size cho bé</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Chiều cao</th><th>Cân Nặng</th></tr><tr><td>S</td><td>Từ 60cm- 102cm</td><td>Từ 8kg - 15kg</td></tr><tr><td>L</td><td>từ 110cm - 116cm</td><td>Từ 16kg - 23kg </td></tr><tr><td>M</td><td>từ 120cm- 130cm</td><td>Từ 20kg - 29kg</td></tr><tr><td>XL</td><td>Từ 140cm-150cm</td><td>Từ 28kg-40kg</td></tr></table></div>"   
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>",
+        "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Size Table for Babies</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Height</th><th>Weight</th></tr><tr><td>S</td><td>60cm-102cm</td><td>8kg-15kg</td></tr><tr><td>L</td><td>110cm-116cm</td><td>16kg-23kg</td></tr><tr><td>M</td><td>120cm-130cm</td><td>20kg-29kg</td></tr><tr><td>XL</td><td>From 140cm-150cm</td><td>From 28kg-40kg</td></tr></table></div>"
     },
     {
         "productID": "BF02",
-        "name":"Bộ bé trai ngắn nón có tai Animo",
+        "name": "Animo short-sleeved hat and ear-trimmed outfit for baby boys",
         "categories": "boyFashion",
-        "variants":[
+        "variants": [
             {
                 "color": "Red",
-                "item":[
+                "item": [
                     {
                         "sku": "BF02-S-R",
                         "size": "S",
@@ -290,25 +287,25 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/BoyFashion/BF02/jpeg.webp",
-                  "../asset/image/Product/BoyFashion/BF02/jpeg (1).webp",
-                  "../asset/image/Product/BoyFashion/BF02/jpeg (2).webp",
-                  "../asset/image/Product/BoyFashion/BF02/jpeg (3).webp" 
+                "image": [
+                    "../asset/image/Product/BoyFashion/BF02/jpeg.webp",
+                    "../asset/image/Product/BoyFashion/BF02/jpeg (1).webp",
+                    "../asset/image/Product/BoyFashion/BF02/jpeg (2).webp",
+                    "../asset/image/Product/BoyFashion/BF02/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>",
-    "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Bảng Size cho bé</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Chiều cao</th><th>Cân Nặng</th></tr><tr><td>S</td><td>Từ 60cm- 102cm</td><td>Từ 8kg - 15kg</td></tr><tr><td>L</td><td>từ 110cm - 116cm</td><td>Từ 16kg - 23kg </td></tr><tr><td>M</td><td>từ 120cm- 130cm</td><td>Từ 20kg - 29kg</td></tr><tr><td>XL</td><td>Từ 140cm-150cm</td><td>Từ 28kg-40kg</td></tr></table></div>"   
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>",
+        "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Size Table for Babies</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Height</th><th>Weight</th></tr><tr><td>S</td><td>60cm-102cm</td><td>8kg-15kg</td></tr><tr><td>L</td><td>110cm-116cm</td><td>16kg-23kg</td></tr><tr><td>M</td><td>120cm-130cm</td><td>20kg-29kg</td></tr><tr><td>XL</td><td>From 140cm-150cm</td><td>From 28kg-40kg</td></tr></table></div>"
     },
     {
         "productID": "BF03",
-        "name": "Bộ bé trai ngắn Animo",
+        "name": "Animo short set for boys",
         "categories": "boyFashion",
-        "variants":[
+        "variants": [
             {
                 "color": "Red",
-                "item":[
+                "item": [
                     {
                         "sku": "BF03-S-R",
                         "size": "S",
@@ -334,26 +331,25 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/BoyFashion/BF03/jpeg.webp",
-                  "../asset/image/Product/BoyFashion/BF03/jpeg (1).webp",
-                  "../asset/image/Product/BoyFashion/BF03/jpeg (2).webp",
-                  "../asset/image/Product/BoyFashion/BF03/jpeg (3).webp" 
+                "image": [
+                    "../asset/image/Product/BoyFashion/BF03/jpeg.webp",
+                    "../asset/image/Product/BoyFashion/BF03/jpeg (1).webp",
+                    "../asset/image/Product/BoyFashion/BF03/jpeg (2).webp",
+                    "../asset/image/Product/BoyFashion/BF03/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>",
-    "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Bảng Size cho bé</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Chiều cao</th><th>Cân Nặng</th></tr><tr><td>S</td><td>Từ 60cm- 102cm</td><td>Từ 8kg - 15kg</td></tr><tr><td>L</td><td>từ 110cm - 116cm</td><td>Từ 16kg - 23kg </td></tr><tr><td>M</td><td>từ 120cm- 130cm</td><td>Từ 20kg - 29kg</td></tr><tr><td>XL</td><td>Từ 140cm-150cm</td><td>Từ 28kg-40kg</td></tr></table></div>"   
-    
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>",
+        "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Size Table for Babies</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Height</th><th>Weight</th></tr><tr><td>S</td><td>60cm-102cm</td><td>8kg-15kg</td></tr><tr><td>L</td><td>110cm-116cm</td><td>16kg-23kg</td></tr><tr><td>M</td><td>120cm-130cm</td><td>20kg-29kg</td></tr><tr><td>XL</td><td>From 140cm-150cm</td><td>From 28kg-40kg</td></tr></table></div>"
     },
     {
         "productID": "BF04",
-        "name": "Bộ sơ mi bé trai ngắn cà vạt Animo ",
+        "name": "Animo short-sleeved shirt and tie set for boys",
         "categories": "boyFashion",
-                "variants":[
+        "variants": [
             {
                 "color": "Brown",
-                "item":[
+                "item": [
                     {
                         "sku": "BF04-S-B",
                         "size": "S",
@@ -379,26 +375,25 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/BoyFashion/BF04/jpeg.webp",
-                  "../asset/image/Product/BoyFashion/BF04/jpeg (1).webp",
-                  "../asset/image/Product/BoyFashion/BF04/jpeg (2).webp",
-                  "../asset/image/Product/BoyFashion/BF04/jpeg (3).webp" 
+                "image": [
+                    "../asset/image/Product/BoyFashion/BF04/jpeg.webp",
+                    "../asset/image/Product/BoyFashion/BF04/jpeg (1).webp",
+                    "../asset/image/Product/BoyFashion/BF04/jpeg (2).webp",
+                    "../asset/image/Product/BoyFashion/BF04/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>",
-    "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Bảng Size cho bé</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Chiều cao</th><th>Cân Nặng</th></tr><tr><td>S</td><td>Từ 60cm- 102cm</td><td>Từ 8kg - 15kg</td></tr><tr><td>L</td><td>từ 110cm - 116cm</td><td>Từ 16kg - 23kg </td></tr><tr><td>M</td><td>từ 120cm- 130cm</td><td>Từ 20kg - 29kg</td></tr><tr><td>XL</td><td>Từ 140cm-150cm</td><td>Từ 28kg-40kg</td></tr></table></div>"   
-  
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>",
+        "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Size Table for Babies</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Height</th><th>Weight</th></tr><tr><td>S</td><td>60cm-102cm</td><td>8kg-15kg</td></tr><tr><td>L</td><td>110cm-116cm</td><td>16kg-23kg</td></tr><tr><td>M</td><td>120cm-130cm</td><td>20kg-29kg</td></tr><tr><td>XL</td><td>From 140cm-150cm</td><td>From 28kg-40kg</td></tr></table></div>"
     },
-        {
+    {
         "productID": "BF05",
-        "name": "Bộ bé trai ngắn Animo",
+        "name": "Animo short set for boys",
         "categories": "boyFashion",
-                "variants":[
+        "variants": [
             {
                 "color": "Blue",
-                "item":[
+                "item": [
                     {
                         "sku": "BF05-S-BL",
                         "size": "S",
@@ -424,26 +419,25 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/BoyFashion/BF05/jpeg.webp",
-                  "../asset/image/Product/BoyFashion/BF05/jpeg (1).webp",
-                  "../asset/image/Product/BoyFashion/BF05/jpeg (2).webp",
-                  "../asset/image/Product/BoyFashion/BF05/jpeg (3).webp"
+                "image": [
+                    "../asset/image/Product/BoyFashion/BF05/jpeg.webp",
+                    "../asset/image/Product/BoyFashion/BF05/jpeg (1).webp",
+                    "../asset/image/Product/BoyFashion/BF05/jpeg (2).webp",
+                    "../asset/image/Product/BoyFashion/BF05/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>",
-    "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Bảng Size cho bé</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Chiều cao</th><th>Cân Nặng</th></tr><tr><td>S</td><td>Từ 60cm- 102cm</td><td>Từ 8kg - 15kg</td></tr><tr><td>L</td><td>từ 110cm - 116cm</td><td>Từ 16kg - 23kg </td></tr><tr><td>M</td><td>từ 120cm- 130cm</td><td>Từ 20kg - 29kg</td></tr><tr><td>XL</td><td>Từ 140cm-150cm</td><td>Từ 28kg-40kg</td></tr></table></div>"   
-  
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>",
+        "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Size Table for Babies</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Height</th><th>Weight</th></tr><tr><td>S</td><td>60cm-102cm</td><td>8kg-15kg</td></tr><tr><td>L</td><td>110cm-116cm</td><td>16kg-23kg</td></tr><tr><td>M</td><td>120cm-130cm</td><td>20kg-29kg</td></tr><tr><td>XL</td><td>From 140cm-150cm</td><td>From 28kg-40kg</td></tr></table></div>"
     },
-        {
+    {
         "productID": "BF06",
-        "name": "Bộ bé trai áo sát nách quần ngắn Animo",
+        "name": "Animo sleeveless top and shorts set for boys",
         "categories": "boyFashion",
-                "variants":[
+        "variants": [
             {
                 "color": "White",
-                "item":[
+                "item": [
                     {
                         "sku": "BF06-S-W",
                         "size": "S",
@@ -469,25 +463,25 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/BoyFashion/BF06/jpeg.webp",
-                  "../asset/image/Product/BoyFashion/BF06/jpeg (1).webp",
-                  "../asset/image/Product/BoyFashion/BF06/jpeg (2).webp",
-                  "../asset/image/Product/BoyFashion/BF06/jpeg (3).webp" 
+                "image": [
+                    "../asset/image/Product/BoyFashion/BF06/jpeg.webp",
+                    "../asset/image/Product/BoyFashion/BF06/jpeg (1).webp",
+                    "../asset/image/Product/BoyFashion/BF06/jpeg (2).webp",
+                    "../asset/image/Product/BoyFashion/BF06/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>",
-    "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Bảng Size cho bé</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Chiều cao</th><th>Cân Nặng</th></tr><tr><td>S</td><td>Từ 60cm- 102cm</td><td>Từ 8kg - 15kg</td></tr><tr><td>L</td><td>từ 110cm - 116cm</td><td>Từ 16kg - 23kg </td></tr><tr><td>M</td><td>từ 120cm- 130cm</td><td>Từ 20kg - 29kg</td></tr><tr><td>XL</td><td>Từ 140cm-150cm</td><td>Từ 28kg-40kg</td></tr></table></div>"   
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>",
+        "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Size Table for Babies</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Height</th><th>Weight</th></tr><tr><td>S</td><td>60cm-102cm</td><td>8kg-15kg</td></tr><tr><td>L</td><td>110cm-116cm</td><td>16kg-23kg</td></tr><tr><td>M</td><td>120cm-130cm</td><td>20kg-29kg</td></tr><tr><td>XL</td><td>From 140cm-150cm</td><td>From 28kg-40kg</td></tr></table></div>"
     },
-        {
+    {
         "productID": "GF01",
-        "name": "Áo ỉn in hình dễ thương",
+        "name": "Cute pig print T-shirt",
         "categories": "girlFashion",
-        "variants":[
+        "variants": [
             {
                 "color": "purple",
-                "item":[
+                "item": [
                     {
                         "sku": "GF01-S-P",
                         "size": "S",
@@ -513,26 +507,25 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/GirlFashion/GF01/jpeg.webp",
-                  "../asset/image/Product/GirlFashion/GF01/jpeg (1).webp",
-                  "../asset/image/Product/GirlFashion/GF01/jpeg (2).webp",
-                  "../asset/image/Product/GirlFashion/GF01/jpeg (3).webp" 
+                "image": [
+                    "../asset/image/Product/GirlFashion/GF01/jpeg.webp",
+                    "../asset/image/Product/GirlFashion/GF01/jpeg (1).webp",
+                    "../asset/image/Product/GirlFashion/GF01/jpeg (2).webp",
+                    "../asset/image/Product/GirlFashion/GF01/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>",
-    "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Bảng Size cho bé</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Chiều cao</th><th>Cân Nặng</th></tr><tr><td>S</td><td>Từ 60cm- 102cm</td><td>Từ 8kg - 15kg</td></tr><tr><td>L</td><td>từ 110cm - 116cm</td><td>Từ 16kg - 23kg </td></tr><tr><td>M</td><td>từ 120cm- 130cm</td><td>Từ 20kg - 29kg</td></tr><tr><td>XL</td><td>Từ 140cm-150cm</td><td>Từ 28kg-40kg</td></tr></table></div>"   
-        
-},
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>",
+        "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Size Table for Babies</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Height</th><th>Weight</th></tr><tr><td>S</td><td>60cm-102cm</td><td>8kg-15kg</td></tr><tr><td>L</td><td>110cm-116cm</td><td>16kg-23kg</td></tr><tr><td>M</td><td>120cm-130cm</td><td>20kg-29kg</td></tr><tr><td>XL</td><td>From 140cm-150cm</td><td>From 28kg-40kg</td></tr></table></div>"
+    },
     {
         "productID": "GF02",
-        "name":"Sơ mi cổ kiểu phối viền ren",
+        "name": "Shirt with lace trim collar",
         "categories": "girlFashion",
-        "variants":[
+        "variants": [
             {
                 "color": "White",
-                "item":[
+                "item": [
                     {
                         "sku": "GF02-S-W",
                         "size": "S",
@@ -558,25 +551,25 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/GirlFashion/GF02/jpeg.webp",
-                  "../asset/image/Product/GirlFashion/GF02/jpeg (1).webp",
-                  "../asset/image/Product/GirlFashion/GF02/jpeg (2).webp",
-                  "../asset/image/Product/GirlFashion/GF02/jpeg (3).webp" 
+                "image": [
+                    "../asset/image/Product/GirlFashion/GF02/jpeg.webp",
+                    "../asset/image/Product/GirlFashion/GF02/jpeg (1).webp",
+                    "../asset/image/Product/GirlFashion/GF02/jpeg (2).webp",
+                    "../asset/image/Product/GirlFashion/GF02/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>",
-    "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Bảng Size cho bé</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Chiều cao</th><th>Cân Nặng</th></tr><tr><td>S</td><td>Từ 60cm- 102cm</td><td>Từ 8kg - 15kg</td></tr><tr><td>L</td><td>từ 110cm - 116cm</td><td>Từ 16kg - 23kg </td></tr><tr><td>M</td><td>từ 120cm- 130cm</td><td>Từ 20kg - 29kg</td></tr><tr><td>XL</td><td>Từ 140cm-150cm</td><td>Từ 28kg-40kg</td></tr></table></div>"   
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>",
+        "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Size Table for Babies</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Height</th><th>Weight</th></tr><tr><td>S</td><td>60cm-102cm</td><td>8kg-15kg</td></tr><tr><td>L</td><td>110cm-116cm</td><td>16kg-23kg</td></tr><tr><td>M</td><td>120cm-130cm</td><td>20kg-29kg</td></tr><tr><td>XL</td><td>From 140cm-150cm</td><td>From 28kg-40kg</td></tr></table></div>"
     },
     {
         "productID": "GF03",
-        "name": "Áo sơ mi cổ kiểu phối bèo",
+        "name": "Shirt with ruffled collar",
         "categories": "girlFashion",
-        "variants":[
+        "variants": [
             {
                 "color": "Blue",
-                "item":[
+                "item": [
                     {
                         "sku": "GF03-S-BL",
                         "size": "S",
@@ -602,26 +595,25 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/GirlFashion/GF03/jpeg.webp",
-                  "../asset/image/Product/GirlFashion/GF03/jpeg (1).webp",
-                  "../asset/image/Product/GirlFashion/GF03/jpeg (2).webp",
-                  "../asset/image/Product/GirlFashion/GF03/jpeg (3).webp" 
+                "image": [
+                    "../asset/image/Product/GirlFashion/GF03/jpeg.webp",
+                    "../asset/image/Product/GirlFashion/GF03/jpeg (1).webp",
+                    "../asset/image/Product/GirlFashion/GF03/jpeg (2).webp",
+                    "../asset/image/Product/GirlFashion/GF03/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>",
-    "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Bảng Size cho bé</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Chiều cao</th><th>Cân Nặng</th></tr><tr><td>S</td><td>Từ 60cm- 102cm</td><td>Từ 8kg - 15kg</td></tr><tr><td>L</td><td>từ 110cm - 116cm</td><td>Từ 16kg - 23kg </td></tr><tr><td>M</td><td>từ 120cm- 130cm</td><td>Từ 20kg - 29kg</td></tr><tr><td>XL</td><td>Từ 140cm-150cm</td><td>Từ 28kg-40kg</td></tr></table></div>"   
-    
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>",
+        "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Size Table for Babies</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Height</th><th>Weight</th></tr><tr><td>S</td><td>60cm-102cm</td><td>8kg-15kg</td></tr><tr><td>L</td><td>110cm-116cm</td><td>16kg-23kg</td></tr><tr><td>M</td><td>120cm-130cm</td><td>20kg-29kg</td></tr><tr><td>XL</td><td>From 140cm-150cm</td><td>From 28kg-40kg</td></tr></table></div>"
     },
     {
         "productID": "GF04",
-        "name": "Áo sơ mi cổ sen",
+        "name": "Peter Pan collar shirt",
         "categories": "girlFashion",
-                "variants":[
+        "variants": [
             {
                 "color": "White",
-                "item":[
+                "item": [
                     {
                         "sku": "GF04-S-W",
                         "size": "S",
@@ -647,26 +639,25 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/GirlFashion/GF04/jpeg.webp",
-                  "../asset/image/Product/GirlFashion/GF04/jpeg (1).webp",
-                  "../asset/image/Product/GirlFashion/GF04/jpeg (2).webp",
-                  "../asset/image/Product/GirlFashion/GF04/jpeg (3).webp" 
+                "image": [
+                    "../asset/image/Product/GirlFashion/GF04/jpeg.webp",
+                    "../asset/image/Product/GirlFashion/GF04/jpeg (1).webp",
+                    "../asset/image/Product/GirlFashion/GF04/jpeg (2).webp",
+                    "../asset/image/Product/GirlFashion/GF04/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>",
-    "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Bảng Size cho bé</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Chiều cao</th><th>Cân Nặng</th></tr><tr><td>S</td><td>Từ 60cm- 102cm</td><td>Từ 8kg - 15kg</td></tr><tr><td>L</td><td>từ 110cm - 116cm</td><td>Từ 16kg - 23kg </td></tr><tr><td>M</td><td>từ 120cm- 130cm</td><td>Từ 20kg - 29kg</td></tr><tr><td>XL</td><td>Từ 140cm-150cm</td><td>Từ 28kg-40kg</td></tr></table></div>"   
-    
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>",
+        "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Size Table for Babies</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Height</th><th>Weight</th></tr><tr><td>S</td><td>60cm-102cm</td><td>8kg-15kg</td></tr><tr><td>L</td><td>110cm-116cm</td><td>16kg-23kg</td></tr><tr><td>M</td><td>120cm-130cm</td><td>20kg-29kg</td></tr><tr><td>XL</td><td>From 140cm-150cm</td><td>From 28kg-40kg</td></tr></table></div>"
     },
-        {
+    {
         "productID": "GF05",
-        "name": "Áo thô lụa cổ cánh bướm hai lớp",
+        "name": "Double-layered raw silk blouse with butterfly collar.",
         "categories": "girlFashion",
-                "variants":[
+        "variants": [
             {
                 "color": "Blue",
-                "item":[
+                "item": [
                     {
                         "sku": "GF05-S-BL",
                         "size": "S",
@@ -692,24 +683,23 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/GirlFashion/GF05/jpeg.webp",
-                  "../asset/image/Product/GirlFashion/GF05/jpeg (1).webp"
+                "image": [
+                    "../asset/image/Product/GirlFashion/GF05/jpeg.webp",
+                    "../asset/image/Product/GirlFashion/GF05/jpeg (1).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>",
-    "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Bảng Size cho bé</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Chiều cao</th><th>Cân Nặng</th></tr><tr><td>S</td><td>Từ 60cm- 102cm</td><td>Từ 8kg - 15kg</td></tr><tr><td>L</td><td>từ 110cm - 116cm</td><td>Từ 16kg - 23kg </td></tr><tr><td>M</td><td>từ 120cm- 130cm</td><td>Từ 20kg - 29kg</td></tr><tr><td>XL</td><td>Từ 140cm-150cm</td><td>Từ 28kg-40kg</td></tr></table></div>"   
-  
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>",
+        "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Size Table for Babies</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Height</th><th>Weight</th></tr><tr><td>S</td><td>60cm-102cm</td><td>8kg-15kg</td></tr><tr><td>L</td><td>110cm-116cm</td><td>16kg-23kg</td></tr><tr><td>M</td><td>120cm-130cm</td><td>20kg-29kg</td></tr><tr><td>XL</td><td>From 140cm-150cm</td><td>From 28kg-40kg</td></tr></table></div>"
     },
-        {
+    {
         "productID": "GF06",
-        "name": "Áo cổ nhúng bèo đính nơ xinh xắn",
+        "name": "Cute blouse with ruffled collar and bow detail.",
         "categories": "girlFashion",
-                "variants":[
+        "variants": [
             {
                 "color": "Pink",
-                "item":[
+                "item": [
                     {
                         "sku": "GF06-S-PI",
                         "size": "S",
@@ -735,15 +725,15 @@
                         "stock": 10
                     }
                 ],
-                "image":[
-                  "../asset/image/Product/GirlFashion/GF06/jpeg.webp",
-                  "../asset/image/Product/GirlFashion/GF06/jpeg (1).webp",
-                  "../asset/image/Product/GirlFashion/GF06/jpeg (2).webp",
-                  "../asset/image/Product/GirlFashion/GF06/jpeg (3).webp" 
+                "image": [
+                    "../asset/image/Product/GirlFashion/GF06/jpeg.webp",
+                    "../asset/image/Product/GirlFashion/GF06/jpeg (1).webp",
+                    "../asset/image/Product/GirlFashion/GF06/jpeg (2).webp",
+                    "../asset/image/Product/GirlFashion/GF06/jpeg (3).webp"
                 ]
             }
         ],
-    "descirption": "<li class=\"mar-t-b\"><p class=\" font-w-700 upcass \">CHẤT LIỆU VẢI COTTON</p><ul  class=\"list-none\"><li class=\"mar-t-b\" >Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">KỸ THUẬT THIẾT KẾ</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Sử dụng vải thun cotton 100% với độ dày 240GSM, bề mặt mịn, đứng vải nhưng vẫn thoáng và dễ chịu khi mặc, phù hợp mặc hằng ngày</li></ul></li><li class=\"mar-t-b\"><p class=\" font-w-700 upcass\">FORM DÁNG REGULAR THOẢI MÁI</p><ul  class=\"list-none\"><li class=\"mar-t-b\">Form Regular có độ rộng vừa phải, không ôm sát, phù hợp với nhiều dáng người nam. Dễ phối cùng quần jeans, kaki hoặc short cho phong cách casual, street hoặc mặc hằng ngày. Thiết kế hướng đến sự thoải mái, bền bỉ và tính ứng dụng cao.</li></ul></li>",
-    "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Bảng Size cho bé</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Chiều cao</th><th>Cân Nặng</th></tr><tr><td>S</td><td>Từ 60cm- 102cm</td><td>Từ 8kg - 15kg</td></tr><tr><td>L</td><td>từ 110cm - 116cm</td><td>Từ 16kg - 23kg </td></tr><tr><td>M</td><td>từ 120cm- 130cm</td><td>Từ 20kg - 29kg</td></tr><tr><td>XL</td><td>Từ 140cm-150cm</td><td>Từ 28kg-40kg</td></tr></table></div>"   
+        "descirption": "<li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">COTTON FABRIC</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">DESIGN TECHNIQUE</p><ul class=\"list-none\"><li class=\"mar-t-b\">Uses 100% cotton jersey fabric with a thickness of 240GSM, smooth surface, structured yet breathable and comfortable to wear, suitable for everyday wear</li></ul></li><li class=\"mar-t-b\"><p class=\"font-w-700 upcass\">Comfortable Regular Fit</p><ul class=\"list-none\"><li class=\"mar-t-b\">The Regular fit has a moderate width, not tight-fitting, suitable for many male body types. Easily paired with jeans, chinos, or shorts for casual, street, or everyday wear. Designed for comfort, durability, and high versatility.</li></ul></li>",
+        "sizeTable": "<h1 class=\"bo-bot upcass home-heading\">Size Table for Babies</h1><div ><table class=\"table-dt-size wid-100 font-title\"><tr><th>Size</th><th>Height</th><th>Weight</th></tr><tr><td>S</td><td>60cm-102cm</td><td>8kg-15kg</td></tr><tr><td>L</td><td>110cm-116cm</td><td>16kg-23kg</td></tr><tr><td>M</td><td>120cm-130cm</td><td>20kg-29kg</td></tr><tr><td>XL</td><td>From 140cm-150cm</td><td>From 28kg-40kg</td></tr></table></div>"
     }
 ]

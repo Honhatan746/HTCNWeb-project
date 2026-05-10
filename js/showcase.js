@@ -34,7 +34,7 @@ async function renderTrending() {
         })
         trendContain.innerHTML = html;
     } catch (error) {
-        console.error("Lỗi khi tải dữ liệu JSON:", error);
+        console.error("Error loading JSON data:", error);
     }
 }
 document.addEventListener("DOMContentLoaded", renderTrending);

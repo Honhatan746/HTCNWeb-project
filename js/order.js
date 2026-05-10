@@ -1,10 +1,12 @@
+console.log(JSON.parse(localStorage.getItem("user")));
+console.log(JSON.parse(localStorage.getItem("orders")));
 function translateStatus(status) {
     switch (status) {
-        case "PENDING_DELIVERY": return "Chờ giao";
-        case "DELIVERING": return "Đang giao";
-        case "COMPLETED": return "Đơn hoàn thành";
-        case "CANCELED": return "Đã hủy";
-        default: return "Không xác định";
+        case "PENDING_DELIVERY": return "Pending Delivery";
+        case "DELIVERING": return "Delivering";
+        case "COMPLETED": return "Completed";
+        case "CANCELED": return "Canceled";
+        default: return "Not determined";
     }
 }
 
@@ -13,19 +15,21 @@ function formatPrice(price) {
 }
 
 function renderOrders() {
-    const container = document.getElementById("orderContainer");
-    let orders = JSON.parse(localStorage.getItem("orders")) || [];
-console.log(orders);
-    if (orders.length === 0) {
-        container.innerHTML = "<p>Chưa có đơn hàng</p>";
+    let currentuser = JSON.parse(localStorage.getItem("currentUser"));
+    if (!currentuser) return;
+
+    let allOrders = JSON.parse(localStorage.getItem("orders")) || {};
+    let userOrders = allOrders[currentuser.email] || [];
+    if (userOrders.length === 0) {
+        document.getElementById("orderContainer").innerHTML = "<p class='fs-2'>You have no orders yet.</p>";
         return;
     }
-
+    const container = document.getElementById("orderContainer");
     let html = "";
 
-    orders.forEach(order => {
+    userOrders.forEach(order => {
 
-         html += `
+        html += `
                 <div class="card order-card shadow-sm mb-4">
                     <div class="card-body p-4">
 
@@ -42,7 +46,7 @@ console.log(orders);
                         ${order.items.map(item => `
                             <div class="d-flex align-items-center mb-3 pb-3 border-bottom" style="border-bottom-style: dashed !important;">
                             
-                                <div style="width:150px; height:150px; margin-right:10px;">
+                                <div style="width:150px; height:150px; margin-right:10px; flex-shrink: 0;">
                             <img src="${item.image}" style="width:100%; height:100%; object-fit:cover;">
                                 </div>
 
@@ -77,16 +81,16 @@ console.log(orders);
 
                         <div class="mt-4 d-flex justify-content-end gap-2">
                             
-                            ${order.status === "DELIVERING" || order.status === "PENDING_DELIVERY" ?`
+                            ${order.status === "DELIVERING" || order.status === "PENDING_DELIVERY" ? `
                                 <button class="btn btn-confirm-order btn-sm" onclick="confirmReceived('${order.orderID}')">
-                                        Xác nhận đã nhận hàng
+                                        Confirm receipt of goods
                                 </button>
                             ` : ""}
 
                             <button class="btn btn-outline-danger btn-sm" 
                                 ${order.status !== "PENDING_PAYMENT" && order.status !== "PENDING_DELIVERY" ? "disabled" : ""} 
                                 onclick="cancelOrder('${order.orderID}')">
-                                Hủy đơn
+                                Cancel order
                             </button>
                         </div>
 

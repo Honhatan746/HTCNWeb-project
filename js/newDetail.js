@@ -2,25 +2,15 @@ async function initNewsDetail() {
     try {
         const response = await fetch("../data/news.json");
         const newsData = await response.json();
-
-        // 1. Lấy ID bài viết từ URL (?id=NEW_01)
         const params = new URLSearchParams(window.location.search);
         const newsId = params.get("id");
-
-        // 2. Tìm bài viết tương ứng
         const currentNews = newsData.find(n => n.id === newsId) || newsData[0];
-
-        // 3. Render bài viết chính
         renderMainNews(currentNews);
-
-        // 4. Render danh sách bên trái (trừ bài hiện tại)
         renderSidebar(newsData, newsId);
-
     } catch (error) {
         console.error("Lỗi:", error);
     }
 }
-
 function renderMainNews(news) {
     const detailArea = document.getElementById("newsDetailArea");
     document.querySelector(".newDetail").innerHTML = news.title;
@@ -29,7 +19,7 @@ function renderMainNews(news) {
         <h1>${news.title}</h1>
         <div class="d-flex align-items-center gap-3 mb-4 text-muted small">
             <span>📅 ${news.published}</span>
-            <span>✍️ Admin KidVogue</span>
+            <span>✍️ Nhat Tan</span>
         </div>
         <img src="${news.image}" class="img-fluid rounded-4 mb-4 w-100 shadow-sm" alt="${news.title}">
         <div class="news-body-text">
@@ -43,7 +33,6 @@ function renderSidebar(allNews, currentId) {
     let html = "";
 
     allNews.forEach(news => {
-        // Không hiển thị lại bài đang đọc trong sidebar
         if (news.id !== currentId) {
             html += `
                 <a href="newsDetail.html?id=${news.id}" class="text-decoration-none text-dark">

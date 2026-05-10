@@ -1,5 +1,5 @@
-let allData = []; // Lưu toàn bộ mảng sản phẩm từ JSON
-let currentProduct = []; // Dữ liệu dùng để hiển thị (sau khi lọc/sắp xếp)
+let allData = []; 
+let currentProduct = []; 
 let currentPage = 1;
 const productPerPage = 9;
 
@@ -9,21 +9,14 @@ async function loadAllProduct() {
         const data = await res.json();
 
         allData = data;
-
-        // --- PHẦN THÊM MỚI: Xử lý tham số từ URL ---
         const params = new URLSearchParams(window.location.search);
         const categoryFromUrl = params.get("cat");
 
         if (categoryFromUrl) {
-            // Lọc dữ liệu ngay khi tải trang
             currentProduct = allData.filter(p => p.categories === categoryFromUrl);
-            
-            // Tự động làm sáng nút filter tương ứng (nếu có)
-            // Giả sử các nút filter của bạn có thuộc tính onclick chứa tên category
             setTimeout(() => {
                 const filterBtns = document.querySelectorAll('.btn-filter');
                 filterBtns.forEach(btn => {
-                    // Kiểm tra xem nội dung onclick có chứa category không
                     if (btn.getAttribute('onclick').includes(`'${categoryFromUrl}'`)) {
                         btn.classList.add('active');
                     } else {
@@ -33,16 +26,14 @@ async function loadAllProduct() {
             }, 100); 
 
         } else {
-            // Nếu không có tham số, hiện tất cả và active nút "All"
             currentProduct = [...allData];
             const btnAll = document.querySelector('.btn-filter[onclick*="all"]');
             if(btnAll) btnAll.classList.add('active');
         }
-        // ------------------------------------------
 
         renderPage(1);
     } catch (error) {
-        console.error("Lỗi tải sản phẩm:", error);
+        console.error("Product loading error:", error);
     }
 }
 
@@ -57,7 +48,6 @@ function renderPage(page) {
     let html = "";
 
     pagedItems.forEach(p => {
-        // Tạo các chấm màu (swatches)
         const colorSwatches = p.variants.map(v => `
             <span class="swatch" 
                   style="background-color: ${v.color.toLowerCase()};" 
@@ -95,7 +85,7 @@ function renderPage(page) {
 `;
     });
 
-    productGrid.innerHTML = html || `<div class="text-center w-100 py-5">Không có sản phẩm nào.</div>`;
+    productGrid.innerHTML = html || `<div class="text-center w-100 py-5">There are no products.</div>`;
     renderPagination();
 }
 
@@ -124,26 +114,20 @@ function renderPagination() {
 
 // Logic Bộ lọc (Filter)
 window.filterCategory = function(category, element) {
-    // 1. Cập nhật class active cho nút
     const buttons = document.querySelectorAll('.btn-filter');
     buttons.forEach(btn => btn.classList.remove('active'));
     if (element) element.classList.add('active');
-
-    // 2. Lọc sản phẩm
     if (category === 'all') {
         currentProduct = [...allData];
-        // Xóa tham số cat trên URL cho sạch
         window.history.pushState({}, '', window.location.pathname);
     } else {
         currentProduct = allData.filter(p => p.categories === category);
-        // Cập nhật tham số cat lên URL mà không load lại trang
         window.history.pushState({}, '', `?cat=${category}`);
     }
 
     renderPage(1);
 }
-
-// Logic Sắp xếp (Sort)
+// Logic Sắp xếp
 window.sortProducts = function () {
     const sortType = document.getElementById("priceSort").value;
 
@@ -156,7 +140,7 @@ window.sortProducts = function () {
 }
 
 function translateCategory(cat) {
-    const map = { 'girlFashion': 'Bé Gái', 'boyFashion': 'Bé Trai', 'Accessories': 'Phụ Kiện' };
+    const map = { 'girlFashion': 'Girl Fashion', 'boyFashion': 'Boy Fashion', 'Accessories': 'Fashion Accessories' };
     return map[cat] || cat;
 }
 

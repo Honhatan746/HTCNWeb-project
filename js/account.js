@@ -1,6 +1,6 @@
 let user = JSON.parse(localStorage.getItem("currentUser"));
 if (!user) {
-    if (confirm("Vui lòng đăng nhập?")) {
+    if (confirm("Please log in?")) {
         window.location.href = "../login.html";
     } else {
         window.location.href = "../home.html";
@@ -29,7 +29,7 @@ async function renderAddress() {
     let provinces = await fetch("https://provinces.open-api.vn/api/p/")
         .then(res => res.json());
 
-    provinceSelect.innerHTML = '<option value="">Chọn Tỉnh</option>';
+    provinceSelect.innerHTML = '<option value="">Select Province</option>';
     provinces.forEach(p => {
         let option = document.createElement("option");
         option.value = p.code;
@@ -42,7 +42,7 @@ async function renderAddress() {
     let districts = await fetch(`https://provinces.open-api.vn/api/p/${user.province.code}?depth=2`)
         .then(res => res.json());
 
-    districtSelect.innerHTML = '<option value="">Chọn Huyện</option>';
+    districtSelect.innerHTML = '<option value="">Select District</option>';
 
     districts.districts.forEach(d => {
         let option = document.createElement("option");
@@ -55,7 +55,7 @@ async function renderAddress() {
     let wards = await fetch(`https://provinces.open-api.vn/api/d/${user.district.code}?depth=2`)
         .then(res => res.json());
 
-    wardSelect.innerHTML = '<option value="">Chọn Xã</option>';
+    wardSelect.innerHTML = '<option value="">Select Commune</option>';
 
     wards.wards.forEach(w => {
         let option = document.createElement("option");
@@ -81,20 +81,20 @@ function handleUpdateProfile() {
 
         // Validate
         if (!(/^[A-ZÀ-Ỹa-zà-ỹ']{2,}(\s[A-ZÀ-Ỹa-zà-ỹ]+)*$/).test(fullName)) {
-            document.querySelector(".validReName").textContent = "Tên không hợp lệ";
+            document.querySelector(".validReName").textContent = "Invalid name";
             return;
         } else {
             document.querySelector(".validReName").textContent = "";
         }
 
         if (phone && !/^0\d{9}$/.test(phone)) {
-            document.querySelector(".validRePhone").textContent = "Số điện thoại không hợp lệ";
+            document.querySelector(".validRePhone").textContent = "Invalid phone number";
             return;
         } else {
             document.querySelector(".validRePhone").textContent = "";
         }
         if (!document.getElementById("province").value || !document.getElementById("district").value || !document.getElementById("ward").value) {
-            document.querySelector(".validAddress").textContent = "Vui lòng chọn địa chỉ đầy đủ";
+            document.querySelector(".validAddress").textContent = "Please select the full address.";
             return;
         } else {
             document.querySelector(".validAddress").textContent = "";
@@ -102,7 +102,7 @@ function handleUpdateProfile() {
 
         const btn = document.querySelector(".luuProfile");
         btn.disabled = true;
-        btn.textContent = "Đang xử lý...";
+        btn.textContent = "Loading...";
         setTimeout(() => {
             let newUser = {
                 ...user,
@@ -130,9 +130,9 @@ function handleUpdateProfile() {
             users = users.map(u => u.email === user.email ? newUser : u);
 
             localStorage.setItem("user", JSON.stringify(users));
-            alert("Chỉnh sửa thành công");
+            alert("Edited successfully");
             btn.disabled = false;
-            btn.textContent = "Lưu thay đổi";
+            btn.textContent = "Save changes";
             window.location.href = "../account.html"
         }, 1500);
     })
@@ -162,13 +162,13 @@ function handleChangePassword() {
         console.log(oldPassword, newPassword, confirmPassword);
         // VALIDATE
         if (oldPassword != user.pass) {
-            document.querySelector(".valdiOldPass").textContent = "Mật khẩu không chính xác";
+            document.querySelector(".valdiOldPass").textContent = "Incorrect password";
             return;
         } else {
             document.querySelector(".valdiOldPass").textContent = "";
         }
         if (newPassword.length < 8) {
-            document.querySelector(".validPass").textContent = "Mật khẩu phải 8 ký tự";
+            document.querySelector(".validPass").textContent = "The password must be 8 characters long.";
             return;
         } else {
             document.querySelector(".validPass").textContent = "";
@@ -184,7 +184,7 @@ function handleChangePassword() {
         let btn = document.getElementById("matKhau");
 
         btn.disabled = true;
-        btn.textContent = "Đang xử lý...";
+        btn.textContent = "Loading...";
         setTimeout(() => {
             let newPass = {
                 ...user,
@@ -195,9 +195,9 @@ function handleChangePassword() {
             users = users.map(u => user.email === u.email ? newPass : u);
             localStorage.setItem("user", JSON.stringify(users));
 
-            alert("cập nhật thành công");
+            alert("Updated successfully");
             btn.disabled = false;
-            btn.textContent = "Cập nhật mật khẩu";
+            btn.textContent = "Update password";
             window.location.href = "../account.html";
         }, 1500);
 
@@ -207,7 +207,7 @@ function handleChangePassword() {
 }
 function logout() {
     document.getElementById("logout").addEventListener("click", () => {
-        if (confirm("Bạn có muốn đăng xuất không ?")) {
+        if (confirm("Do you want to log out?")) {
             localStorage.removeItem("currentUser");
             window.location.href = "../login.html";
         }
@@ -221,11 +221,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 document.querySelectorAll(".toggle-password").forEach(icon => {
     icon.addEventListener("click", function () {
-        // Tìm input tương ứng dựa trên data-target
         const targetId = this.getAttribute("data-target");
         const passwordInput = document.getElementById(targetId);
-
-        // Chuyển đổi type giữa password và text
         if (passwordInput.type === "password") {
             passwordInput.type = "text";
             this.classList.replace("ti-lock", "ti-unlock");
@@ -235,13 +232,10 @@ document.querySelectorAll(".toggle-password").forEach(icon => {
         }
     });
 });
-// Sự kiện thay đổi Tỉnh/Thành phố
 document.getElementById("province").addEventListener("change", function () {
     let provinceCode = this.value;
-
-    // Reset các dropdown con
-    document.getElementById("district").innerHTML = '<option value="">Chọn Quận/Huyện</option>';
-    document.getElementById("ward").innerHTML = '<option value="">Chọn Xã/Phường</option>';
+    document.getElementById("district").innerHTML = '<option value="">Select District/County</option>';
+    document.getElementById("ward").innerHTML = '<option value="">Select Commune/Ward</option>';
 
     if (provinceCode) {
         fetch(`https://provinces.open-api.vn/api/p/${provinceCode}?depth=2`)
@@ -255,16 +249,12 @@ document.getElementById("province").addEventListener("change", function () {
                     districtSelect.appendChild(option);
                 });
             })
-            .catch(error => console.error('Lỗi:', error));
+            .catch(error => console.error('Error:', error));
     }
 });
-
-// Sự kiện thay đổi Quận/Huyện
 document.getElementById("district").addEventListener("change", function () {
     let districtCode = this.value;
-
-    // Reset dropdown Phường/Xã
-    document.getElementById("ward").innerHTML = '<option value="">Chọn Xã/Phường</option>';
+    document.getElementById("ward").innerHTML = '<option value="">Select Commune/Ward</option>';
 
     if (districtCode) {
         fetch(`https://provinces.open-api.vn/api/d/${districtCode}?depth=2`)
@@ -278,6 +268,6 @@ document.getElementById("district").addEventListener("change", function () {
                     wardSelect.appendChild(option);
                 });
             })
-            .catch(error => console.error('Lỗi:', error));
+            .catch(error => console.error('Error:', error));
     }
 });

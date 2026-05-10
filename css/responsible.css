@@ -255,7 +255,8 @@
     }
 
     .cart-item .frame_img {
-        width: 14rem;
+        width: 130px;
+        height: 130px;
     }
 
     .cart-total {

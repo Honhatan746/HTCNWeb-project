@@ -2,27 +2,16 @@ async function loadNews() {
     try {
         const response = await fetch("../data/news.json");
         const newsData = await response.json();
-
-        // --- XỬ LÝ DỮ LIỆU ---
-        // 1. Sắp xếp tin tức theo ngày (published) mới nhất
         const sortedNews = [...newsData].sort((a, b) => {
             return new Date(b.published.replace(/_/g, '-')) - new Date(a.published.replace(/_/g, '-'));
         });
-
-        // 2. Lấy 6 bài mới nhất cho cột bên phải
         const top6News = sortedNews.slice(0, 6);
-
-        // --- RENDER CỘT TRÁI (Giữ nguyên logic chia đôi của bạn) ---
         renderLeftColumn(newsData);
-
-        // --- RENDER CỘT PHẢI (6 bài mới nhất) ---
         renderRightColumn(top6News);
-
     } catch (error) {
-        console.error("Lỗi khi tải tin tức:", error);
+        console.error("Error loading news:", error);
     }
 }
-
 function renderRightColumn(newsList) {
     const hotNewsInner = document.getElementById("hotNewsSliderInner");
     let htmlContent = "";
@@ -48,8 +37,6 @@ function renderRightColumn(newsList) {
 
     hotNewsInner.innerHTML = htmlContent;
 }
-
-// Hàm bổ trợ render cột trái (chia 2 bài mỗi slide)
 function renderLeftColumn(data) {
     const sliderInner = document.getElementById("newsSliderInner");
     let htmlContent = "";
@@ -76,5 +63,4 @@ function renderLeftColumn(data) {
     }
     sliderInner.innerHTML = htmlContent;
 }
-
 document.addEventListener("DOMContentLoaded", loadNews);

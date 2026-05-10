@@ -18,15 +18,15 @@ $(function () {
         let btn = $(this);
         if (btn.attr("disabled")) return;
         btn.attr("disabled", true);
-        btn.text("Đang xử lý...");
+        btn.text("Loading...");
         setTimeout(() => {
             if (login()) {
-                alert("Đăng nhập thành công!");
+                alert("Log in successfully!");
                 window.location.href = "../home.html";
             } else {
-                alert("Tài khoản không tồn tại")
+                alert("The account does not exist.")
                 btn.attr("disabled", false);
-                btn.text("Đăng nhập");
+                btn.text("Login");
             }
         }, 1500);
     });
