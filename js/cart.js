@@ -86,14 +86,14 @@ window.increase = function (index) {
     if (originProduct) {
         originProduct.variants.forEach(variant => {
             let stockItem = variant.item.find(i => i.sku === itemInCart.sku);
-            if (stockItem) {
-                currentStock = stockItem.stock;
-            }
+            if (stockItem) currentStock = stockItem.stock;
         });
     }
+
     if (itemInCart.quantity < currentStock) {
         itemInCart.quantity++;
-        localStorage.setItem("cart", JSON.stringify(cart));
+        allCarts[userKey] = cart; 
+        localStorage.setItem("cart", JSON.stringify(allCarts));
         renderCart();
     } else {
         alert(`Unfortunately, this product only has a maximum of ${currentStock} units left in stock.`);
@@ -106,11 +106,13 @@ window.decrease = function (index) {
 
     let allCarts = JSON.parse(localStorage.getItem("cart")) || {};
     let cart = allCarts[userKey] || [];
+    
     if (cart[index].quantity > 1) {
         cart[index].quantity--;
+        allCarts[userKey] = cart;
+        localStorage.setItem("cart", JSON.stringify(allCarts));
+        renderCart();
     }
-    localStorage.setItem("cart", JSON.stringify(cart));
-    renderCart();
 };
 
 window.removeItem = function (index) {
@@ -120,11 +122,11 @@ window.removeItem = function (index) {
 
         let allCarts = JSON.parse(localStorage.getItem("cart")) || {};
         let cart = allCarts[userKey] || [];
+        
         cart.splice(index, 1);
-        localStorage.setItem("cart", JSON.stringify(cart));
+        allCarts[userKey] = cart;
+        localStorage.setItem("cart", JSON.stringify(allCarts));
         renderCart();
-    } else {
-        return;
     }
 };
 
