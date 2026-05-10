@@ -1,3 +1,4 @@
+console.log(JSON.parse(localStorage.getItem("currentUser")))
 // Render ra trending sản phẩm
 async function renderTrending() {
     try {
@@ -52,9 +53,7 @@ async function renderTop2Fashion(categories, container) {
             .sort((a, b) => b.topPrice - a.topPrice)
             .slice(0, 2);
         const cardContainer = document.getElementById(container);
-        if (!cardContainer) return; // Thoát nếu không tìm thấy container chứa card
-
-        // Tạo chuỗi HTML trống
+        if (!cardContainer) return;
         let htmlContent = '';
 
         top2Product.forEach(product => {
@@ -70,12 +69,10 @@ async function renderTop2Fashion(categories, container) {
                 </a>
             `;
         });
-
-        // Cập nhật lại giao diện
         cardContainer.innerHTML = htmlContent;
 
     } catch (error) {
-        console.error("Lỗi khi tải dữ liệu JSON:", error);
+        console.error("Error loading JSON data:", error);
     }
 }
 // Render ra danh sách sản phẩm
@@ -123,8 +120,8 @@ async function renderListNews(){
                             <div class="d-flex align-items-center">
                                 <img src="${item.image}" class="tab-thumb" alt="">
                                 <div class="ms-3">
-                                    <h6 class="mb-0">${item.title}</h6>
-                                    <small class="text-muted">${item.published}</small>
+                                    <h4 class="mb-0">${item.title}</h4>
+                                    <small class="text-muted fs-5">${item.published}</small>
                                 </div>
                             </div>
                     </div>
@@ -134,7 +131,7 @@ async function renderListNews(){
         newsList.innerHTML = html;
         if(newsData.length > 0) updatePrivew(newsData[0]);
     } catch (error) {
-        console.error("Lỗi khi tải dữ liệu JSON:", error);
+        console.error("Error loading JSON data:", error);
     }
 }
 function updatePrivew(data){

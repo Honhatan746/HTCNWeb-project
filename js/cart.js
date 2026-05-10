@@ -1,19 +1,24 @@
+console.log(JSON.parse(localStorage.getItem("cart")));
 let currentBuyNow = JSON.parse(localStorage.getItem("buyProduct"));
 if (currentBuyNow) {
     localStorage.removeItem("buyProduct");
 }
 console.log(currentBuyNow);
 function renderCart() {
+    let currentuser = JSON.parse(localStorage.getItem("currentUser"));
+    if (!currentuser) return;
+    let userKey = currentuser.email;
+
+    let allCarts = JSON.parse(localStorage.getItem("cart")) || {};
+    let cart = allCarts[userKey] || [];
     const cartContainer = document.getElementById("cart-List");
     const countEl = document.getElementById("cart-count");
     const totalEl = document.getElementById("total-price");
     const finalEl = document.getElementById("final-price");
-
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
     console.log(cart);
     if (cart.length === 0) {
-        cartContainer.innerHTML = "<p>Giỏ hàng trống</p>";
-        countEl.innerText = "0 sản phẩm";
+        cartContainer.innerHTML = "<p>Cart is empty</p>";
+        countEl.innerText = "0 Product";
         totalEl.innerText = "0đ";
         finalEl.innerText = "0đ";
         return;
@@ -60,16 +65,20 @@ function renderCart() {
     });
 
     cartContainer.innerHTML = html;
-    countEl.innerText = totalQuantity + " sản phẩm";
+    countEl.innerText = totalQuantity + " Products";
     totalEl.innerText = total.toLocaleString("vi-VN") + "đ";
     finalEl.innerText = total.toLocaleString("vi-VN") + "đ";
 }
 document.addEventListener("DOMContentLoaded", renderCart);
 
 window.increase = function (index) {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let currentuser = JSON.parse(localStorage.getItem("currentUser"));
+    let userKey = currentuser.email;
+
+    let allCarts = JSON.parse(localStorage.getItem("cart")) || {};
+    let cart = allCarts[userKey] || [];
     let allProducts = JSON.parse(localStorage.getItem("products")) || [];
-    
+
     let itemInCart = cart[index];
     let originProduct = allProducts.find(p => p.productID === itemInCart.productID);
     let currentStock = 0;
@@ -87,12 +96,16 @@ window.increase = function (index) {
         localStorage.setItem("cart", JSON.stringify(cart));
         renderCart();
     } else {
-        alert(`Rất tiếc, sản phẩm này chỉ còn tối đa ${currentStock} cái trong kho.`);
+        alert(`Unfortunately, this product only has a maximum of ${currentStock} units left in stock.`);
     }
 };
 
 window.decrease = function (index) {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let currentuser = JSON.parse(localStorage.getItem("currentUser"));
+    let userKey = currentuser.email;
+
+    let allCarts = JSON.parse(localStorage.getItem("cart")) || {};
+    let cart = allCarts[userKey] || [];
     if (cart[index].quantity > 1) {
         cart[index].quantity--;
     }
@@ -101,22 +114,30 @@ window.decrease = function (index) {
 };
 
 window.removeItem = function (index) {
-    if(confirm("Bạn có muốn xóa không?")){
-        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    if (confirm("Do you want to delete it?")) {
+        let currentuser = JSON.parse(localStorage.getItem("currentUser"));
+        let userKey = currentuser.email;
+
+        let allCarts = JSON.parse(localStorage.getItem("cart")) || {};
+        let cart = allCarts[userKey] || [];
         cart.splice(index, 1);
         localStorage.setItem("cart", JSON.stringify(cart));
         renderCart();
-    }else{
+    } else {
         return;
     }
 };
 
 function paying() {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let currentuser = JSON.parse(localStorage.getItem("currentUser"));
+    let userKey = currentuser.email;
+
+    let allCarts = JSON.parse(localStorage.getItem("cart")) || {};
+    let cart = allCarts[userKey] || [];
     let allProducts = JSON.parse(localStorage.getItem("products")) || [];
-    
+
     if (cart.length === 0) {
-        alert("Giỏ hàng của bạn đang trống!");
+        alert("Your shopping cart is empty!");
         return;
     }
     for (let item of cart) {
@@ -131,7 +152,7 @@ function paying() {
         }
 
         if (item.quantity > stockAvailable) {
-            alert(`Sản phẩm "${item.name}" đã vượt quá số lượng trong kho (${stockAvailable}). Vui lòng điều chỉnh lại!`);
+            alert(`The product "${item.name}" has exceeded the stock quantity (${stockAvailable}). Please adjust it!`);
             return;
         }
     }

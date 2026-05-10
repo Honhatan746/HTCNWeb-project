@@ -70,25 +70,10 @@
 
         <div class="container py-4">
 
-            <h3 class="mb-4 font-heading heading-pink fw-bold text-uppercase">Đơn hàng của bạn</h3>
+            <h3 class="mb-4 font-heading heading-pink fw-bold text-uppercase">Your order</h3>
             <div id="orderContainer"></div>
 
         </div>
-
-<div class="modal fade" id="orderDetailModal" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content" style=" border: none;">
-    <div class="modal-header" style="background-color: #fcfaff; border-bottom: 1px solid #eee;">
-        <h5 class="modal-title" style="font-size: 1.8rem; color: var(--primary-color);">
-            <i class="bi bi-receipt"></i> Chi tiết đơn hàng
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" style="font-size: 1.2rem;"></button>
-    </div>
-    <div class="modal-body" id="orderDetailContent" style="font-size: 1.5rem; line-height: 1.6;">
-        </div>
-</div>
-  </div>
-</div>
 
     <!-- Footer -->
     <footer>
@@ -190,25 +175,46 @@
             </div>
         </div>
     </div>
-    <!-- Menu Mobile -->
-    <div class="menu-mobile menu-mobile-js">
-        <div class="menu-mobile_body">
-            <div class="menu-mobile_header">
-                <div class="wid-logo"><img src="./asset/image/Logo/Logo_White-removebg-preview.png" alt="Logo"></div>
-                
-            </div>
-            <div class="header_menu alignItem-star">
-                <ul class=" menu-tools flex-colum menu-tools-mobile">
-                    <!--Render Js code-->
-                </ul>
-            </div>
-            <div class="menu-mobile_img ">
-                <div><img src="./asset/image/Slide/anh_tet.webp" alt="anhTet"></div>
-                <div><img src="./asset/image/Slide/anh_trung_thu.webp" alt="anhTrungThu"></div>
+        <!-- Menu Mobile -->
+        <div class="menu-mobile menu-mobile-js">
+            <div class="menu-mobile_body">
+                <div class="menu-mobile_header">
+                    <div class="wid-logo"><img src="./asset/image/Logo/Logo_White-removebg-preview.png" alt="Logo">
+                    </div>
+
+                </div>
+                <div class="header_menu alignItem-star">
+                    <ul class=" menu-tools flex-colum menu-tools-mobile">
+                        <li class="pad-2rem link-hover "><a style="color: black;" class="text-hover" href="">Home</a>
+                        </li>
+                        <li class="pad-2rem link-hover menu-mobile-sub">
+                            <a href="allProduct.html" class="text-hover " style="color: black;"> Product</a>
+                            <div class="menu-mobile-sub-nav">
+                                <ul>
+                                    <li><a class="" style="color: black;" href="allProduct.html?cat=boyFashion">Boy
+                                            Fashion</a></li>
+                                    <li><a class="" style="color: black;" href="allProduct.html?cat=girlFashion">Girl
+                                            Fashion</a></li>
+                                    <li><a class="" style="color: black;" href="allProduct.html?cat=Accessories">Fashion
+                                            Accessories</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="pad-2rem link-hover"><a class="text-hover " style="color: black;" href="">News</a>
+                        </li>
+                        <li class="pad-2rem link-hover"><a class="text-hover " style="color: black;" href="">About</a>
+                        </li>
+                        <li class="pad-2rem link-hover"><a class="text-hover " style="color: black;" href="">SiteMap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-mobile_img ">
+                    <div><img src="./asset/image/Slide/anh_tet.webp" alt="anhTet"></div>
+                    <div><img src="./asset/image/Slide/anh_trung_thu.webp" alt="anhTrungThu"></div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- End Menu Mobile -->
        <script src="./js/modal.js"></script>
 <script src="./js/order.js"></script>
 <script src="./bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>

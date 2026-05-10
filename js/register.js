@@ -1,12 +1,12 @@
-
+console.log(JSON.parse(localStorage.getItem("user")));
 function validName() {
     let name = $("#fullName").val().trim();
     if (name === "") {
-        $(".validReName").text("Tên không được để trống");
+        $(".validReName").text("The name cannot be left blank.");
         return false;
     } else {
         if (!(/^[A-ZÀ-Ỹa-zà-ỹ']{2,}(\s[A-ZÀ-Ỹa-zà-ỹ]+)*$/).test(name)) {
-            $(".validReName").text("Tên không hợp lệ");
+            $(".validReName").text("Invalid name");
             return false;
         } else {
             $(".validReName").text("");
@@ -17,11 +17,11 @@ function validName() {
 function validPhone() {
     let phone = $("#phoneNumber").val().trim();
     if (phone === "") {
-        $(".validRePhone").text("Vui lòng nhập số điện thoại");
+        $(".validRePhone").text("Please enter your phone number.");
         return false;
     } else {
         if (!(/^0\d{9}$/.test(phone))) {
-            $(".validRePhone").text("Số điện thoại không hợp lệ");
+            $(".validRePhone").text("Invalid phone number");
             return false;
         } else {
             $(".validRePhone").text("");
@@ -35,7 +35,7 @@ function validAddress() {
     let w = $("#ward").val();
 
     if (!p || !d || !w) {
-        $(".validReAddress").text("Vui lòng chọn đầy đủ địa chỉ");
+        $(".validReAddress").text("Please select the full address.");
         return false;
     }
 
@@ -45,11 +45,11 @@ function validAddress() {
 function validEmail() {
     let email = $("#email").val().trim();
     if (email === "") {
-        $(".validReEmail").text("Vui lòng nhập email");
+        $(".validReEmail").text("Please enter email");
         return false;
     } else {
         if (!(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/).test(email)) {
-            $(".validReEmail").text("Email không hợp lệ");
+            $(".validReEmail").text("Invalid email");
             return false;
         } else {
             $(".validReEmail").text("");
@@ -60,7 +60,7 @@ function validEmail() {
 function validPass() {
     let pass = $("#password").val().trim();
     if (pass.length < 8) {
-        $(".validPass").text("Mật khẩu ít nhất 8 ký tự");
+        $(".validPass").text("Password must be at least 8 characters long.");
         return false;
     } else {
         $(".validPass").text("");
@@ -71,7 +71,7 @@ function validRePass() {
     let rePass = $("#rePass").val().trim();
     let pass = $("#password").val().trim();
     if (rePass != pass) {
-        $(".validRePass").text("Mật khẩu hông khớp");
+        $(".validRePass").text("Passwords do not match");
         return false;
     } else {
         $(".validRePass").text("");
@@ -87,7 +87,7 @@ function register() {
     let user = JSON.parse(localStorage.getItem("user")) || [];
     let exist = user.find(u => u.email === email);
     if (exist) {
-        alert("Email đã tồn tại rồi");
+        alert("Email already exists.");
         return;
     }
     let newUser = {
@@ -130,8 +130,8 @@ $(function () {
     $("#province").change(function () {
         let provinceCode = $(this).val();
 
-        $("#district").html('<option value="">Chọn Quận/Huyện</option>');
-        $("#ward").html('<option value="">Chọn Xã/Phường</option>');
+        $("#district").html('<option value="">Select District/County</option>');
+        $("#ward").html('<option value="">Select Commune/Ward</option>');
 
         if (provinceCode) {
             $.get(`https://provinces.open-api.vn/api/p/${provinceCode}?depth=2`, function (data) {
@@ -145,7 +145,7 @@ $(function () {
     $("#district").change(function () {
         let districtCode = $(this).val();
 
-        $("#ward").html('<option value="">Chọn Xã/Phường</option>');
+        $("#ward").html('<option value="">Select Commune/Ward</option>');
 
         if (districtCode) {
             $.get(`https://provinces.open-api.vn/api/d/${districtCode}?depth=2`, function (data) {
@@ -174,14 +174,14 @@ $(function () {
         if (validName() && validPhone() && validAddress() && validEmail() && validPass() && validRePass()) {
             if (btn.attr("disabled")) return;
             btn.attr("disabled", true);
-            btn.text("Đang xử lý...");
+            btn.text("Loading...");
             setTimeout(function () {
                 if (register()) {
-                    alert("Đăng ký thành công");
+                    alert("Registered successfully");
                     window.location.href = "../login.html";
                 } else {
                     btn.attr("disabled", false);
-                    btn.text("Tạo tài khoản");
+                    btn.text("Create an account");
                 }
             }, 1500)
         }
