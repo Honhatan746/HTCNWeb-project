@@ -18,7 +18,7 @@ async function renderTrending() {
         topProduct.forEach(p => {
             html += `
             <div class="col-6 col-md-4 col-lg-3">
-                 <a href="../productDetail.html?id=${p.productID}" class=" product-item product-card text-decoration-none">
+                 <a href="../productDetail.html?id=${p.productID}" class="product-item product-card text-decoration-none">
                 <div  class=" cart h-100 border-0 shadow-sm">
                     <div class="product-img-container frame_img">
                         <img src="${p.variants[0].image[0]}" class=" img-cls" alt="${p.name}">

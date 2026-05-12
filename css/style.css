@@ -706,7 +706,6 @@ header {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    /* scroll x, Forced inhalation to the nearest point */
     scroll-behavior: smooth;
 }
 
@@ -962,7 +961,6 @@ header {
 }
 
 .news-main-preview {
-    background: #fff;
     border-radius: 20px;
     overflow: hidden;
     transition: opacity 0.4s ease-in-out;
@@ -1799,7 +1797,6 @@ header {
 
 .product-dt_list {
     flex: 0 0 80px;
-    /* Độ rộng ảnh nhỏ vừa đủ nhìn */
 }
 
 .product-dt_list_img {
@@ -1830,9 +1827,7 @@ header {
     transition: opacity .6s ease, transform 0.6s ease;
     width: 100%;
     height: 500px;
-    /* Khống chế chiều cao cố định để không bị quá dài */
     object-fit: contain;
-    /* Giữ nguyên tỷ lệ ảnh, không bị méo */
     display: block;
 }
 
@@ -2122,7 +2117,6 @@ header {
     margin-bottom: 2rem;
     transition: all 0.3s ease;
     border-top: 4px solid var(--primary-color);
-    /* Chọn border-top để hiện đại hơn */
     overflow: hidden;
 }
 
@@ -2290,7 +2284,6 @@ header {
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    /* Cuộn mượt trên iPhone */
     margin-bottom: 2rem;
     border-radius: 1rem;
 }
